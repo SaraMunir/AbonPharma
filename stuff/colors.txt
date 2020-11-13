@@ -1,0 +1,9 @@
+gradient in a: green to blue: #7ccd88 56d4b3
+dark blue leaf a: #286371
+
+
+green leaf: 	dark:  #215e4f
+		light: #50b940
+
+
+https://www.graphicsprings.com/logographics/letter-a-leaf

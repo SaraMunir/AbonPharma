@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abon | About Abon</title>
+    <link rel="icon" href="assets/ABLogo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body class="myBody">
+    <header class="hero">
+        <nav class="navbar navbar-expand-lg container myNav ">
+            <div class="col-5">
+                <ul class="navbar-nav navFont">
+                    <li class="nav-item" style="width: 50px; height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/ABLogo.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="navBrandName">Abon Pharmaceuticals</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navFont text-center">
+                    <li class="nav-item active navItemWidth">
+                        <a class="nav-link navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink" href="about.html">About Abon</a>
+                    </li>
+                    <li class="nav-item  navItemWidth">
+                        <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item navItemWidth" id="showMoreBtn">
+                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuBar hide">
+                <div class="d-flex justify-content-end mb-3">
+                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
+                </div>
+                <div class="row text-center">
+                    <ul class="col-lg">
+                        <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
+                        <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
+                        <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
+                        <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
+                    </ul>
+                    <ul class="col-lg">
+                        <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
+                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
+                    </ul>
+                    <ul class="col-lg">
+                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
+                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container heroTexts mt-2 text-center">
+            <div class="row">
+                <div class="heroText mt-5 mx-auto">
+                    <h1 class="heroHText" style="font-size: 3.5rem;">About Us</h1>
+                    <p class="heroSubText mx-auto" style="width: 70%;">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on drug delivery research and product development. Abon’s expertise and flexibility can bring a complex formulation project into clinical or bioequivalence study in a timely manner and within budget. Whether your goal is to improve bio-availability, achieve bio-equivalence, or develop a new product, Abon’s innovative approach to formulation development will meet your expectations. Abon’s professional team of scientists has a proven track record in a multitude of dosage forms, and has multiple patents in drug delivery.</p>
+                    <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">
+                        Read More
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 mx-auto">
+                    <img class="heroImg" src="assets/pharmacyImageVect2.png" alt="" style="width: 100%;">
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <section class="aspectSection text-center">
+        <h5 class="header5" style="margin-bottom: 30px;">OUR SERVICES</h5>
+        <h1 class="title1" style="margin-bottom: 60px;">Meet The Founders</h1>
+        <div class="row container mx-auto col-9">
+            <!-- <div class="myCard mx-auto mb-4" style="width: 425px;">
+                <img class="fndrRndImg mb-4" src="assets/founderSalah.jpg" alt="product-development">
+                <div class="cardDesc">
+                    <h4 class="mb-4">Salah U. Ahmed, PhD</h4>
+                    <p>Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. </p>
+                </div>
+                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrSalah()">
+                    Read More
+                </div>
+            </div>
+            <div class="myCard mx-auto  mb-4" style="width: 425px;">
+                <img class="fndrRndImg mb-4" src="assets/founderBruce.jpg" alt="product-Capabilities">
+                <div class="cardDesc">
+                    <h4 class="mb-4">Bruce Downey, Esq</h4>
+                    <p>Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008.</p>
+                </div>
+                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrBruce()"> 
+                    Read More
+                </div>
+            </div> -->
+
+            <div class="founderCard  mx-auto">
+                <img class="card1" src="assets/founderSalah.jpg" alt="product-development">
+                <div class="info  text-center">
+                    <p class="founderDesc">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc... </p>
+                    <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrSalah()">
+                        Read More
+                    </div>
+                </div>
+                <div class="others">
+                    <h4 class="mb-4 text-center founderName mt-3">Salah U. Ahmed, PhD</h4>
+                    <h6 class="mb-4 text-center founderJobTitle">job title</h6>
+                </div>
+            </div>
+            <div class="founderCard  mx-auto">
+                <img class="card1" src="assets/founderBruce.jpg" alt="product-development">
+                <div class="info text-center">
+                    <p class="founderDesc">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008...</p>
+                    <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrBruce()"> 
+                        Read More
+                    </div>
+                </div>
+                <div class="others">
+                    <h4 class="mb-4 text-center founderName mt-3">Bruce Downey, Esq</h4>
+                    <h6 class="mb-4 text-center founderJobTitle">job title</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="founderIntro2 row col-lg-8 mx-auto">
+        <div class="founderCard  mx-auto">
+            <img class="card1" src="assets/founderSalah.jpg" alt="product-development">
+            <div class="info  text-center">
+                <p class="founderDesc">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc... </p>
+                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrSalah()">
+                    Read More
+                </div>
+            </div>
+            <div class="others">
+                <h4 class="mb-4 text-center founderName mt-3">Salah U. Ahmed, PhD</h4>
+                <h6 class="mb-4 text-center founderJobTitle">job title</h6>
+            </div>
+        </div>
+        <div class="founderCard  mx-auto">
+            <img class="card1" src="assets/founderBruce.jpg" alt="product-development">
+            <div class="info text-center">
+                <p class="founderDesc">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008...</p>
+                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrBruce()"> 
+                    Read More
+                </div>
+            </div>
+            <div class="others">
+                <h4 class="mb-4 text-center founderName mt-3">Bruce Downey, Esq</h4>
+                <h6 class="mb-4 text-center founderJobTitle">job title</h6>
+            </div>
+        </div>
+    </section> -->
+    <section class="founderSectionDetail" id="fndrSalah">
+        <div class="row container mx-auto">
+            <div class="fndrImg mx-auto">
+                <img class="fndrRndImg mb-4" src="assets/founderSalah.jpg" alt="product-development">
+            </div>
+            <div class="fndrDetail text-center">
+                <h3>Dr. Salah U. Ahmed</h3>
+                <p>Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. He was responsible for the development of generic and proprietary pharmaceuticals as well as API and biotechnology products. Barr’s product portfolio encompassed diverse Drug Delivery Systems (DDS) including parenteral, nasal, ocular, oral, transmucosal, transdermal, and intrauterine routes of administration. The corporation ran its research and development operations in the USA and several countries in Europe.
+                <br>Dr. Ahmed received his MS in industrial Pharmacy and PhD in Pharmaceutical Sciences from St. Johns University, New York. He has more than a quarter century of pharmaceutical experience, of which 16 years was at Barr Pharmaceuticals, Inc. His leadership role in product development significantly contributed to Barr’s transformation to a specialty pharmaceutical company and a world leader in the generic pharmaceutical industry.
+                <br>Dr. Ahmed has a distinguished track record in pharmaceutical research involving special DDS, solid-state interactions, statistical design and mathematical modeling in product development research, and in-vitro/in-vivo performance of dosage forms. His research work in these areas originated more than 40 patents. He authored or co-authored more than 60 research papers, abstracts and book chapters.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="founderSectionDetail" id="fndrBruce">
+        <div class="row container mx-auto">
+            <div class="fndrImg mx-auto">
+                <img class="fndrRndImg mb-4" src="assets/founderBruce.jpg" alt="product-development">
+            </div>
+            <div class="fndrDetail text-center">
+                <h3>Dr. Salah U. Ahmed</h3>
+                <p>Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008. Mr. Downey joined Barr Pharmaceuticals, Inc. in 1993 and was appointed Chairman of the Board and Chief Executive Officer in 1994. Prior to joining Barr, Mr. Downey was a capital partner in Winston & Strawn, and a predecessor firm, Bishop, Cook, Purcell and Reynolds. In 1979, he founded Baller & Downey, which later merged with Bishop, Cook, Purcell and Reynolds. <br> Mr. Downey began his legal career in the Honors Program at the U.S. Department of Justice. He later worked as a Special Litigation Counsel at the U.S. Department of Energy. Mr. Downey graduated with honors from Miami University in 1969 and received his law degree cum laude from Ohio State. He also served on the Board of Editors of The Ohio State University Law Journal and was elected to the Order of the Coif. Mr. Downey is a former director of Warner Chilcott. In 2006 and 2007, Mr. Downey served as the Chairman of the Board for the Generic Pharmaceutical Association (GPhA), the trade association for the generic pharmaceutical industry. <br> Mr. Downey is a Partner in NewSpring Health Capital II, L.P. a venture capital firm, and also a board member of Momenta Pharmaceuticals, Cardinal Health, and Acetylon Pharmaceuticals. Mr. Downey is currently the Chair of the Board of Ambassadors for Johns Hopkins’ Project RESTORE that funds research and clinical trials to support the creation of progressive treatments for transverse myelitis and multiple sclerosis.</p>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

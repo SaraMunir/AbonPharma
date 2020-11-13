@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abon | Product Development</title>
+    <link rel="icon" href="assets/ABLogo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="productDevelopment.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="myBody">
+    <header class="hero">
+        <nav class="navbar navbar-expand-lg container myNav ">
+            <div class="col-5">
+                <ul class="navbar-nav navFont">
+                    <li class="nav-item" style="width: 50px; height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/ABLogo.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="navBrandName">Abon Pharmaceuticals</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navFont text-center">
+                    <li class="nav-item active navItemWidth">
+                        <a class="nav-link navLink" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink" href="about.html">About Abon</a>
+                    </li>
+                    <li class="nav-item  navItemWidth">
+                        <a class="nav-link navLink" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item navItemWidth" id="showMoreBtn">
+                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menuBar hide">
+                <div class="d-flex justify-content-end mb-3">
+                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
+                </div>
+                <div class="row text-center">
+                    <ul class="col-lg">
+                        <li class="nav-item"><a class="menuItem-link" href="index.html">ABOUT ABON</a></li>
+                        <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
+                        <li><a class="menuItem-link" href="#">PRODUCT DEVELOPMENT</a></li>
+                        <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
+                    </ul>
+                    <ul class="col-lg">
+                        <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
+                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
+                    </ul>
+                    <ul class="col-lg">
+                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
+                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container heroTexts mt-2">
+            <div class="row">
+                <div class="heroText col-lg-6 mt-5 mx-auto">
+                    <h1 class="heroHText">Pre-Formulation</h1>
+                    <p class="heroSubText">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on drug delivery research and product development. Abon’s expertise and flexibility can bring a complex formulation project into clinical or bioequivalence study in a timely manner and within budget. Whether your goal is to improve bio-availability, achieve bio-equivalence, or develop a new product, Abon’s innovative approach to formulation development will meet your expectations. Abon’s professional team of scientists has a proven track record in a multitude of dosage forms, and has multiple patents in drug delivery.</p>
+
+                </div>
+                <div class="col-lg-5 mx-auto">
+                    <img class="heroImg" src="assets/production.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="aspectBubble row container mx-auto col-md-8">
+        <div class="resLogo mx-auto" onClick="scrollToPrForm()">
+            <div class="bubble mb-2 resLogo mx-auto" >
+                <img class="bubbleImg" src="assets/icons/research-white.png" alt="product-development" >
+            </div>
+            <div class="tooltiptext mx-auto">Pre-Formulation</div>
+        </div>
+        <div class="resLogo mx-auto" onClick="scrollToFormu()"> 
+            <div class="bubble mx-auto mb-2 resLogo">
+                <img class="bubbleImg" src="assets/icons/formula-white.png" alt="product-development">
+            </div>
+            <div class="tooltiptext">Formulation</div>
+        </div>
+        <div class="resLogo mx-auto" onClick="scrollToAnalytical()">
+            <div class="bubble mx-auto mb-2 resLogo">
+                <img class="bubbleImg" src="assets/icons/analytics-white.png" alt="product-development">
+            </div>
+            <div class="tooltiptext">Analytical Services</div>
+        </div>
+        <div class="resLogo mx-auto" onClick="scrollToBioAnalytical()">
+            <div class="bubble mx-auto mb-2 resLogo">
+                <img class="bubbleImg" src="assets/icons/lab-white.png" alt="product-development">
+            </div>
+            <div class="tooltiptext">Bio-Analytical Services</div>
+            
+        </div>
+    </section>
+    <section class="aspectSection text-center">
+        <h5 class="header5" style="margin-bottom: 30px;">OUR SERVICES</h5>
+        <h1 class="title1" style="margin-bottom: 60px;">What We Offer for You</h1>
+        <div class="container mx-auto">
+            <div class="myCard mx-auto mb-4" id="preFormulation">
+                <div class="cardRndImg mx-auto mb-4">
+                    <img class="cardImg" src="assets/icons/research-white.png" alt="product-development">
+                </div>
+                <div class="cardDesc">
+                    <h5 class="mb-4">Pre-Formulation</h5>
+                    <p>Proper Pre-formulation research is the key to successful development of a product with a high probability of meeting bio-performance, stability, optimum process, that addresses recent FDA science-based review requirements. Pre-formulation is often an under-utilized step in Product Development. This scientific research saves time and resources during development. Such activities are included, but not limited to:</p>
+                    <ul class="list-group col-6 mx-auto text-left">
+                        <li class="list-group-item">Polymorphism</li>
+                        <li class="list-group-item">Micromeritics - Particle Properties</li>
+                        <li class="list-group-item">Thermal Analysis</li>
+                        <li class="list-group-item">Drug-Excipient Interaction</li>
+                        <li class="list-group-item">Viscoelastic Behavior</li>
+                        <li class="list-group-item">Solid-state Characterization</li>
+                        <li class="list-group-item">Micro and Nanotechnology Analysis</li>
+                        <li class="list-group-item">Matrix hydration & drug diffusion</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="myCard mx-auto  mb-4" id="formulation">
+                <div class="cardRndImg mx-auto mb-4">
+                    <img class="cardImg" src="assets/icons/formula-white.png" alt="product-Capabilities">
+                </div>
+                <div class="cardDesc">
+                    <h5 class="mb-4">Formulation</h5>
+                    <ul class="list-group col-6 mx-auto text-left">
+                        <li class="list-group-item">Mathematical Simulation Modeling</li>
+                        <li class="list-group-item">Modified Release Technology (Micro/Macro particle, Matrix, Coating)</li>
+                        <li class="list-group-item">Optimize and Improve Bioavailability</li>
+                        <li class="list-group-item">In-vivo/In-vitro Correlation</li>
+                        <li class="list-group-item">Robust Manufacturing Process</li>
+                        <li class="list-group-item">Integrate Quality & Regulatory Requirements</li>
+                       
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="myCard mx-auto mb-4" id="analytical" >
+                <div class="cardRndImg mx-auto mb-4">
+                    <img class="cardImg" src="assets/icons/analytics-white.png" alt="product-development">
+                </div>
+                <div class="cardDesc">
+                    <h5 class="mb-4">Analytical Services</h5>
+                    <ul class="list-group col-6 mx-auto text-left">
+                        <li class="list-group-item">Physical and Chemical Characterization</li>
+                        <li class="list-group-item">Method Development, Optimization and Validation</li>
+                        <li class="list-group-item">Bio-indicative release</li>
+                        <li class="list-group-item">Pharmaceutical Equivalency of Complex Molecules</li>
+                        <li class="list-group-item">API Development Support</li>
+                        <li class="list-group-item">Polymorph Screening</li>
+                        <li class="list-group-item">Stability Studies</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="myCard mx-auto  mb-4" id="bioAnalytical" >
+                <div class="cardRndImg mx-auto mb-4">
+                    <img class="cardImg" src="assets/icons/lab-white.png" alt="product-development">
+                </div>
+                <div class="cardDesc">
+                    <h5 class="mb-4">Bio-Analytical Services</h5>
+                    <ul class="list-group col-6 mx-auto text-left">
+                        <li class="list-group-item">Protocol Development</li>
+                        <li class="list-group-item">Biostudy Design</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+    <!-- <script src="./productDevelopment.js"></script> -->
+</body>
+</html>

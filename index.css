@@ -1,0 +1,261 @@
+header {
+    /* background: #e4f0e4; */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.myBody{
+    position: relative;
+}
+.hero{
+    background-image: url(assets/heroBackground.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.navFont {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navItemWidth {
+    min-width: 150px;
+}
+.navLink {
+    color: #286371;
+    transition: all ease .5s;
+}
+.navLink:hover {
+    /* color: #56d4b3; */
+    color: #47d1db;
+}
+.navBrandName {
+    color: #286371;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+.closeMenuBtn {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+.heroHText{
+    color: #7ccd88;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+.heroSubText{
+    color: #353535;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.myBtn {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #286371;
+    color: #286371;
+    transition: all ease .4s;
+}
+.myBtn2 {
+    /* cursor: pointer; */
+    display: block;
+    text-emphasis: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #286371;
+    color: #286371;
+    transition: all ease .4s;
+}
+.myBtn2:hover {
+    text-decoration: none;
+    background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
+    /* background: #286371; */
+    color: white;
+    filter: drop-shadow(4px 4px 5px #1c383f);
+}
+.myBtn:hover {
+    background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
+    /* background: #286371; */
+    color: white;
+    filter: drop-shadow(4px 4px 5px #1c383f);
+}
+.myBtn:active {
+    /* background: #286371; */
+    color: white;
+    filter: drop-shadow(4px 4px 5px #1c383f00);
+}
+.btnWdth1 {
+    width: 200px;
+}
+.btnWdth2 {
+    width: 175px;
+}
+.navMenu {
+    background: aqua;
+    padding: 10px;
+    margin: 10px;
+}
+.myNav {
+    position: relative;
+}
+.menuBar {
+    /* display: none; */
+    height: 75vh;
+    padding: 50px;
+    background-image: linear-gradient(45deg,#1c383fe1, #286371e1, #1e7c74e1);
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    right: 50px;
+    left: 0;
+    z-index: 50;
+}
+.menuItem {
+    padding: 10px;
+}
+.menuItem-link {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    margin: 0;
+    transition: all ease .5s;
+
+}
+.menuItem-link:hover {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    background: #7ccd88;
+}
+ul li {
+    list-style: none;
+}
+.hide {
+    display: none;
+}
+.hamburger {
+    color: pink;
+}
+.header5 {
+    color: #7ccd88;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* margin: 30px auto; */
+}
+.aspectSection{
+    padding: 50px;
+    padding-bottom: 100px;
+    background-color: #dfe2df;
+    min-height: 100vh;
+}
+
+.title1 {
+    color: #286371;
+}
+.title1 {
+    color: #7ccd88;
+    font-size: 3rem;
+}
+.myCard{
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    border-radius: 5px;
+    filter: drop-shadow(4px 4px 4px #1c383f3d);
+
+}
+div img {
+    width: 100%;
+
+}
+.cardImg{
+    width: 12vh;
+    height: 12vh;
+    margin: 26px auto;
+    /* object-fit: cover; */
+}
+
+.cardRndImg{
+    position: relative;
+    border-radius: 50%; 
+    background-color: #d5d8d5;
+    width: 20vh;
+    height: 20vh;
+    transition: all ease .4s;
+}
+.cardDesc{
+    min-height: 23vh;
+}
+.cardRndImg:hover {
+    background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
+
+}
+.fndrRndImg{
+    border-radius: 50%; 
+    background-color: #d5d8d5;
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    /* transition: all ease .4s; */
+}
+/* career */
+.jobSum{
+    font-size: 0.78rem;;
+    color: #7ccd88;
+    font-weight: bold;
+}
+.background {
+    position: relative;
+    min-height: 100vh;
+    border-radius: 8px;
+    background: #3d5358e1;
+    padding: 40px 20px;
+    box-shadow: -2px  -2px 20px #1c383fd8 inset;
+}
+.card2{
+    width: 350px; 
+    max-height: 70vh; 
+    min-height: 30vh;
+    margin-bottom: 15px;
+    filter: drop-shadow(4px 4px 5px #1c383fd8);
+}
+.jobDetailWindow{
+    width: 100%;
+    padding: 50px;
+    min-height: 100vh;
+    position: sticky;
+    z-index: 100;
+    background: #3d5358e1;
+    top: 0;
+    right: 0;
+right: 0;    
+}
+.lightTxt{
+    color: white;
+}
+.myList li {
+    list-style-type: disc;
+}
+
+/* footer */
+footer {
+    padding: 50px;
+}
+.footer-link {
+    color: #3d5358e1;
+    padding: 10px;
+}
+.footerList{
+    padding: 10px;
+    
+}

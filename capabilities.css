@@ -1,0 +1,7 @@
+.capabilities{
+    background-image: url(assets/heroBackground.png);
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
