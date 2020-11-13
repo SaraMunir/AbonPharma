@@ -13,9 +13,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<!--     
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="jquery.easeScroll.js"></script> -->
+
 </head>
 <body class="myBody">
-    <header class="hero">
+    <div class="cover mx-auto container-fluid">
+        <div class="col-1 mx-auto loadingBox">
+            <img src="./assets/Rolling-1s-200px.gif" alt="" style="width: 50px;">
+        </div>
+        
+
+    </div>
+    <header class="hero" >
         <nav class="navbar navbar-expand-lg container myNav ">
             <div class="col-5">
                 <ul class="navbar-nav navFont">
@@ -44,16 +55,13 @@
                         <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
                     </li>
                     <li class="nav-item navItemWidth" id="showMoreBtn">
-                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
+                        <div class="nav-link navLink"  href="#" onmouseover="showMenu()">More &nbsp; &nbsp;
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="menuBar hide">
-                <div class="d-flex justify-content-end mb-3">
-                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
-                </div>
+            <div class="menuBar hide" onmouseleave="closeMenu()">
                 <div class="row text-center">
                     <ul class="col-lg">
                         <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
@@ -72,21 +80,31 @@
                 </div>
             </div>
         </nav>
-        <div class="container heroTexts mt-2">
-            <div class="row">
-                <div class="heroText col-lg-6 mt-5 mx-auto">
-                    <h1 class="heroHText">A Science-based Approach to Product Development</h1>
-                    <p class="heroSubText">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company with innovative approaches to develop generic and proprietary products with high formulation barriers. Abon’s experienced scientists provide product development services for the pharmaceutical healthcare industry.</p>
-                    <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">
-                        Read More
+        <div class="heroTexts mt-2">
+            <div class="row col-10 mx-auto text-center" >
+                <div class="heroText mx-auto" style="margin-top: 40px;">
+                    <!-- <h1 class="heroHText">A Science-based Approach to Product Development</h1> -->
+                    <h1 class="ml10">
+                        <span class="text-wrapper">
+                            <span class="letters heroHText">A Science-Based Approach To Product Development</span>
+                        </span>
+                    </h1>
+                    <div style="min-height: 31vh;" >
                     </div>
                 </div>
-                <div class="col-lg-5 mx-auto">
+                <!-- <div class="col-lg-5 mx-auto">
                     <img class="heroImg" src="assets/pharmacyImageVect2.png" alt="" style="width: 100%;">
-                </div>
+                </div> -->
             </div>
-        </div>
+            <div class="myBorder" style="bottom: 0; min-height: 20vh;" onmouseover="myScroll('aboutSumm')">
+            </div>
     </header>
+    <div class="about" id="aboutSumm">
+        <div class="col-10 mx-auto text-center" style="top: 30vh;">
+            <p class="heroSubText col-11 mx-auto">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company with innovative approaches to develop generic and proprietary products with high formulation barriers. Abon’s experienced scientists provide product development services for the pharmaceutical healthcare industry.</p>
+            <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">Read More</div>
+        </div>
+    </div>
     <section class="aspectSection text-center">
         <h5 class="header5" style="margin-bottom: 30px;">OUR SERVICES</h5>
         <h1 class="title1" style="margin-bottom: 60px;">What We Offer for You</h1>
@@ -99,9 +117,6 @@
                     <h5 class="mb-4">Product Development</h5>
                     <p>Abon offers comprehensive formulation and analytical expertise.</p>
                 </div>
-                <!-- <div class="myBtn btnWdth1 mx-auto mt-5">
-                    Read More
-                </div> -->
                 <a class="myBtn2 btnWdth1 mx-auto mt-5" href="./productDevelopment.html" >Read More</a>
             </div>
             <div class="myCard mx-auto mb-4" style="width: 335px;">
@@ -149,5 +164,9 @@
         </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>

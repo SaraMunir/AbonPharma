@@ -1,12 +1,27 @@
 let PreFormulation;
 
-$(document).ready(function(){
-
+$(document).ready(function(e){
+    setTimeout(() => {
+        closeCover()
+    }, 500);
 
     console.log('is it workjing?')
     
+    // Wrap every letter in a span
 
-
+    setTimeout(() => {
+        var textWrapper = document.querySelector('.ml10 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.ml10 .letter',
+                rotateY: [-90, 0],
+                duration: 1000,
+                // delay: 1000
+                delay: (el, i) => 45 * i
+            })
+    }, 500);
+        
 })
 function showMenu() {
     console.log('showing menu!');
@@ -18,6 +33,18 @@ function showMenu() {
     //     </div>
     // `);
 }
+function myScroll(type){
+    if(type === 'aboutSumm'){
+        $('html, body').animate({
+            scrollTop: $("#aboutSumm").offset().top
+        }, 1000);
+
+    }
+    // $('html, body').animate({
+    //     scrollTop: $(".aspectSection").offset().top
+    // }, 1000);
+}
+
 // function hideMenu() {
 //     console.log('showing menu!');
 //     $( ".menuBar" ).slideUp( 1000);
@@ -27,6 +54,10 @@ function showMenu() {
 // </div>
 //     `);
 // }
+function closeCover(){
+    $( ".cover" ).fadeOut( 500);
+
+}
 function closeMenu(){
     $( ".menuBar" ).slideUp( 1000);
 
@@ -102,3 +133,15 @@ function openJobDetail(){
     }, 500);
 }
 
+// window.scroll({
+//     top: 2500, 
+//     left: 0, 
+//     behavior: 'smooth'
+//   });
+  
+//   // Scroll certain amounts from current position 
+//   window.scrollBy({ 
+//     top: 100, // could be negative value
+//     left: 0, 
+//     behavior: 'smooth' 
+//   });

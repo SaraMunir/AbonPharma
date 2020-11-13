@@ -1,19 +1,41 @@
+body{
+    width: 100%;
+}
 header {
     /* background: #e4f0e4; */
     /* background-size: contain; */
     background-repeat: no-repeat;
     min-height: 100vh;
+}
 
+.cover{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #0a1125;
+    z-index: 100;
+}
+.scrollToNext{
+    min-height: 30px;
+}
+.loadingBox{
+    top: 45%;
 }
 .myBody{
     position: relative;
 }
+.myBorder{
+    border: 1px solid red;
+}
 .hero{
-    background-image: url(assets/heroBackground.png);
+    background-image: url(../assets/rodion-kutsaev-049M_crau5k-unsplash.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 50px;
+    background-attachment: scroll;
 }
 .navFont {
     font-size: 1rem;
@@ -44,9 +66,13 @@ header {
     color: #7ccd88;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
+    font-size: 4rem;
 }
 .heroSubText{
-    color: #353535;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #dfdfdf;
     font-weight: 400;
     line-height: 2rem;
 }
@@ -152,6 +178,11 @@ ul li {
     font-size: 1.2rem;
     font-weight: bold;
     /* margin: 30px auto; */
+}
+#aboutSumm{
+    min-height: 100vh;
+    background: #0a1125;
+
 }
 .aspectSection{
     padding: 50px;
@@ -259,3 +290,36 @@ footer {
     padding: 10px;
     
 }
+
+/* for header animation  */
+.ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+
+
+  .ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
