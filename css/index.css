@@ -458,14 +458,14 @@ line-height: 1em;
 }
 
 
-@media only screen and (min-width: 1300px ) {
+@media only screen and (min-width: 1350px ) {
     /* For mobile phones: */
     .heroHText{
         font-size: 6.1rem;
     }
     .myNav {
         width: 100%;
-        height: 10vh;
+        height: 9vh;
         position: fixed;
         z-index: 100;
         top: 0;
