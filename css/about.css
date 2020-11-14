@@ -9,8 +9,10 @@
 }
 
 .founderSectionDetail {
+    max-width: 1200px;
     min-height: 100vh;
     padding: 50px;
+    margin: 0 auto;
 
 }
 .founderCard{
@@ -20,6 +22,9 @@
 }
 .founderDesc{
     height: 35vh;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
 }
 .card1{
     width: 60vh;
@@ -38,7 +43,7 @@
     border-radius: 5px;
     width: 60vh;
     height: 70vh;
-    background: #7ccd88d2;
+    background: #75a12fee;
     position: absolute;
     top: 0;
     left: 0;
@@ -58,3 +63,23 @@
     font-size: 1rem;
     /* font-weight: bold; */
 }
+.fndrDetail{
+    width: 100%;
+    background: #75a12fee;
+    padding: 50px;
+    font-size: 1.3rem;
+}
+.fndrDetail h3{
+    font-size: 2.3rem;
+}
+@media only screen and (max-width: 1920px ) {
+    /* For large laptop: */
+    
+
+
+  }
+@media only screen and (max-width: 1200px) {
+    /* For medium: */
+    
+
+  }
