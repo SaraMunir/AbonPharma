@@ -458,7 +458,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 1920px ) {
+@media only screen and (min-width: 1920px ) {
     /* For mobile phones: */
     .heroHText{
         font-size: 6.1rem;
@@ -489,8 +489,8 @@ footer {
     }
 
 
-  }
-@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1300px) {
     /* For mobile phones: */
     .heroHText{
         font-size: 4.4rem;
@@ -519,5 +519,34 @@ footer {
         padding-left: 30px;
         background: #75a12fee;
     }
-
-  }
+}
+@media only screen and (max-width: 1100px) {
+    /* For mobile phones: */
+    .heroHText{
+        font-size: 4.4rem;
+    }
+    .descCard{
+        width: 57%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 30px;
+        background: #75a12fee;
+        /* height: 40vh; */
+        /* z-index: 10; */
+    }
+    .descCardLft{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        background: #75a12fee;
+    }
+}
