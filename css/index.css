@@ -348,7 +348,7 @@ div img {
 }
 .background {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 50vh; */
     border-radius: 8px;
     background: #75a12fee;
     padding: 40px 20px;
