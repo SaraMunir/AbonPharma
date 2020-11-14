@@ -1,12 +1,12 @@
 body{
-    width: 100%;
+    max-width:  1920px;
     background-image: url(../assets/rodion-kutsaev-049M_crau5k-unsplash.jpg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 50px;
     background-attachment: fixed;
-}
+} 
 header {
     /* background: #e4f0e4; */
     /* background-size: contain; */
@@ -49,6 +49,9 @@ header {
     top: 0;
     right: 0;
     background: #070820da;
+}
+.myWrapper{
+    max-width: 1200px;
 }
 
 .navFont {
@@ -453,3 +456,68 @@ footer {
     text-decoration: none;
     color: #286371;
 }
+
+
+@media only screen and (max-width: 1920px ) {
+    /* For mobile phones: */
+    .heroHText{
+        font-size: 6.1rem;
+    }
+    .descCard{
+        width: 66%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 30px;
+        background: #75a12fee;
+        /* height: 40vh; */
+        /* z-index: 10; */
+    }
+    .descCardLft{
+        width: 66%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        background: #75a12fee;
+    }
+
+
+  }
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    .heroHText{
+        font-size: 4.4rem;
+    }
+    .descCard{
+        width: 57%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 30px;
+        background: #75a12fee;
+        /* height: 40vh; */
+        /* z-index: 10; */
+    }
+    .descCardLft{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        background: #75a12fee;
+    }
+
+  }
