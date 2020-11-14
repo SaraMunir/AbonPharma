@@ -92,8 +92,21 @@ header {
     font-weight: bold;
     font-size: 4rem;
 }
+.heroH2Text{
+    color: #070820;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
 .heroSubText{
     color: #c4c4c4;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.heroSubText2{
+    color: #353535;
     font-weight: 400;
     font-size: 1.6rem;
     font-weight: 400;
@@ -204,6 +217,15 @@ ul li {
     min-height: 100vh;
     padding: 20vh 0;
     background: #070820ee;
+}
+.contactUs{
+    min-height: 100vh;
+    padding: 10vh 0;
+    background: #e0e0e0ee;
+}
+.darkBk{
+    background: #070820ee;
+
 }
 .aspectSection{
     padding: 50px;
@@ -325,7 +347,7 @@ div img {
     position: relative;
     min-height: 100vh;
     border-radius: 8px;
-    background: #3d5358e1;
+    background: #75a12fee;
     padding: 40px 20px;
     box-shadow: -2px  -2px 20px #1c383fd8 inset;
 }
@@ -405,4 +427,29 @@ footer {
 
 .myFlex{
     display: flex;
+}
+
+
+.cardRight{
+    padding: 50px;
+    background: white;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+}
+.myGroupBrd{
+    padding: 10px;
+    min-height: 75px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+}
+.emailClass {
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+.emailClass:hover {
+    text-decoration: none;
+    color: #286371;
 }
