@@ -1,5 +1,11 @@
 body{
     width: 100%;
+    background-image: url(../assets/rodion-kutsaev-049M_crau5k-unsplash.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    background-attachment: fixed;
 }
 header {
     /* background: #e4f0e4; */
@@ -15,7 +21,7 @@ header {
     left: 0;
     bottom: 0;
     background: #0a1125;
-    z-index: 100;
+    z-index: 200;
 }
 .scrollToNext{
     min-height: 30px;
@@ -23,9 +29,7 @@ header {
 .loadingBox{
     top: 45%;
 }
-.myBody{
-    position: relative;
-}
+
 .myBorder{
     border: 1px solid red;
 }
@@ -35,27 +39,47 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 50px;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
+.myNav {
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background: #070820da;
+}
+
 .navFont {
-    font-size: 1rem;
-    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 .navItemWidth {
     min-width: 150px;
 }
 .navLink {
-    color: #286371;
+    color: #68b1c4;
     transition: all ease .5s;
 }
 .navLink:hover {
     /* color: #56d4b3; */
-    color: #47d1db;
+    color: #56d4b3;
+    
 }
 .navBrandName {
     color: #286371;
     font-size: 1.5rem;
-    padding-top: 15px;
+    font-weight: 400;
+}
+.navBrandNameSp {
+    text-transform: uppercase;
+    color: #3da589;
+    font-size: 1.5rem;
+    font-weight: 600;
+
 }
 .closeMenuBtn {
     padding: 10px;
@@ -69,10 +93,9 @@ header {
     font-size: 4rem;
 }
 .heroSubText{
-    color: white;
+    color: #c4c4c4;
     font-weight: 400;
-    font-size: 1.8rem;
-    color: #dfdfdf;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 2rem;
 }
@@ -128,9 +151,7 @@ header {
     padding: 10px;
     margin: 10px;
 }
-.myNav {
-    position: relative;
-}
+
 .menuBar {
     /* display: none; */
     height: 75vh;
@@ -139,7 +160,7 @@ header {
     position: absolute;
     top: 70px;
     bottom: 0;
-    right: 50px;
+    right: 0;
     left: 0;
     z-index: 50;
 }
@@ -181,13 +202,13 @@ ul li {
 }
 #aboutSumm{
     min-height: 100vh;
-    background: #0a1125;
-
+    padding: 20vh 0;
+    background: #070820ee;
 }
 .aspectSection{
     padding: 50px;
     padding-bottom: 100px;
-    background-color: #dfe2df;
+    /* background-color: #dfe2df; */
     min-height: 100vh;
 }
 
@@ -226,6 +247,61 @@ div img {
 }
 .cardDesc{
     min-height: 23vh;
+    color: #dadada;
+}
+.descCard{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    background: #75a12fee;
+    /* height: 40vh; */
+    /* z-index: 10; */
+}
+.descCardLft{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    background: #75a12fee;
+}
+.descCardTxt{
+    width: 85%;
+    margin-right: 11px;
+}
+.descCardTxtLt{
+    width: 84%;
+    margin-left: 11px;
+}
+.descImg{
+    width: 450px;
+    position: relative;
+    right: -32px;
+    top: 100px;
+    z-index: 10;
+}
+.descImgLeft{
+    width: 450px;
+    position: relative;
+    left: -90px;
+    top: 100px;
+    z-index: 20;
+}
+.descTitle{
+    font-size: 2.3rem;
+}
+.descSubText{
+    /* min-height: 50vh; */
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 .cardRndImg:hover {
     background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
@@ -275,15 +351,18 @@ right: 0;
     color: white;
 }
 .myList li {
-    list-style-type: disc;
+    list-style-type: square;
 }
 
 /* footer */
 footer {
     padding: 50px;
+    background: #070820e3;
 }
+/*     color: #56d4b3;
+    color: #68b1c4; */
 .footer-link {
-    color: #3d5358e1;
+    color: #68b1c4;
     padding: 10px;
 }
 .footerList{
@@ -323,3 +402,7 @@ footer {
     display: inline-block;
     line-height: 1em;
   }
+
+.myFlex{
+    display: flex;
+}

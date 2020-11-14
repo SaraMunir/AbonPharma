@@ -19,62 +19,58 @@
 </head>
 <body class="myBody">
     <header class="hero">
-        <nav class="navbar navbar-expand-lg container myNav ">
-            <div class="col-5">
-                <ul class="navbar-nav navFont">
-                    <li class="nav-item" style="width: 50px; height: 50px;">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/ABLogo.png" alt="">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <p class="navBrandName">Abon Pharmaceuticals</p>
-                    </li>
-                </ul>
-            </div>
-            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navFont text-center">
-                    <li class="nav-item active navItemWidth">
-                        <a class="nav-link navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item navItemWidth">
-                        <a class="nav-link navLink" href="about.html">About Abon</a>
-                    </li>
-                    <li class="nav-item  navItemWidth">
-                        <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item navItemWidth" id="showMoreBtn">
-                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="menuBar hide">
-                <div class="d-flex justify-content-end mb-3">
-                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
-                </div>
-                <div class="row text-center">
-                    <ul class="col-lg">
-                        <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
-                        <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
-                        <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
-                        <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
-                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
-                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
+        <div class="myNav">
+            <div class="d-flex">
+                <div class="col-5">
+                    <ul class="d-flex navFont">
+                        <li class="nav-item" style="width: 50px; height: 50px;">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/ABLogo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="navBrandName" > <span class="navBrandNameSp">Abon </span>Pharmaceuticals</p>
+                        </li>
                     </ul>
                 </div>
+                <div class="col-7">
+                    <ul class="d-flex navFont text-center">
+                        <li class="nav-item active navItemWidth">
+                            <a class="nav-link navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item navItemWidth">
+                            <a class="nav-link navLink" href="about.html">About Abon</a>
+                        </li>
+                        <li class="nav-item  navItemWidth">
+                            <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item navItemWidth" id="showMoreBtn">
+                            <div class="nav-link navLink"  href="#" onmouseover="showMenu()">More &nbsp; &nbsp;
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menuBar hide mx-auto" onmouseleave="closeMenu()">
+                    <div class="row text-center">
+                        <ul class="col-lg">
+                            <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
+                            <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
+                            <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
+                            <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
+                        </ul>
+                        <ul class="col-lg">
+                            <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
+                            <li><a class="menuItem-link" href="news.html">NEWS </a></li>
+                        </ul>
+                        <ul class="col-lg">
+                            <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
+                            <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="container heroTexts mt-2 text-center">
             <div class="row">
                 <div class="heroText mt-5 mx-auto">
