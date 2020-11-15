@@ -50,6 +50,13 @@ header {
     right: 0;
     background: #070820da;
 }
+.navBr{
+    width: 30%;
+}
+.navMen{
+    width: 70%;
+}
+
 .myWrapper{
     max-width: 1200px;
 }
@@ -433,6 +440,7 @@ line-height: 1em;
 }
 
 
+
 .cardRight{
     padding: 50px;
     background: white;
@@ -529,33 +537,31 @@ line-height: 1em;
         background: #75a12fee;
     }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1220px) {
     /* For mobile phones: */
     .heroHText{
         font-size: 4.4rem;
     }
     .descCard{
-        width: 57%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 30px;
-        background: #75a12fee;
-        /* height: 40vh; */
-        /* z-index: 10; */
+        width: 56%;
     }
     .descCardLft{
         width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-        background: #75a12fee;
+        
     }
+    
+}
+@media only screen and (max-width: 1020px) {
+    /* For mobile phones: */
+    .heroHText{
+        font-size: 4.4rem;
+    }
+    .descCard{
+        width: 56%;
+    }
+    .descCardLft{
+        width: 50%;
+        
+    }
+
 }
