@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abon | About Abon</title>
-    <link rel="icon" href="assets/ABLogo.png">
+    <link rel="icon" href="assets/abon_llc_logoA.ico">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -15,74 +15,112 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts:  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body class="myBody">
-    <header class="hero">
-        <div class="myNav ">
-            <div class="d-flex container">
-                <div class="col-5">
-                    <ul class="d-flex navFont">
-                        <li class="nav-item" style="width: 50px; height: 50px;">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/ABLogo.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <p class="navBrandName" > <span class="navBrandNameSp">Abon </span>Pharmaceuticals</p>
-                        </li>
-                    </ul>
+    <div class="myNav myBoxShad">
+        <div class="navBarCont">
+            <div class="navBr">
+                <ul class="row navFont">
+                    <li class="nav-item navLogo">
+                        <a class="navbar-brand mr-auto" href="index.html">
+                            <img src="assets/abon_llc_logo_white.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="navBrandName" >Pharmaceuticals</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="navMen navHide">
+                <ul class="navMenFlex navFont text-center pt-4">
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItemWidth" >
+                        <a class="nav-link navLinkActive" href="about.html">leader</a>
+                    </li>
+                    <li class="menuBarContr nav-item  navItemWidth" >
+                        <a class="nav-link navLink" href="facilities.html">Facilities
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="facility myBoxShad mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menuBarContr nav-item  navItemWidth">
+                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="capability myBoxShad  mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navHamburger" onclick="showMenu()">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="navMenResp hide">
+                <div class=" closeMenuBtn" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
                 </div>
-                <div class="col-7">
-                    <ul class="d-flex navFont text-center">
-                        <li class="nav-item active navItemWidth">
-                            <a class="nav-link navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item navItemWidth">
-                            <a class="nav-link navLink" href="about.html">About Abon</a>
-                        </li>
-                        <li class="nav-item  navItemWidth">
-                            <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item navItemWidth" id="showMoreBtn">
-                            <div class="nav-link navLink"  href="#" onmouseover="showMenu()">More &nbsp; &nbsp;
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menuBar hide mx-auto" onmouseleave="closeMenu()">
-                    <div class="row text-center">
-                        <ul class="col-lg">
-                            <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
-                            <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
-                            <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
-                            <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
-                        </ul>
-                        <ul class="col-lg">
-                            <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
-                            <li><a class="menuItem-link" href="news.html">NEWS </a></li>
-                        </ul>
-                        <ul class="col-lg">
-                            <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
-                            <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="navFont text-center" style="padding-left: 0; padding-top: 15px;">
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItemWidth" >
+                        <a class=" nav-link navLinkActive" href="about.html">leader</a>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLink" href="facilities.html">Facilities
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="navHvrItem facility mx-auto" >
+                            <ul class="p-1 border" >
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="navHvrItem capability mx-auto" >
+                            <ul class="p-1 border">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="container heroTexts text-center" style="margin-top: 25vh;">
-            <div class="row">
+    </div>
+    <header class="hero">
+        <div class="container heroTexts text-center">
+            <div class="row" style="margin-top: 10vh;">
                 <div class="heroText mt-5 mx-auto">
-                    <h1 class="heroHText">About Us</h1>
-                    <p class="heroSubText mx-auto" style="width: 70%;">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on drug delivery research and product development. Abon’s expertise and flexibility can bring a complex formulation project into clinical or bioequivalence study in a timely manner and within budget. Whether your goal is to improve bio-availability, achieve bio-equivalence, or develop a new product, Abon’s innovative approach to formulation development will meet your expectations. Abon’s professional team of scientists has a proven track record in a multitude of dosage forms, and has multiple patents in drug delivery.</p>
+                    <h2 class="heroH3Text">About Us</h2>
+                    <p class="heroSubText mx-auto">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on drug delivery research and product development. Abon’s expertise and flexibility can bring a complex formulation project into clinical or bioequivalence study in a timely manner and within budget. Whether your goal is to improve bio-availability, achieve bio-equivalence, or develop a new product, Abon’s innovative approach to formulation development will meet your expectations. Abon’s professional team of scientists has a proven track record in a multitude of dosage forms, and has multiple patents in drug delivery.</p>
                     <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">
                         Read More
                     </div>
                 </div>
-                <!-- <div class="col-lg-5 mx-auto">
-                    <img class="heroImg" src="assets/pharmacyImageVect2.png" alt="" style="width: 100%;">
-                </div> -->
             </div>
         </div>
     </header>
@@ -118,34 +156,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="founderIntro2 row col-lg-8 mx-auto">
-        <div class="founderCard  mx-auto">
-            <img class="card1" src="assets/founderSalah.jpg" alt="product-development">
-            <div class="info  text-center">
-                <p class="founderDesc">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc... </p>
-                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrSalah()">
-                    Read More
-                </div>
-            </div>
-            <div class="others">
-                <h4 class="mb-4 text-center founderName mt-3">Salah U. Ahmed, PhD</h4>
-                <h6 class="mb-4 text-center founderJobTitle">job title</h6>
-            </div>
-        </div>
-        <div class="founderCard  mx-auto">
-            <img class="card1" src="assets/founderBruce.jpg" alt="product-development">
-            <div class="info text-center">
-                <p class="founderDesc">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008...</p>
-                <div class="myBtn btnWdth1 mx-auto mt-5" onclick="showFndrBruce()"> 
-                    Read More
-                </div>
-            </div>
-            <div class="others">
-                <h4 class="mb-4 text-center founderName mt-3">Bruce Downey, Esq</h4>
-                <h6 class="mb-4 text-center founderJobTitle">job title</h6>
-            </div>
-        </div>
-    </section> -->
     <section class="founderSectionDetail" id="fndrSalah">
         <div class="row container mx-auto">
             <div class="fndrImg mx-auto">

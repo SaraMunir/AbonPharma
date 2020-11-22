@@ -3,233 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abon | Careers</title>
-    <link rel="icon" href="assets/ABLogo.png">
+    <title>Abon Pharmaceuticals</title>
+    <link rel="icon" href="assets/abon_llc_logoA.ico">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/productDevelopment.css">
-    <link rel="stylesheet" href="./css/capabilities.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-    <style>
-        .cardRight{
-            padding: 50px;
-            background: white;
-            border-top-right-radius: 10px; 
-            border-bottom-right-radius: 10px;
-        }
-        .myGroupBrd{
-            padding: 10px;
-            min-height: 75px;
-            border: 1px solid rgb(190, 190, 190);
-            border-radius: 5px;
-        }
-        .emailClass {
-            text-decoration: none;
-            color: black;
-            padding: 3px;
-            border-radius: 5px;
-
-        }
-        .emailClass:hover {
-            text-decoration: none;
-            color: #286371;
-        }
-    </style>
+    <!-- fonts:  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.easeScroll.js"></script> -->
 </head>
-<body class="myBody">
-    <!-- <div class="jobDetailWindow hide" id="jobDetailWindo">
-        <div class="jobDetail">
-            <div class="card">
-                <div class="card-body mt-2 mb-4">
-                    <div class="col-11 mx-auto mt-4 mb-4">
-                        <div class="d-flex justify-content-end mb-3" >
-                            <i class="closeMenuBtn fas fa-times" style="color: grey;" onClick="closeJobDetail()"></i>
-                        </div>
-                        <h1 class="title1 text-center col-6 mx-auto" style="margin-bottom: 60px;">Job Title <hr></h1>
-                        <div class="detailSumm row container ">
-                            <div class="jobSum mr-3 mx-auto text-left mb-3">
-                                <h6 style="color: #a3a2a2;">
-                                    <i class="fas fa-map-marker-alt" ></i>&nbsp; location
-                                </h6>
-                                <h5 style="font-weight: bold;">lorem ipsum</h5>
-                            </div>
-                            <div class="jobSum mr-3 mx-auto text-left mb-3">
-                                <h6 style="color: #a3a2a2;">
-                                    <i class="fas fa-clock" style="color: #a3a2a2;"></i>&nbsp;Job Type (parmanent)
-                                </h6>
-                                <h5 style="font-weight: bold;" >lorem ipsum</h5>
-                            </div>
-                            <div class="jobSum mr-3 mx-auto text-left mb-3">
-                                <h6 style="color: #a3a2a2;">
-                                    <i class="fas fa-dollar-sign" style="color: #a3a2a2;"></i>&nbsp; Salary
-                                </h6>
-                                <h5 style="font-weight: bold;" >lorem ipsum</h5>
-                            </div>
-                            <div class="jobSum mr-3 mx-auto text-left mb-3">
-                                <h6 style="color: #a3a2a2;">
-                                    <i class="fas fa-calendar-week"></i>&nbsp; Start Date
-                                </h6>
-                                <h5 style="font-weight: bold;" >lorem ipsum</h5>
-                            </div>
-                            
-                        </div>
-                        <div class="text-left">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, accusantium. Totam sint quod debitis amet quibusdam! Reprehenderit dolores quisquam sequi. Animi rerum voluptas earum nihil facere dolorem sint sunt voluptates!
-                            <br>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis recusandae nulla, et incidunt quasi exercitationem fugiat? Minus, reiciendis? Unde facere, blanditiis rem facilis quas amet neque exercitationem. Iste, aspernatur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem commodi quas sequi expedita molestias magni explicabo eligendi hic optio. Minima porro autem eaque nam inventore, quam veritatis pariatur dolorum?
-                            </p>
-                            <h4>Primary Job Responsibilities:</h4>
-                            <ul class="myList">
-                                <li>Phasellus iaculis neque</li>
-                                <li>Purus sodales ultricies</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
-                            </ul>
-                            <h4>Qualifications:</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, aliquid. Suscipit beatae facilis nesciunt optio corporis perferendis eveniet ut eligendi porro, atque pariatur vero at dolores ipsum. Facere, iste numquam!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, doloremque nulla qui dolor officia consequuntur harum et quaerat incidunt consequatur cum accusamus nam sapiente, distinctio numquam placeat est expedita reprehenderit.
-                            </p>
-                            <ul class="myList">
-                                <li>Phasellus iaculis neque</li>
-                                <li>Purus sodales ultricies</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
-                                <li>Vestibulum laoreet porttitor sem</li>
-                                <li>Ac tristique libero volutpat at</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="myBtn btnWdth2 mx-auto mt-5" >
-                        Apply
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="capabilities">
-        <nav class="navbar navbar-expand-lg container myNav ">
-            <div class="col-5">
-                <ul class="navbar-nav navFont">
-                    <li class="nav-item" style="width: 50px; height: 50px;">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/ABLogo.png" alt="">
+<body>
+    <div class="myNav myBoxShad">
+        <div class="navBarCont">
+            <div class="navBr">
+                <ul class="row navFont">
+                    <li class="nav-item navLogo">
+                        <a class="navbar-brand mr-auto" href="index.html">
+                            <img src="assets/abon_llc_logo_white.png" alt="">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <p class="navBrandName" >Abon Pharmaceuticals</p>
+                        <p class="navBrandName" >Pharmaceuticals</p>
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navFont text-center">
-                    <li class="nav-item active navItemWidth">
+            <div class="navMen navHide">
+                <ul class="navMenFlex navFont text-center pt-4">
+                    <li class="nav-item navItemWidth">
                         <a class="nav-link navLink" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item navItemWidth">
-                        <a class="nav-link navLink" href="about.html">About Abon</a>
+                    <li class="nav-item navItemWidth" >
+                        <a class="nav-link navLink" href="about.html">leader</a>
                     </li>
-                    <li class="nav-item  navItemWidth">
-                        <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item navItemWidth" id="showMoreBtn">
-                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
+                    <li class="menuBarContr nav-item  navItemWidth" >
+                        <a class="nav-link navLink" href="facilities.html">Facilities
                             <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="facility myBoxShad mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="menuBarContr nav-item  navItemWidth">
+                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="capability myBoxShad  mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLinkActive"  href="contactUs.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
-            <div class="menuBar hide">
-                <div class="d-flex justify-content-end mb-3">
-                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
-                </div>
-                <div class="row text-center">
-                    <ul class="col-lg">
-                        <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
-                        <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
-                        <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
-                        <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="#">CAREERS</a></li>
-                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
-                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
-                    </ul>
-                </div>
+            <div class="navHamburger" onclick="showMenu()">
+                <i class="fas fa-bars fa-2x"></i>
             </div>
-        </nav>
-        <div class="container heroTexts mt-2">
-            <div class="">
-                <div class="heroText mt-5 mx-auto text-center">
-                    <i class="fas fa-map-marker-alt fa-6x" ></i>
-                    <h4 class="">Welcome To Abon</h4>
-                    <h1 class="heroHText">Contact Us</h1>
-                    <p class="heroSubText">Abon is seeking global partners for development and marketing opportunities.
-                    </p>
-                    <div class="background">
-                        <div class="mx-auto row container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1451221900506!2d-73.9485722491456!3d41.00019672776955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2ee9a3feb6f81%3A0x1f2c69870a59bc6!2s140%20Legrand%20Ave%2C%20Northvale%2C%20NJ%2007647%2C%20USA!5e0!3m2!1sen!2sca!4v1585428112424!5m2!1sen!2sca" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;" width="520px" min-height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <div class="cardRight col-lg-6">
-                                <div class="d-flex mb-2 myGroupBrd">
-                                    <i class="col-2 fas fa-map-marked-alt fa-3x"></i>
-                                    <p class="col-10 mx-auto">140 Legrand Ave
-                                        Northvale, New Jersey 07647
-                                        USA.</p>
-                                </div>
-                                <div class="d-flex mb-2 myGroupBrd">
-                                    <i class="col-2 fas fa-phone-square fa-3x"></i>
-                                    <p class="col-10 mx-auto">
-                                        1-877-330-ABON(2266)
-                                        <br>
-                                        201-767-1102
-                                    </p>
-                                </div>
-                                <div class="d-flex mb-2 myGroupBrd">
-                                    <i class="col-2  fas fa-fax fa-3x"></i>
-                                    <p class="col-10 mx-auto">
-                                        201-767-1145
-                                    </p>
-                                </div>
-                                <div class="d-flex mb-2 myGroupBrd">
-                                    <i class="col-2  fas fa-envelope-open-text fa-3x"></i>
-                                    <p class="col-10 mx-auto">
-                                        <a class="emailClass" href = "mailto: info@abonpharma.com">info@abonpharma.com (General Inquiries)</a>
-                                        <!-- info@abonpharma.com (General Inquiries:) -->
-                                        <br>
-                                        <a class="emailClass" href = "mailto: businessdevelopment@abonpharma.com">businessdevelopment@abonpharma.com (Business Development)</a>
-                                        
-                                    </p>
-                                </div>
-                            </div>
+            <div class="navMenResp hide">
+                <div class=" closeMenuBtn" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="navFont text-center" style="padding-left: 0; padding-top: 15px;">
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItemWidth" >
+                        <a class="nav-link navLink" href="about.html">leader</a>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLink" href="facilities.html">Facilities
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="navHvrItem facility mx-auto" >
+                            <ul class="p-1 border" >
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
                         </div>
-                    </div>
-                    
-                </div>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="navHvrItem capability mx-auto" >
+                            <ul class="p-1 border">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLinkActive"  href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-            
         </div>
     </div>
-    <!-- <section class="aspectSection text-center">
-        <h5 class="header5" style="margin-bottom: 30px;">lorem ipsum</h5>
-        <h1 class="title1" style="margin-bottom: 60px;">Contact Us</h1>
-        
-        
-    </section> -->
+    <div class="contactHero"  style="padding-top: 10vh; margin-top: 10vh;">
+        <div class="col-lg-10 row mx-auto">
+            <div class="col-lg-6 mx-auto  text-center" 
+            style="color: white;">
+                <i class="fas fa-map-marker-alt fa-4x" ></i>
+                <h1 class="heroH2Text" style="color: white;">Contact Us</h1>
+                <p class="heroSubText2 mb-4" style="color: #103f6e; font-size: 1.9rem; font-weight: 500;">Abon is seeking global partners for development and marketing opportunities.
+                </p>
+                <div class="col-lg-10 mx-auto myGroupBrd mt-4">
+                    <div class="d-flex mb-2 ">
+                        <i class="col-1 fas fa-map-marked-alt mt-2" style="color: #2b5a8a"></i>
+                        <p class="col-11 text-left">140 Legrand Ave
+                            Northvale, New Jersey 07647
+                            USA.</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="col-1 fas fa-phone-square mt-2" style="color: #2b5a8a"></i>
+                        <p class="col-11 text-left">
+                            1-877-330-ABON(2266)
+                            <br>
+                            201-767-1102
+                        </p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="col-1 fas fa-fax mt-2" style="color: #2b5a8a"></i>
+                        <p class="col-11 text-left">
+                            201-767-1145
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto" style="height: 60vh;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1451221900506!2d-73.9485722491456!3d41.00019672776955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2ee9a3feb6f81%3A0x1f2c69870a59bc6!2s140%20Legrand%20Ave%2C%20Northvale%2C%20NJ%2007647%2C%20USA!5e0!3m2!1sen!2sca!4v1585428112424!5m2!1sen!2sca" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <section class="contactUs" id="ContactUs">
+        <div class="col-lg-6 mx-auto">
+            <div class="contactCard">
+                <div class="mx-auto text-center">
+                    <h2 class="">Send Us A Message</h2>
+                    <form class="">
+                        <div class="form-group text-left">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class= "myInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <hr class="col-5 mx-auto">
+                        <div class="form-group text-left mt-4">
+                            <label for="exampleInputName ">Name</label>
+                            <input type="text" class="myInput" id="exampleInputName" aria-describedby="name" placeholder="Enter Your Name">
+                        </div>
+                        <hr class="col-5 mx-auto">
+                        <div class="form-group text-left  mt-4">
+                            <label for="exampleInputName">Message</label>
+                            <textarea class="myInput" name="" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="mySubBtn">Submit</button>
+                    </form>                 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row text-center container mx-auto">
+            <ul class="col-lg">
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="about.html">ABOUT ABON</a>
+                </li>
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="capabilities.html">CAPABILITIES </a>
+                </li>
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a>
+                </li>
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="#">BUSINESS OPPORTUNITY</a>
+                </li>
+            </ul>
+            <ul class="col-lg">
+                <li class="nav-item footerList"><a class="footer-link" href="careers.html">CAREERS</a></li>
+                <li class="nav-item footerList"><a class="footer-link" href="news.html">NEWS </a></li>
+            </ul>
+            <ul class="col-lg">
+                <li class="nav-item footerList"><a class="footer-link" href="contactUs.html">CONTACT US </a></li>
+                <li class="nav-item footerList"><a class="footer-link" href="#">SOCIAL MEDIA</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="mx-auto text-center" style="height: 8vh; width: 100%; background: #e7e7e7ee;
+    ">
+        <p class="col-lg-6 mx-auto pt-3"style="font-size: 1.5rem">© 2020 Abon Pharmaceutical</p>
+    </div>
     <script src="./index.js"></script>
-    <!-- <script src="./productDevelopment.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            // {
+            // duration: 1000,
+            // easing: 'ease-in-out-back'}
+        );
+    </script>
+
 </body>
 </html>

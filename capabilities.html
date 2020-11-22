@@ -3,199 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abon | Capabilities</title>
-    <link rel="icon" href="assets/ABLogo.png">
+    <title>Abon Pharmaceuticals</title>
+    <link rel="icon" href="assets/abon_llc_logoA.ico">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/productDevelopment.css">
-    <link rel="stylesheet" href="./css/capabilities.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts:  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.easeScroll.js"></script> -->
 </head>
-<body class="myBody container-fluid">
-    <div class="capabilities">
-        <nav class="navbar navbar-expand-lg container myNav ">
-            <div class="col-5">
-                <ul class="navbar-nav navFont">
-                    <li class="nav-item" style="width: 50px; height: 50px;">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/ABLogo.png" alt="">
+<body class="myBody">
+    <div class="myNav myBoxShad">
+        <div class="navBarCont">
+            <div class="navBr">
+                <ul class="row navFont">
+                    <li class="nav-item navLogo">
+                        <a class="navbar-brand mr-auto" href="index.html">
+                            <img src="assets/abon_llc_logo_white.png" alt="">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <p class="navBrandName" >Abon Pharmaceuticals</p>
+                        <p class="navBrandName" >Pharmaceuticals</p>
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navFont text-center">
-                    <li class="nav-item active navItemWidth">
+            <div class="navMen navHide">
+                <ul class="navMenFlex navFont text-center pt-4">
+                    <li class="nav-item navItemWidth">
                         <a class="nav-link navLink" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item navItemWidth">
-                        <a class="nav-link navLink" href="about.html">About Abon</a>
+                    <li class="nav-item navItemWidth" >
+                        <a class="nav-link navLink" href="about.html">leader</a>
                     </li>
-                    <li class="nav-item  navItemWidth">
-                        <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item navItemWidth" id="showMoreBtn">
-                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
+                    <li class="menuBarContr nav-item  navItemWidth" >
+                        <a class="nav-link navLink" href="facilities.html">Facilities
                             <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="facility myBoxShad mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="menuBarContr nav-item  navItemWidth">
+                        <a class="nav-link navLinkActive" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="capability myBoxShad  mx-auto" >
+                            <ul class="menuBar">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
-            <div class="menuBar hide">
-                <div class="d-flex justify-content-end mb-3">
-                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
-                </div>
-                <div class="row text-center">
-                    <ul class="col-lg">
-                        <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
-                        <li><a class="menuItem-link" href="#">CAPABILITIES </a></li>
-                        <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
-                        <li><a class="menuItem-link" href="businessOpportunity.html">BUSINESS OPPORTUNITY</a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="careers.html">CAREERS</a></li>
-                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
-                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
-                    </ul>
-                </div>
+            <div class="navHamburger" onclick="showMenu()">
+                <i class="fas fa-bars fa-2x"></i>
             </div>
-        </nav>
-        <div class="container heroTexts mt-2">
-            <div class="row">
-                <div class="heroText mt-5 mx-auto text-center">
-                    <h1 class="heroHText">Capabilities</h1>
-                    <p class="heroSubText">Abon Pharmaceuticals, LLC operates out of a 42,300 sq ft facility in Northvale, NJ. In this facility we are capable of developing:</p>
+            <div class="navMenResp hide">
+                <div class=" closeMenuBtn" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
                 </div>
-                <!-- <div class="col-lg-5 mx-auto">
-                    <img class="heroImg" src="assets/production.png" alt="" style="width: 100%;">
-                </div> -->
-            </div>
-            <div class="capBubbles row container mx-auto col-md-8">
-                <div class="resLogo mx-auto" onClick="scrollToOrals()">
-                    <div class="bubble mb-2 resLogo mx-auto" >
-                        <img class="bubbleImg" src="assets/icons/research-white.png" alt="product-development" >
-                    </div>
-                    <div class="tooltiptext mx-auto">Oral Solids</div>
-                </div>
-                <div class="resLogo mx-auto" onClick="scrollToLiquids()">
-                    <div class="bubble mb-2 resLogo mx-auto" >
-                        <img class="bubbleImg" src="assets/icons/research-white.png" alt="product-development" >
-                    </div>
-                    <div class="tooltiptext mx-auto">Liquids</div>
-                </div>
-                <div class="resLogo mx-auto" onClick="scrollToParenterals()">
-                    <div class="bubble mb-2 resLogo mx-auto" >
-                        <img class="bubbleImg" src="assets/icons/research-white.png" alt="product-development" >
-                    </div>
-                    <div class="tooltiptext mx-auto">Parenterals</div>
-                </div>
+                <ul class="navFont text-center" style="padding-left: 0; padding-top: 15px;">
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navItemWidth" >
+                        <a class="nav-link navLink" href="about.html">leader</a>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLink" href="facilities.html">Facilities
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="navHvrItem facility mx-auto" >
+                            <ul class="p-1 border" >
+                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navHvr nav-item navItemWidth">
+                        <a class="nav-link navLinkActive" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <div class="navHvrItem capability mx-auto" >
+                            <ul class="p-1 border">
+                                <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item navItemWidth">
+                        <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- <section class="aspectBubble row container mx-auto col-md-8">
-        <div class="resLogo mx-auto" onClick="scrollToPrForm()">
-            <div class="bubble mb-2 resLogo mx-auto" >
-                <img class="bubbleImg" src="assets/icons/research-white.png" alt="product-development" >
+    <header class="hero">
+        <div class="container heroTexts text-center">
+            <div class="row" style="margin-top: 10vh;">
+                <div class="heroText mt-5 mx-auto">
+                    <h2 class="heroH3Text">Capabilities</h2>
+                    <div class="relativeInp">
+                        <p class="descSubText">Abon’s highly skilled scientific team is capable of utilizing sophisticated techniques and technologiesin their product development work. Our scientists and chemists apply the physicochemical attributes of the drug, excipients and the finished product in connection with the pharmacokinetic parameters of the drug and dosage form in the development of the drug delivery system. The use of statistical design and mathematical modeling with consideration of pharmacokinetic principles in formulation development enables Abon’s scientists to develop a product with a predictable outcome that offers higher assurance in the success of bio/clinical studies. In addition, Abon’s scientists integrate quality and regulatory requirements into the development program, giving higher assurance of fast track product review, approval and launch.</p>
+                        <div class="absInputText text-center">
+                            <h3>INPUT TEXT HERE</h3>
+                        </div>
+                    </div>
+                    <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">
+                        Read More
+                    </div>
+                </div>
             </div>
-            <div class="tooltiptext mx-auto">Pre-Formulation</div>
         </div>
-        <div class="resLogo mx-auto" onClick="scrollToFormu()"> 
-            <div class="bubble mx-auto mb-2 resLogo">
-                <img class="bubbleImg" src="assets/icons/formula-white.png" alt="product-development">
-            </div>
-            <div class="tooltiptext">Formulation</div>
-        </div>
-        <div class="resLogo mx-auto" onClick="scrollToAnalytical()">
-            <div class="bubble mx-auto mb-2 resLogo">
-                <img class="bubbleImg" src="assets/icons/analytics-white.png" alt="product-development">
-            </div>
-            <div class="tooltiptext">Analytical Services</div>
-        </div>
-        <div class="resLogo mx-auto" onClick="scrollToBioAnalytical()">
-            <div class="bubble mx-auto mb-2 resLogo">
-                <img class="bubbleImg" src="assets/icons/lab-white.png" alt="product-development">
-            </div>
-            <div class="tooltiptext">Bio-Analytical Services</div>
-            
-        </div>
-    </section> -->
+    </header>
     <section class="aspectSection text-center">
         <h5 class="header5" style="margin-bottom: 30px;">OUR SERVICES</h5>
         <h1 class="title1" style="margin-bottom: 60px;">What We Offer for You</h1>
-        <div class="container mx-auto">
-            <div class="myCard mx-auto mb-4" id="oralSolids">
-                <div class="cardRndImg mx-auto mb-4">
-                    <img class="cardImg" src="assets/icons/research-white.png" alt="product-development">
-                </div>
-                <div class="cardDesc">
-                    <h5 class="mb-4">Oral Solids</h5>
-                    <ul class="list-group col-6 mx-auto text-left">
-                        <li class="list-group-item">Immediate and Controlled Release Capsules and Tablets</li>
-                        <li class="list-group-item">Orally Disintegrating Tablets</li>
-                        <li class="list-group-item">Swellable Hydrogel System</li>
-                        <li class="list-group-item">Hot Melt-extruded Dosage Form</li>
-                        <li class="list-group-item">Multi-layer and Press-coated Drug Delivery System</li>
-                        <li class="list-group-item">Pseudo-osmotic Drug Delivery System</li>
-                        <li class="list-group-item">Micro-particle Coated System</li>
-                        <li class="list-group-item">Nano-technology Products</li>
-                        <li class="list-group-item">Transmucosal Drug Delivery System</li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="myCard mx-auto  mb-4" id="liquids">
-                <div class="cardRndImg mx-auto mb-4">
-                    <img class="cardImg" src="assets/icons/formula-white.png" alt="product-Capabilities">
-                </div>
-                <div class="cardDesc">
-                    <h5 class="mb-4">Liquids</h5>
-                    <ul class="list-group col-6 mx-auto text-left">
-                        <li class="list-group-item">Oral Solutions and Suspensions</li>
-                        <li class="list-group-item">Ophthalmic Solutions, Suspensions and Emulsions</li>
-                        <li class="list-group-item">Self-emulsifying Drug Delivery System</li>
-                        <li class="list-group-item">Micro-emulsion</li>
-                        <!-- <li class="list-group-item">Robust Manufacturing Process</li>
-                        <li class="list-group-item">Integrate Quality & Regulatory Requirements</li> -->
-                       
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="myCard mx-auto mb-4" id="parenterals" >
-                <div class="cardRndImg mx-auto mb-4">
-                    <img class="cardImg" src="assets/icons/analytics-white.png" alt="product-development">
-                </div>
-                <div class="cardDesc">
-                    <h5 class="mb-4">Parenterals</h5>
-                    <ul class="list-group col-6 mx-auto text-left">
-                        <li class="list-group-item">Aqueous and Oil based Injectables</li>
-                        <li class="list-group-item">Suspensions</li>
-                        <li class="list-group-item">Lyophilized Powders</li>
-                        <li class="list-group-item">Pharmaceutical Equivalency of Complex Molecules</li>
-                        <li class="list-group-item">Bio-degradable Depot</li>
-                    </ul>
+        <div class="mx-auto">
+            <div class="RandD" id="preformulation">
+                <div class="myWrapper row mx-auto mb-5">
+                    <div class="col-lg-4">
+                        <img class="mx-auto myBoxShad" src="assets/different-pills-capsules-blisters_179068-704.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 descCard mx-auto text-left myBoxShad"  >
+                        <div class="descCardTxt mx-auto">
+                            <h5 class="mb-4 descTitle">preformulation</h5>
+                            <div class="relativeInp">
+                                <p class="descSubText">Abon’s highly skilled scientific team is capable of utilizing sophisticated techniques and technologiesin their product development work. Our scientists and chemists apply the physicochemical attributes of the drug, excipients and the finished product in connection with the pharmacokinetic parameters of the drug and dosage form in the development of the drug delivery system. The use of statistical design and mathematical modeling with consideration of pharmacokinetic principles in formulation development enables Abon’s scientists to develop a product with a predictable outcome that offers higher assurance in the success of bio/clinical studies. In addition, Abon’s scientists integrate quality and regulatory requirements into the development program, giving higher assurance of fast track product review, approval and launch.</p>
+                                <div class="absInputText text-center">
+                                    <h3>INPUT TEXT HERE</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-            
+            <div class="RandD" id="formulation">
+                <div class="myWrapper row mx-auto mb-5">
+                    <div  class="col-lg-4 imgOnWhnResp">
+                        <img class="" src="assets/interior-laboratory.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 descCardLft mx-auto text-right myBoxShad">
+                        <div class="descCardTxt mx-auto">
+                            <h5 class="mb-4 descTitle">formulation</h5>
+                            <div class="relativeInp">
+                                <p class="descSubText">Abon’s highly skilled scientific team is capable of utilizing sophisticated techniques and technologiesin their product development work. Our scientists and chemists apply the physicochemical attributes of the drug, excipients and the finished product in connection with the pharmacokinetic parameters of the drug and dosage form in the development of the drug delivery system. The use of statistical design and mathematical modeling with consideration of pharmacokinetic principles in formulation development enables Abon’s scientists to develop a product with a predictable outcome that offers higher assurance in the success of bio/clinical studies. In addition, Abon’s scientists integrate quality and regulatory requirements into the development program, giving higher assurance of fast track product review, approval and launch.</p>
+                                <div class="absInputText text-center">
+                                    <h3>INPUT TEXT HERE</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-lg-4 imgOffWhnResp">
+                        <img class="" src="assets/interior-laboratory.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="RandD" id="analytical">
+                <div class="myWrapper row mx-auto mb-5">
+                    <div class="col-lg-4">
+                        <img class="mx-auto myBoxShad" src="assets/different-pills-capsules-blisters_179068-704.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 descCard mx-auto text-left myBoxShad"  >
+                        <div class="descCardTxt mx-auto">
+                            <h5 class="mb-4 descTitle">analytical</h5>
+                            <div class="relativeInp">
+                                <p class="descSubText">Abon’s highly skilled scientific team is capable of utilizing sophisticated techniques and technologiesin their product development work. Our scientists and chemists apply the physicochemical attributes of the drug, excipients and the finished product in connection with the pharmacokinetic parameters of the drug and dosage form in the development of the drug delivery system. The use of statistical design and mathematical modeling with consideration of pharmacokinetic principles in formulation development enables Abon’s scientists to develop a product with a predictable outcome that offers higher assurance in the success of bio/clinical studies. In addition, Abon’s scientists integrate quality and regulatory requirements into the development program, giving higher assurance of fast track product review, approval and launch.</p>
+                                <div class="absInputText text-center">
+                                    <h3>INPUT TEXT HERE</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <footer>
+        <div class="row text-center container mx-auto">
+            <ul class="col-lg">
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="about.html">ABOUT ABON</a></li>
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="capabilities.html">CAPABILITIES </a></li>
+                <li class="nav-item footerList">
+                    <a class="footer-link" href="facilities.html">FACILITIES</a></li>
+            </ul>
+            <ul class="col-lg">
+                <li class="nav-item footerList"><a class="footer-link" href="careers.html">CAREERS</a></li>
+                
+            </ul>
+            <ul class="col-lg">
+                <li class="nav-item footerList"><a class="footer-link" href="contactUs.html">CONTACT US </a></li>
+                
+            </ul>
+        </div>
+    </footer>
+    <div class="mx-auto text-center" style="height: 8vh; width: 100%; background: #e7e7e7ee;
+    ">
+        <p class="col-6 mx-auto pt-3"style="font-size: 1.5rem">© 2020 Abon Pharmaceutical</p>
+    </div>
     <script src="./index.js"></script>
-    <!-- <script src="./productDevelopment.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
 </body>
 </html>

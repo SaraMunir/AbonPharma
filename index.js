@@ -3,12 +3,9 @@ let PreFormulation;
 $(document).ready(function(e){
     setTimeout(() => {
         closeCover()
-    }, 500);
+    }, 1000);
 
-    console.log('is it workjing?')
     
-    // Wrap every letter in a span
-
     setTimeout(() => {
         var textWrapper = document.querySelector('.ml10 .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -16,22 +13,31 @@ $(document).ready(function(e){
             .add({
                 targets: '.ml10 .letter',
                 rotateY: [-90, 0],
-                duration: 1000,
+                duration: 1200,
                 // delay: 1000
                 delay: (el, i) => 45 * i
             })
-    }, 500);
+    }, 1500);
+    setTimeout(() => {
+        var textWrapper2 = document.querySelector('.ml101 .letters');
+        textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.ml101 .letter',
+                rotateY: [-90, 0],
+                duration: 1200,
+                // delay: 1000
+                delay: (el, i) => 45 * i
+            })
+    }, 1600);
         
 })
 function showMenu() {
-    console.log('showing menu!');
-    $( ".menuBar" ).slideDown( 1000);
-    // $( "#showMoreBtn" ).html( `
-
-    //     <div class="nav-link navLink"  href="#" onClick="hideMenu()">Hide &nbsp; &nbsp;
-    //         <i class="fas fa-chevron-up"></i>
-    //     </div>
-    // `);
+    $( ".navMenResp" ).slideDown();
+}
+function closeMenu(){
+    $( ".navMenResp" ).slideUp();
+    
 }
 function myScroll(type){
     if(type === 'aboutSumm'){
@@ -58,10 +64,7 @@ function closeCover(){
     $( ".cover" ).fadeOut( 500);
 
 }
-function closeMenu(){
-    $( ".menuBar" ).slideUp( 1000);
 
-}
 
 function showMoreSect() {
     $('html, body').animate({
@@ -132,7 +135,6 @@ function openJobDetail(){
         scrollTop: $(".jobDetail").offset().top
     }, 500);
 }
-
 // window.scroll({
 //     top: 2500, 
 //     left: 0, 
@@ -145,3 +147,7 @@ function openJobDetail(){
 //     left: 0, 
 //     behavior: 'smooth' 
 //   });
+$('.carousel').carousel({
+    interval: 4000
+    })
+

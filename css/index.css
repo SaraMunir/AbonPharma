@@ -1,17 +1,19 @@
+
 body{
     max-width:  1920px;
-    background-image: url(../assets/rodion-kutsaev-049M_crau5k-unsplash.jpg);
-    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(../assets/flat-lay-medical-elements-composition-PLACEholder.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
     background-attachment: fixed;
-} 
-header {
-    /* background: #e4f0e4; */
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    /* background-position-y: -50px; */
+    object-fit: cover;
+    margin: 0;
+}
+.myBody{
+    background-color: #d2d8db;
+
 }
 
 .cover{
@@ -20,8 +22,8 @@ header {
     right: 0;
     left: 0;
     bottom: 0;
-    background: #0a1125;
-    z-index: 200;
+    background: radial-gradient( #154d85,  #07223d);
+    z-index: 500;
 }
 .scrollToNext{
     min-height: 30px;
@@ -33,87 +35,137 @@ header {
 .myBorder{
     border: 1px solid red;
 }
-.hero{
-    background-image: url(../assets/rodion-kutsaev-049M_crau5k-unsplash.jpg);
+.heroMain{
     min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 50px;
-    background-attachment: fixed;
+    position: relative;
 }
-.myNav {
-    width: 100%;
-    height: 12vh;
-    position: fixed;
-    z-index: 100;
+.hero{
+    min-height: 80vh;
+    position: relative;
+}
+.heroTexts{
+    position: absolute;
     top: 0;
     right: 0;
-    background: #070820da;
+    left: 0;
+    bottom: 0;
+    z-index: 150;
+}
+.myNav {
+    /* height: 12vh; */
+    width: 100%;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    background: #103f6e;
+}
+.navBarCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .navBr{
     width: 30%;
+    /* border: 1px solid orangered; */
 }
 .navMen{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* border: 1px solid #9dff00; */
+    margin-right: auto;
 }
-
-.myWrapper{
-    max-width: 1200px;
+.navMenFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
 .navFont {
     text-transform: uppercase;
     padding-top: 10px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 .navItemWidth {
     min-width: 150px;
 }
-.navLink {
-    color: #68b1c4;
+.navLinkActive {
+    color:  #f6fdff;
     transition: all ease .5s;
+    font-weight: 500;
+    border-radius: 3px;
+    border:3px solid #f6fdff;
+}
+.navLinkActive:hover {
+    color:  #103f6e;
+    transition: all ease .5s;
+    font-weight: 500;
+    background: #f6fdff;
+}
+.navLink {
+    color:  #58ade7;
+    transition: all ease .5s;
+    font-weight: 500;
 }
 .navLink:hover {
-    /* color: #56d4b3; */
-    color: #56d4b3;
+    color: #ffffff;
     
 }
 .navBrandName {
-    color: #286371;
-    font-size: 1.5rem;
+    color: #58ade7;
+    font-size: 2rem;
     font-weight: 400;
+    margin-top: 18px;
 }
 .navBrandNameSp {
     text-transform: uppercase;
     color: #3da589;
     font-size: 1.5rem;
     font-weight: 600;
+}
+.carouselEffect{
+    background: radial-gradient( #3169c34d  ,#17345fbc ,#060e1a96);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    opacity: .75;
 
 }
-.closeMenuBtn {
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-}
+
 .heroHText{
-    color: #7ccd88;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 4rem;
+    color: #ffffff;
+    font-family: 'Goldman', cursive;
+    /* font-weight: bold; */
+    font-size: 4.2rem;
+    filter: drop-shadow(2px 2px 2px #142f2ed0);
+    text-align: left;
+    /* box-shadow: 4px 4px 10px #323436; */
+    text-transform: uppercase;
+
 }
 .heroH2Text{
     color: #070820;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Goldman', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.heroH3Text{
+    color: #103f6e;
+    font-family: 'Goldman', cursive;
     font-weight: bold;
     font-size: 4rem;
 }
 .heroSubText{
-    color: #c4c4c4;
-    font-weight: 400;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.95rem;
+    
 }
 .heroSubText2{
     color: #353535;
@@ -127,11 +179,24 @@ header {
     cursor: pointer;
     font-weight: bold;
     text-align: center;
-    border-radius: 25px;
-    padding: 10px;
-    border: 1px solid #286371;
-    color: #286371;
+    border-radius: 50px;
+    padding: 15px;
+    border: 2px solid #75a12fee;
+    color: #75a12fee;
     transition: all ease .4s;
+    font-size: 1.4rem;
+}
+.mySubBtn{
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 35px;
+    padding: 13px 52px;
+    border: 2px solid white;
+    color: white;
+    transition: all ease .4s;
+    font-size: 1.4rem;
+    background: #103f6e;
 }
 .myBtn2 {
     /* cursor: pointer; */
@@ -153,7 +218,7 @@ header {
     filter: drop-shadow(4px 4px 5px #1c383f);
 }
 .myBtn:hover {
-    background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
+    background-image: linear-gradient(45deg,#547224ee, #75a12fee, #a0c06cee);
     /* background: #286371; */
     color: white;
     filter: drop-shadow(4px 4px 5px #1c383f);
@@ -174,39 +239,53 @@ header {
     padding: 10px;
     margin: 10px;
 }
-
+.menuBarContr{
+    position: relative;
+}
 .menuBar {
-    /* display: none; */
-    height: 75vh;
-    padding: 50px;
-    background-image: linear-gradient(45deg,#1c383fe1, #286371e1, #1e7c74e1);
+    visibility: hidden;
+    min-width: 350px;
+    padding: 50px 0;
     position: absolute;
     top: 70px;
-    bottom: 0;
     right: 0;
-    left: 0;
+    z-index: -40;
+    background: #63addf;
+    transition: all .5s;
+    height: 0px;
+}
+.menuBarContr:hover .menuBar{
+    visibility: visible;
+    /* top: 70px; */
     z-index: 50;
+    height: 400px;
+}
+.menuItem-link{
+    opacity: 0;
+}
+.menuBarContr:hover .menuItem-link{
+    opacity: 1;
+    /* top: 70px; */
 }
 .menuItem {
     padding: 10px;
 }
 .menuItem-link {
+    width: 100%;
     display: block;
     padding: 20px;
-    margin: 10px;
-    color: rgb(226, 226, 226);
+    /* margin: 10px; */
+    color: #ffffff;
     text-decoration: none;
     margin: 0;
     transition: all ease .5s;
-
+    font-weight: bold;
 }
 .menuItem-link:hover {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
+    color: #458bb9;
     text-decoration: none;
     margin: 0;
-    background: #7ccd88;
+    background: #ffffff;
 }
 ul li {
     list-style: none;
@@ -217,8 +296,11 @@ ul li {
 .hamburger {
     color: pink;
 }
+.myBoxShad{
+    box-shadow: 4px 4px 10px #323436;
+}
 .header5 {
-    color: #7ccd88;
+    color: white;
     font-size: 1.2rem;
     font-weight: bold;
     /* margin: 30px auto; */
@@ -226,16 +308,20 @@ ul li {
 #aboutSumm{
     min-height: 100vh;
     padding: 20vh 0;
-    background: #070820ee;
+    background: #e0e0e0;
 }
 .contactUs{
-    min-height: 100vh;
-    padding: 10vh 0;
+    padding: 10px;
     background: #e0e0e0ee;
 }
+.contactCard{
+    background: white;
+    padding: 50px 70px;
+    border: 2px solid #103f6e;
+    margin-top: -180px;
+}
 .darkBk{
-    background: #070820ee;
-
+    background: #103f6e;
 }
 .aspectSection{
     padding: 50px;
@@ -243,12 +329,24 @@ ul li {
     /* background-color: #dfe2df; */
     min-height: 100vh;
 }
+.myInput{
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #bfc6cc;
+}
+label{
+    color: #4b6174;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 .title1 {
     color: #286371;
 }
 .title1 {
-    color: #7ccd88;
+    color: #75a12fee;
     font-size: 3rem;
 }
 .myCard{
@@ -290,7 +388,7 @@ div img {
     padding-top: 50px;
     padding-bottom: 50px;
     padding-right: 30px;
-    background: #75a12fee;
+    background: #fafafaee;
     /* height: 40vh; */
     /* z-index: 10; */
 }
@@ -303,16 +401,15 @@ div img {
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 30px;
-    background: #75a12fee;
+    background: #fafafaee;
 }
 .descCardTxt{
     width: 85%;
-    margin-right: 11px;
 }
-.descCardTxtLt{
+/* .descCardTxtLt{
     width: 84%;
     margin-left: 11px;
-}
+} */
 .descImg{
     width: 450px;
     position: relative;
@@ -328,12 +425,18 @@ div img {
     z-index: 20;
 }
 .descTitle{
-    font-size: 2.3rem;
+    font-family: 'Goldman', cursive;
+    font-size: 3rem;
+    color: #63addf;  
+    text-transform: uppercase;  
+
 }
 .descSubText{
     /* min-height: 50vh; */
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
+    font-weight: 500;
+    line-height: 2.95rem;
 }
 .cardRndImg:hover {
     background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
@@ -423,24 +526,31 @@ display: inline-block;
 line-height: 1em;
 transform-origin: 0 0;
 }
-
-
-.ml2 {
-font-weight: 900;
-font-size: 3.5em;
+/* for header animation  */
+.ml101 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
 }
 
-.ml2 .letter {
+.ml101 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml101 .letter {
 display: inline-block;
 line-height: 1em;
+transform-origin: 0 0;
 }
 
 .myFlex{
     display: flex;
 }
-
-
-
 .cardRight{
     padding: 50px;
     background: white;
@@ -450,8 +560,9 @@ line-height: 1em;
 .myGroupBrd{
     padding: 10px;
     min-height: 75px;
-    border: 1px solid rgb(190, 190, 190);
+    border: 1px solid #bebebe;
     border-radius: 5px;
+    font-size: 1.5rem;
 }
 .emailClass {
     text-decoration: none;
@@ -464,90 +575,139 @@ line-height: 1em;
     text-decoration: none;
     color: #286371;
 }
+.RandD{
+    padding-top: 100px;
+}
+.navLogo{
+    width: 100px;
+}
+.navHamburger{
+    color: white;
+    padding: 30px 20px;
+    cursor: pointer;
+    display: none;
+}
+.navMenResp{
+    width: 65%;
+    background: #154d85;
+    padding: 40px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.closeMenuBtn {
+    position: absolute;
+    padding: 3px 14px;
+    cursor: pointer;
+    color: white;
+    top: 0;
+    right: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.closeMenuBtn:hover {
+    color: #154d85;
+    background: white;
+}
+.contactHero{
+    background: #348bbd;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
 
+}
+.imgOnWhnResp{
+    display: none;
+}
+.imgOffWhnResp{
+    display: block;
+}
+.relativeInp{
+    position: relative;
+}
+.absInputText{
+    position: absolute;
+    background: #89b6cfd3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.absInputText h3{
+    font-size: 6rem;
+    color: #ffffffed;
+    margin-top: 42px;
 
-@media only screen and (min-width: 1350px ) {
+}
+@media only screen and (min-width: 1352px ) {
     /* For mobile phones: */
     .heroHText{
-        font-size: 6.1rem;
+        font-size: 4.5rem;
     }
     .myNav {
         width: 100%;
-        height: 9vh;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        right: 0;
-        background: #070820da;
+        height: 10vh;
     }
     .descCard{
         width: 66%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 30px;
-        background: #75a12fee;
-        /* height: 40vh; */
-        /* z-index: 10; */
     }
     .descCardLft{
         width: 66%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-        background: #75a12fee;
     }
 
 
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1352px) {
     /* For mobile phones: */
+    
     .heroHText{
         font-size: 4.4rem;
     }
     .descCard{
         width: 57%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 30px;
-        background: #75a12fee;
-        /* height: 40vh; */
-        /* z-index: 10; */
     }
     .descCardLft{
         width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-        background: #75a12fee;
+    }
+    .navFont {
+        font-size: 1.3rem;
+    }
+    .navBr {
+        width: 40%;
+    }
+    .navBrandName{
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width: 1220px) {
     /* For mobile phones: */
+
     .heroHText{
-        font-size: 4.4rem;
+        font-size: 3.4rem;
     }
     .descCard{
-        width: 56%;
+        width: 50%;
+    }
+    .descImgLeft{
+        left: -60px;
     }
     .descCardLft{
         width: 50%;
-        
+    }
+    .navFont {
+        font-size: 1.1rem;
+    }
+    .navItemWidth {
+        min-width: 120px;
+    }
+    .navBrandName{
+        font-size: 1.8rem;
+    }
+    .navBr {
+        width: 40%;
+    }
+    .navMen {
+        width: 60%;
     }
     
 }
@@ -556,12 +716,119 @@ line-height: 1em;
     .heroHText{
         font-size: 4.4rem;
     }
-    .descCard{
-        width: 56%;
+    .descCardLft{
+        width: 50%;
+    }
+    .navItemWidth {
+        min-width: 95px;
+    }
+    .myFlex{
+        display: block;
+    }
+    .descCard, .descCardLft {
+        width: 90%;
+    }
+    .descImg {
+
+    }
+    
+
+}
+@media only screen and (max-width: 990px) {
+    /* For mobile phones: */
+    .heroHText{
+        font-size: 4.4rem;
     }
     .descCardLft{
         width: 50%;
         
+    }
+    .navItemWidth {
+        min-width: 100px;
+    }
+    .myFlex{
+        display: block;
+    }
+    .descCard, .descCardLft {
+        width: 90%;
+    }
+    .navLogo{
+        width: 95px;
+    }
+    .navBrandName{
+        font-size: 1.5rem;
+    }
+    .navHide{
+        display: none; 
+    }
+    .navHamburger{
+        display: block;
+        width: 30%;
+        text-align: right;
+    }
+    .navBr{
+        width: 70%;
+    }
+    .menuBar{
+        position: relative;
+        display: block;
+        height: 0;
+    }
+    .menuBarContr:hover .menuBar{
+        display: block;
+        /* top: 70px; */
+        z-index: 50;
+        height: 200px;
+    }
+    .menuItem-link{
+        opacity: 1;
+    }
+    .navItemWidth {
+        min-width: 130px;
+        padding: 20px 10px;
+    }
+    .navHvrItem{
+        display: none;
+    }
+    .navHvr:hover .navHvrItem {
+        display: block
+    }
+    .nav-link{
+        padding: 20px;
+    }
+    .navLink:hover{
+        background:white;
+        color:#154d85;
+        ;
+    }
+    .contactCard{
+        margin-top: -130px;
+    }
+    .imgOnWhnResp{
+        display: block;
+    }
+    .imgOffWhnResp{
+        display: none;
+    }
+    .descCardTxt{
+        text-align: center;
+    }
+    .hero {
+        min-height: 100vh;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 650px){
+    .navMenResp{
+        width: 100%;
+        background: #154d85;
+        padding: 40px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+    .contactCard{
+        margin-top: -50px;
     }
 
 }
