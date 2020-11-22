@@ -86,12 +86,8 @@ body{
 }
 .navFont {
     text-transform: uppercase;
-    padding-top: 10px;
     font-size: 1.3rem;
     font-weight: 300;
-}
-.navItemWidth {
-    min-width: 150px;
 }
 .navLinkActive {
     color:  #f6fdff;
@@ -648,7 +644,7 @@ transform-origin: 0 0;
 }
 @media only screen and (min-width: 1352px ) {
     /* For mobile phones: */
-    .heroHText{
+    /* .heroHText{
         font-size: 3.5rem;
     }
     .myNav {
@@ -660,13 +656,15 @@ transform-origin: 0 0;
     }
     .descCardLft{
         width: 66%;
-    }
+    } */
 
 
 }
 @media only screen and (max-width: 1352px) {
     /* For mobile phones: */
-    
+    /* .myNav {
+        height: 10vh;
+    } */
     .heroHText{
         font-size: 4.4rem;
     }
@@ -677,7 +675,7 @@ transform-origin: 0 0;
         width: 50%;
     }
     .navFont {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .navBr {
         width: 40%;
@@ -705,10 +703,7 @@ transform-origin: 0 0;
         width: 50%;
     }
     .navFont {
-        font-size: 1.1rem;
-    }
-    .navItemWidth {
-        min-width: 120px;
+        font-size: 1rem;
     }
     .navBrandName{
         font-size: 1.8rem;
@@ -726,14 +721,11 @@ transform-origin: 0 0;
 }
 @media only screen and (max-width: 1020px) {
     /* For mobile phones: */
-    .heroHText{
-        font-size: 4.4rem;
-    }
+    /* .heroHText{
+        font-size:3rem;
+    } */
     .descCardLft{
         width: 50%;
-    }
-    .navItemWidth {
-        min-width: 95px;
     }
     .myFlex{
         display: block;
@@ -749,15 +741,12 @@ transform-origin: 0 0;
 }
 @media only screen and (max-width: 990px) {
     /* For mobile phones: */
-    .heroHText{
+    /* .heroHText{
         font-size: 4.4rem;
-    }
+    } */
     .descCardLft{
         width: 50%;
         
-    }
-    .navItemWidth {
-        min-width: 100px;
     }
     .myFlex{
         display: block;
@@ -795,10 +784,6 @@ transform-origin: 0 0;
     }
     .menuItem-link{
         opacity: 1;
-    }
-    .navItemWidth {
-        min-width: 130px;
-        padding: 20px 10px;
     }
     .navHvrItem{
         display: none;
