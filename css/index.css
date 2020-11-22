@@ -250,7 +250,7 @@ body{
     top: 70px;
     right: 0;
     z-index: -40;
-    background: #63addf;
+    background: #103f6e;
     transition: all .5s;
     height: 0px;
 }
@@ -308,7 +308,7 @@ ul li {
 #aboutSumm{
     min-height: 100vh;
     padding: 20vh 0;
-    background: #e0e0e0;
+    background: #f0f0f0;
 }
 .contactUs{
     padding: 10px;
@@ -639,6 +639,9 @@ transform-origin: 0 0;
     margin-top: 42px;
 
 }
+.myMarTop{
+    margin-top: 35vh;
+}
 @media only screen and (min-width: 1352px ) {
     /* For mobile phones: */
     .heroHText{
@@ -817,6 +820,9 @@ transform-origin: 0 0;
         min-height: 100vh;
         position: relative;
     }
+    .myMarTop{
+        margin-top: 25vh;
+    }
 }
 @media only screen and (max-width: 650px){
     .navMenResp{
@@ -829,6 +835,9 @@ transform-origin: 0 0;
     }
     .contactCard{
         margin-top: -50px;
+    }
+    .myMarTop{
+        margin-top: 25vh;
     }
 
 }
