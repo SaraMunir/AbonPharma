@@ -10,6 +10,7 @@ body{
     /* background-position-y: -50px; */
     object-fit: cover;
     margin: 0;
+    padding: 0;
 }
 .myBody{
     background-color: #d2d8db;
@@ -492,7 +493,7 @@ right: 0;
 /* footer */
 footer {
     padding: 50px;
-    background: #070820e3;
+    background: #103f6e;
 }
 /*     color: #56d4b3;
     color: #68b1c4; */
@@ -641,6 +642,10 @@ transform-origin: 0 0;
 }
 .myMarTop{
     margin-top: 35vh;
+}
+.blur{
+    color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 @media only screen and (min-width: 1352px ) {
     /* For mobile phones: */
