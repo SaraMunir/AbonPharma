@@ -142,7 +142,6 @@ body{
     color: #ffffff;
     font-family: 'Goldman', cursive;
     /* font-weight: bold; */
-    font-size: 4.2rem;
     filter: drop-shadow(2px 2px 2px #142f2ed0);
     text-align: left;
     /* box-shadow: 4px 4px 10px #323436; */
@@ -650,7 +649,7 @@ transform-origin: 0 0;
 @media only screen and (min-width: 1352px ) {
     /* For mobile phones: */
     .heroHText{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .myNav {
         width: 100%;
@@ -686,6 +685,9 @@ transform-origin: 0 0;
     .navBrandName{
         font-size: 1.8rem;
     }
+    .heroHText{
+        font-size: 3.2rem;
+    }
 }
 @media only screen and (max-width: 1220px) {
     /* For mobile phones: */
@@ -716,6 +718,9 @@ transform-origin: 0 0;
     }
     .navMen {
         width: 60%;
+    }
+    .heroHText{
+        font-size: 3rem;
     }
     
 }
