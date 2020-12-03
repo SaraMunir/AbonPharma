@@ -86,7 +86,7 @@ body{
 }
 .navFont {
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 .navLinkActive {
@@ -241,12 +241,12 @@ body{
 .menuBar {
     visibility: hidden;
     min-width: 350px;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     position: absolute;
-    top: 70px;
+    top: 63px;
     right: 0;
     z-index: -40;
-    background: #103f6e;
+    /* background: #103f6e; */
     transition: all .5s;
     height: 0px;
 }
@@ -254,12 +254,27 @@ body{
     visibility: visible;
     /* top: 70px; */
     z-index: 50;
-    height: 400px;
+    /* height: 400px; */
+}
+.triangle-up {
+    opacity: 0;
+    position: relative;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-bottom: 15px solid #103f6e;
+    right: 30px;
 }
 .menuItem-link{
     opacity: 0;
+    background: #103f6e;
 }
-.menuBarContr:hover .menuItem-link{
+.borderBtm{
+    border-bottom: 1px solid #598dc0;
+
+}
+.menuBarContr:hover .menuItem-link,.menuBarContr:hover .triangle-up {
     opacity: 1;
     /* top: 70px; */
 }
