@@ -159,12 +159,12 @@ body{
     color: #103f6e;
     font-family: 'Goldman', cursive;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .heroSubText{
     color: #3a3a3a;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     line-height: 2.95rem;
     
 }
@@ -700,7 +700,7 @@ transform-origin: 0 0;
         font-size: 3.2rem;
     }
 }
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1280px) {
     /* For mobile phones: */
     .hero{
         min-height: 100vh;
