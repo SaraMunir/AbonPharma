@@ -42,7 +42,7 @@ body{
     position: relative;
 }
 .hero{
-    min-height: 85vh;
+    min-height: 80vh;
     position: relative;
 }
 .heroTexts{
@@ -118,7 +118,7 @@ body{
 }
 .navBrandName {
     color: #58ade7;
-    font-size: 1.65rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-top: 18px;
 }
@@ -702,7 +702,10 @@ transform-origin: 0 0;
 }
 @media only screen and (max-width: 1220px) {
     /* For mobile phones: */
-
+    .hero{
+        min-height: 100vh;
+        position: relative;
+    }
     .heroHText{
         font-size: 3.4rem;
     }
@@ -820,10 +823,6 @@ transform-origin: 0 0;
     }
     .descCardTxt{
         text-align: center;
-    }
-    .hero {
-        min-height: 100vh;
-        position: relative;
     }
     .myMarTop{
         margin-top: 25vh;
