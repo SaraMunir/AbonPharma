@@ -26,7 +26,7 @@
 }
 .fndrRndImg{
     background-color: #d5d8d5;
-    object-fit: contain;
+    object-fit: cover;
     
     /* transition: all ease .4s; */
 }
