@@ -16,6 +16,13 @@ body{
     background-color: #d2d8db;
 
 }
+.myB{
+    text-decoration: none;
+    margin: 20px 0;
+}
+.myB:hover{
+    text-decoration: none;
+}
 
 .cover{
     position: fixed;
@@ -333,7 +340,7 @@ ul li {
     background: white;
     padding: 50px 70px;
     border: 2px solid #103f6e;
-    margin-top: -150px;
+    margin-top: -87px;
 }
 .darkBk{
     background: #103f6e;
