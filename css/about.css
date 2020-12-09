@@ -7,13 +7,11 @@
     background-color: #dfe2df;
     min-height: 110vh;
 }
-
 .founderSectionDetail {
-    max-width: 1200px;
-    min-height: 100vh;
+    /* max-width: 1200px;
+    min-height: 100vh; */
     padding: 50px;
     margin: 0 auto;
-
 }
 .founderCard{
     /* width: 60vh;
@@ -21,18 +19,24 @@
     position: relative;
 }
 .founderDesc{
-    height: 35vh;
+    min-height: 38vh;
     font-size: 1.5rem;
     font-weight: 500;
-    color: white;
+    color: #3a3a3a;
+}
+.fndrRndImg{
+    background-color: #d5d8d5;
+    object-fit: contain;
+    
+    /* transition: all ease .4s; */
 }
 .card1{
-    width: 60vh;
-    height: 70vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
     object-fit: cover;
     background-color: #f5f5f5;
     /* padding: 40px 20px; */
-    border-radius: 5px;
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
 .founderIntro2 {
@@ -43,34 +47,38 @@
     border-radius: 5px;
     width: 60vh;
     height: 70vh;
-    background: #75a12fee;
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
+    background: white;
 }
-.founderCard:hover .info{
+/* .founderCard:hover .info{
     visibility: visible;
-}
+} */
 .founderName{
-    color: #7ccd88;
-    font-size: 1.7rem;
+    color: #58ade7;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 .founderJobTitle{
     color: #808080;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* font-weight: bold; */
 }
 .fndrDetail{
     width: 100%;
-    background: #75a12fee;
+    background: white;
     padding: 50px;
     font-size: 1.3rem;
 }
 .fndrDetail h3{
     font-size: 2.3rem;
+}
+@media only screen and (min-width: 1352px ) {
+    .founderDesc {
+        min-height: 26vh;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #3a3a3a;
+    }
 }
 @media only screen and (max-width: 1920px ) {
     /* For large laptop: */
@@ -78,8 +86,11 @@
 
 
   }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 990px) {
     /* For medium: */
-    
+    .founderDesc {
+        min-height: 26vh;
+    }
+}
 
-  }
+  

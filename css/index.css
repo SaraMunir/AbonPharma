@@ -42,7 +42,7 @@ body{
     position: relative;
 }
 .hero{
-    min-height: 80vh;
+    min-height: 85vh;
     position: relative;
 }
 .heroTexts{
@@ -72,16 +72,17 @@ body{
     justify-content: space-between;
 }
 .navBr{
-    width: 30%;
+    width: 40%;
     /* border: 1px solid orangered; */
 }
 .navMen{
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: flex-end;
     /* border: 1px solid #9dff00; */
-    margin-right: auto;
+    margin-left: auto;
 }
 .navMenFlex{
     display: flex;
@@ -90,7 +91,7 @@ body{
 }
 .navFont {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 .navLinkActive {
@@ -117,7 +118,7 @@ body{
 }
 .navBrandName {
     color: #58ade7;
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-weight: 400;
     margin-top: 18px;
 }
@@ -179,12 +180,23 @@ body{
     cursor: pointer;
     font-weight: bold;
     text-align: center;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 15px;
-    border: 2px solid #75a12fee;
-    color: #75a12fee;
+    background: #103f6e;
+    color: white;
     transition: all ease .4s;
     font-size: 1.4rem;
+}
+.myBtn:hover {
+    background:  #58ade7;
+    color: white;
+    filter: drop-shadow(4px 4px 5px #1c383f);
+}
+.myBtn:active {
+    /* background: #286371; */
+    background: #103f6e;
+    color: white;
+    filter: drop-shadow(4px 4px 5px #1c383f00);
 }
 .mySubBtn{
     cursor: pointer;
@@ -199,7 +211,6 @@ body{
     background: #103f6e;
 }
 .myBtn2 {
-    /* cursor: pointer; */
     display: block;
     text-emphasis: none;
     font-weight: bold;
@@ -217,17 +228,7 @@ body{
     color: white;
     filter: drop-shadow(4px 4px 5px #1c383f);
 }
-.myBtn:hover {
-    background-image: linear-gradient(45deg,#547224ee, #75a12fee, #a0c06cee);
-    /* background: #286371; */
-    color: white;
-    filter: drop-shadow(4px 4px 5px #1c383f);
-}
-.myBtn:active {
-    /* background: #286371; */
-    color: white;
-    filter: drop-shadow(4px 4px 5px #1c383f00);
-}
+
 .btnWdth1 {
     width: 200px;
 }
@@ -333,10 +334,13 @@ ul li {
     background: white;
     padding: 50px 70px;
     border: 2px solid #103f6e;
-    margin-top: -180px;
+    margin-top: -150px;
 }
 .darkBk{
     background: #103f6e;
+}
+.lightBk{
+    background: #e3e3e4;
 }
 .aspectSection{
     padding: 50px;
@@ -457,14 +461,7 @@ div img {
     background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
 
 }
-.fndrRndImg{
-    border-radius: 50%; 
-    background-color: #d5d8d5;
-    width: 40vh;
-    height: 40vh;
-    object-fit: cover;
-    /* transition: all ease .4s; */
-}
+
 /* career */
 .jobSum{
     font-size: 0.78rem;;
@@ -693,14 +690,11 @@ transform-origin: 0 0;
     .descCardLft{
         width: 50%;
     }
-    .navFont {
+    /* .navFont {
         font-size: 1.1rem;
-    }
+    } */
     .navBr {
         width: 40%;
-    }
-    .navBrandName{
-        font-size: 1.8rem;
     }
     .heroHText{
         font-size: 3.2rem;
@@ -721,18 +715,15 @@ transform-origin: 0 0;
     .descCardLft{
         width: 50%;
     }
-    .navFont {
+    /* .navFont {
         font-size: 1rem;
-    }
-    .navBrandName{
-        font-size: 1.8rem;
-    }
+    } */
     .navBr {
         width: 40%;
     }
-    .navMen {
+    /* .navMen {
         width: 60%;
-    }
+    } */
     .heroHText{
         font-size: 3rem;
     }
