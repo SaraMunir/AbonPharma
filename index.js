@@ -64,11 +64,10 @@ $(document).ready(function(e){
             .add({
                 targets: '.ml101-1 .letter',
                 rotateY: [-90, 0],
-                duration: 1300,
+                duration: 900,
                 delay: (el, i) => 45 * i
             }).add({
                 targets: '.ml101-1',
-                // opacity: 0,
                 duration: 1000,
                 easing: "easeOutExpo",
                 delay: 1000
@@ -81,11 +80,10 @@ $(document).ready(function(e){
             .add({
                 targets: '.ml102 .letter',
                 rotateY: [-90, 0],
-                duration: 1300,
+                duration: 1100,
                 delay: (el, i) => 45 * i
             }).add({
                 targets: '.ml102',
-                // opacity: 0,
                 duration: 1000,
                 easing: "easeOutExpo",
                 delay: 1000
@@ -97,29 +95,15 @@ function showMenu() {
 }
 function closeMenu(){
     $( ".navMenResp" ).slideUp();
-    
 }
 function myScroll(type){
     if(type === 'aboutSumm'){
         $('html, body').animate({
             scrollTop: $("#aboutSumm").offset().top
         }, 1000);
-
     }
-    // $('html, body').animate({
-    //     scrollTop: $(".aspectSection").offset().top
-    // }, 1000);
 }
 
-// function hideMenu() {
-//     console.log('showing menu!');
-//     $( ".menuBar" ).slideUp( 1000);
-//     $( "#showMoreBtn" ).html( `
-//     <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
-//     <i class="fas fa-chevron-down"></i>
-// </div>
-//     `);
-// }
 function closeCover(){
     $( ".cover" ).fadeOut( 500);
 
