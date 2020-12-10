@@ -48,10 +48,10 @@ body{
     min-height: 100vh;
     position: relative;
 }
-.hero{
+/* .hero{
     min-height: 80vh;
     position: relative;
-}
+} */
 .heroTexts{
     position: absolute;
     top: 0;
@@ -697,10 +697,10 @@ transform-origin: 0 0;
     }
 }
 @media only screen and (max-width: 1280px) {
-    .hero{
+    /* .hero{
         min-height: 100vh;
         position: relative;
-    }
+    } */
     .heroHText{
         font-size: 3.4rem;
     }
