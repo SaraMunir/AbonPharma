@@ -52,10 +52,6 @@ body{
     min-height: 80vh;
     position: relative;
 }
-.facilitiesHero{
-    min-height: 75vh;
-    position: relative;
-}
 .heroTexts{
     position: absolute;
     top: 0;
@@ -699,9 +695,6 @@ transform-origin: 0 0;
     .heroHText{
         font-size: 3.2rem;
     }
-    .facilitiesHero{
-        height: 85vh;
-    }
 }
 @media only screen and (max-width: 1280px) {
     .hero{
@@ -732,10 +725,6 @@ transform-origin: 0 0;
     .heroHText{
         font-size: 3rem;
     }
-    .facilitiesHero{
-        height: 87vh;
-    }
-    
     /* 141vh */
 }
 @media only screen and (max-width: 1020px) {
@@ -829,14 +818,8 @@ transform-origin: 0 0;
     .myMarTop{
         margin-top: 25vh;
     }
-    .facilitiesHero{
-        height: 95vh;
-    }
 }
 @media only screen and (max-width: 767px){
-    .facilitiesHero{
-        height: 118vh;
-    }
 }
 @media only screen and (max-width: 650px){
     .navMenResp{
