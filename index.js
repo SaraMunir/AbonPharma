@@ -56,7 +56,7 @@ $(document).ready(function(e){
                 easing: "easeOutExpo",
                 delay: 1000
             });
-    }, 1500);
+    }, 1400);
     setTimeout(() => {
         var textWrapper2 = document.querySelector('.ml101-1 .letters');
         textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -73,7 +73,7 @@ $(document).ready(function(e){
                 easing: "easeOutExpo",
                 delay: 1000
             });
-    }, 1500);
+    }, 1400);
     setTimeout(() => {
         var textWrapper3 = document.querySelector('.ml102 .letters');
         textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -90,7 +90,7 @@ $(document).ready(function(e){
                 easing: "easeOutExpo",
                 delay: 1000
             });
-    }, 1500);
+    }, 1400);
 })
 function showMenu() {
     $( ".navMenResp" ).slideDown();

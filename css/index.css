@@ -484,9 +484,9 @@ div img {
     position: relative;
     /* min-height: 50vh; */
     border-radius: 8px;
-    background: #75a12fee;
+    background: #ffffff;
     padding: 40px 20px;
-    box-shadow: -2px  -2px 20px #1c383fd8 inset;
+    /* box-shadow: -2px  -2px 20px #1c383fd8 inset; */
 }
 .card2{
     width: 350px; 
@@ -850,7 +850,6 @@ transform-origin: 0 0;
     .heroHText {
         font-size: 2.5rem;
     }
-
 }
 @media only screen and (max-width: 650px){
     .navMenResp{

@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="myBody">
     <div class="jobDetailWindow hide" id="jobDetailWindo">
@@ -91,67 +92,107 @@
         </div>
     </div>
     <div class="capabilities">
-        <nav class="navbar navbar-expand-lg container myNav ">
-            <div class="col-5">
-                <ul class="navbar-nav navFont">
-                    <li class="nav-item" style="width: 50px; height: 50px;">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/ABLogo.png" alt="">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <p class="navBrandName" >Abon Pharmaceuticals</p>
-                    </li>
-                </ul>
-            </div>
-            <button class="navbar-toggler hamburger navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav navFont text-center">
-                    <li class="nav-item active navItemWidth">
-                        <a class="nav-link navLink" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item navItemWidth">
-                        <a class="nav-link navLink" href="about.html">About Abon</a>
-                    </li>
-                    <li class="nav-item  navItemWidth">
-                        <a class="nav-link navLink" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item navItemWidth" id="showMoreBtn">
-                        <div class="nav-link navLink"  href="#" onClick="showMenu()">More &nbsp; &nbsp;
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="menuBar hide">
-                <div class="d-flex justify-content-end mb-3">
-                    <i class="closeMenuBtn fas fa-times" onClick="closeMenu()"></i>
-                </div>
-                <div class="row text-center">
-                    <ul class="col-lg">
-                        <li class="nav-item"><a class="menuItem-link" href="about.html">ABOUT ABON</a></li>
-                        <li><a class="menuItem-link" href="capabilities.html">CAPABILITIES </a></li>
-                        <li><a class="menuItem-link" href="productDevelopment.html">PRODUCT DEVELOPMENT</a></li>
-                        <li><a class="menuItem-link" href="contactUs.html">BUSINESS OPPORTUNITY</a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="#">CAREERS</a></li>
-                        <li><a class="menuItem-link" href="news.html">NEWS </a></li>
-                    </ul>
-                    <ul class="col-lg">
-                        <li><a class="menuItem-link" href="contactUs.html">CONTACT US </a></li>
-                        <li class="nav-item"><a class="menuItem-link" href="#">SOCIAL MEDIA</a></li>
+        <div class="myNav">
+            <div class="navBarCont">
+                <div class="">
+                    <ul class="d-flex m-0 p-0">
+                        <li class="nav-item navLogo">
+                            <a class="navbar-brand mr-auto" href="index.html">
+                                <img src="assets/abon_llc_logo_white.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="navBrandName">Pharmaceuticals, LLC</p>
+                        </li>
                     </ul>
                 </div>
+                <div class="navMen navHide">
+                    <ul class="navMenFlex navFont text-center pt-4">
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link navLink" href="about.html">company profile</a>
+                        </li>
+                        <li class="menuBarContr nav-item " >
+                            <a class="nav-link navLink" href="facilities.html">Facilities
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="facility myBoxShad mx-auto" >
+                                <ul class="menuBar">
+                                    <div class="d-flex justify-content-end">
+                                        <div class="triangle-up"></div>
+                                    </div>
+                                    <li><a class="menuItem-link borderBtm" href="facilities.html#R&D">R&D</a></li>
+                                    <li><a class="menuItem-link " href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menuBarContr nav-item ">
+                            <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                            <div class="capability myBoxShad  mx-auto" >
+                                <ul class="menuBar">
+                                    <div class="d-flex justify-content-end">
+                                        <div class="triangle-up"></div>
+                                    </div>
+                                    <li><a class="menuItem-link borderBtm" href="capabilities.html#preformulation">preformulation</a></li>
+                                    <li><a class="menuItem-link borderBtm" href="capabilities.html#formulation">formulation </a></li>
+                                    <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navHamburger" onclick="showMenu()">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <div class="navMenResp hide">
+                    <div class=" closeMenuBtn" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="navFont text-center" style="padding-left: 0; padding-top: 15px;">
+                        <li class="nav-item">
+                            <a class="nav-link navLink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link navLink" href="about.html">company profile</a>
+                        </li>
+                        <li class="navHvr nav-item">
+                            <a class="nav-link navLink" href="facilities.html">Facilities
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="navHvrItem facility mx-auto" >
+                                <ul class="p-1 border" >
+                                    <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
+                                    <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navHvr nav-item">
+                            <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                            <div class="navHvrItem capability mx-auto" >
+                                <ul class="p-1 border">
+                                    <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
+                                    <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
+                                    <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
-        <div class="container heroTexts mt-2">
+        </div>
+        <div class="container heroTexts mt-4">
             <div class="row">
                 <div class="heroText mt-5 mx-auto text-center">
-                    <h4 class="">Welcome To Abon</h4>
-                    <h1 class="heroHText">Careers</h1>
+                    <h4 class="heroH3Text">Welcome To Abon</h4>
+                    <h1 class="heroHText text-center mx-auto">Careers</h1>
                     <p class="heroSubText">Abon offers exciting and challenging positions that combine the benefits of working on a team with rewards based on contributions and performance. The company is committed to creating a diverse environment and is proud to be an equal opportunity employer.
                     </p>
                     <p class="heroSubText">A key factor to Abon’s success is the experience, flexibility and dedication of our employees. To that end, Abon is committed to invest in the training and development of our employees to ensure that success. As a specialty generic pharmaceutical company, from time to time Abon may be seeking to hire individuals that can bring specific and unique skills and experience to the team. Abon offers a competitive compensation and benefits program. We are an equal opportunity employer. All inquiries related to employment, should be mailed to the Human Resources Department.
