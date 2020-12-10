@@ -144,9 +144,7 @@ body{
     top: 0;
     z-index: 100;
     opacity: .75;
-
 }
-
 .heroHText{
     color: #ffffff;
     font-family: 'Goldman', cursive;
@@ -155,7 +153,6 @@ body{
     text-align: left;
     /* box-shadow: 4px 4px 10px #323436; */
     text-transform: uppercase;
-
 }
 .heroH2Text{
     color: #070820;
@@ -498,6 +495,12 @@ div img {
     margin-bottom: 15px;
     filter: drop-shadow(4px 4px 5px #1c383fd8);
 }
+.heroTxtHide{
+    display: none;
+}
+.heroTxtHideAft{
+    display: block;
+}
 .jobDetailWindow{
     width: 100%;
     padding: 50px;
@@ -531,15 +534,13 @@ footer {
     padding: 10px;
     
 }
-
 /* for header animation  */
-.ml10 {
+.ml10, .ml10-1 {
     position: relative;
     font-weight: 900;
     font-size: 4em;
 }
-
-.ml10 .text-wrapper {
+.ml10 .text-wrapper,.ml10-1 .text-wrapper {
 position: relative;
 display: inline-block;
 padding-top: 0.2em;
@@ -548,19 +549,20 @@ padding-bottom: 0.1em;
 overflow: hidden;
 }
 
-.ml10 .letter {
+.ml10 .letter,.ml10-1 .letter {
 display: inline-block;
 line-height: 1em;
 transform-origin: 0 0;
 }
 /* for header animation  */
-.ml101 {
+.ml101, .ml101-1 {
     position: relative;
     font-weight: 900;
     font-size: 4em;
 }
 
-.ml101 .text-wrapper {
+.ml101 .text-wrapper,
+.ml101-1 .text-wrapper{
 position: relative;
 display: inline-block;
 padding-top: 0.2em;
@@ -569,7 +571,28 @@ padding-bottom: 0.1em;
 overflow: hidden;
 }
 
-.ml101 .letter {
+.ml101 .letter,
+.ml101-1 .letter{
+display: inline-block;
+line-height: 1em;
+transform-origin: 0 0;
+}
+.ml102 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+.ml102 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml102 .letter {
 display: inline-block;
 line-height: 1em;
 transform-origin: 0 0;
@@ -744,10 +767,6 @@ transform-origin: 0 0;
 
 }
 @media only screen and (max-width: 990px) {
-    /* For mobile phones: */
-    /* .heroHText{
-        font-size: 4.4rem;
-    } */
     .descCardLft{
         width: 50%;
         
@@ -819,7 +838,19 @@ transform-origin: 0 0;
         margin-top: 25vh;
     }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 869px){
+    .heroTxtHide{
+        display: block;
+    }
+    .heroTxtHideAft{
+        display: none;
+    }
+}
+@media only screen and (max-width: 730px){
+    .heroHText {
+        font-size: 2.5rem;
+    }
+
 }
 @media only screen and (max-width: 650px){
     .navMenResp{

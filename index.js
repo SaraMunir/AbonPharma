@@ -23,6 +23,24 @@ $(document).ready(function(e){
             });
     }, 1500);
     setTimeout(() => {
+        $( "#heroTxt" ).show();
+        var textWrapper = document.querySelector('.ml10-1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml10-1 .letter',
+                rotateY: [-90, 0],
+                duration: 1300,
+                delay: (el, i) => 45 * i
+            }).add({
+                targets: '.ml10-1',
+                // opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    }, 1500);
+    setTimeout(() => {
         var textWrapper2 = document.querySelector('.ml101 .letters');
         textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
             anime.timeline({loop: false})
@@ -33,6 +51,40 @@ $(document).ready(function(e){
                 delay: (el, i) => 45 * i
             }).add({
                 targets: '.ml101',
+                // opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    }, 1500);
+    setTimeout(() => {
+        var textWrapper2 = document.querySelector('.ml101-1 .letters');
+        textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.ml101-1 .letter',
+                rotateY: [-90, 0],
+                duration: 1300,
+                delay: (el, i) => 45 * i
+            }).add({
+                targets: '.ml101-1',
+                // opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    }, 1500);
+    setTimeout(() => {
+        var textWrapper3 = document.querySelector('.ml102 .letters');
+        textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.ml102 .letter',
+                rotateY: [-90, 0],
+                duration: 1300,
+                delay: (el, i) => 45 * i
+            }).add({
+                targets: '.ml102',
                 // opacity: 0,
                 duration: 1000,
                 easing: "easeOutExpo",
