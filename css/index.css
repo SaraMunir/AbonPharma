@@ -52,6 +52,10 @@ body{
     min-height: 80vh;
     position: relative;
 }
+.facilitiesHero{
+    min-height: 75vh;
+    position: relative;
+}
 .heroTexts{
     position: absolute;
     top: 0;
@@ -128,6 +132,7 @@ body{
     font-size: 1.4rem;
     font-weight: 400;
     margin-top: 18px;
+    padding-left: 10px;
 }
 .navBrandNameSp {
     text-transform: uppercase;
@@ -166,7 +171,7 @@ body{
     color: #103f6e;
     font-family: 'Goldman', cursive;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
 }
 .heroSubText{
     color: #3a3a3a;
@@ -312,6 +317,7 @@ body{
 ul li {
     list-style: none;
 }
+
 .hide {
     display: none;
 }
@@ -346,7 +352,10 @@ ul li {
     background: #103f6e;
 }
 .lightBk{
-    background: #e3e3e4;
+    background: #f1f1f1;
+}
+.lightBkBlue{
+    background: #b9c6d3;
 }
 .aspectSection{
     padding: 50px;
@@ -367,11 +376,9 @@ label{
     font-weight: 400;
 }
 
+
 .title1 {
-    color: #286371;
-}
-.title1 {
-    color: #75a12fee;
+    color: #103f6e;
     font-size: 3rem;
 }
 .myCard{
@@ -454,9 +461,15 @@ div img {
     font-size: 3rem;
     color: #63addf;  
     text-transform: uppercase;  
-
 }
 .descSubText{
+    /* min-height: 50vh; */
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-weight: 500;
+    line-height: 2.95rem;
+}
+.descHeroText{
     /* min-height: 50vh; */
     font-size: 1.6rem;
     font-weight: 400;
@@ -594,7 +607,7 @@ transform-origin: 0 0;
     color: #286371;
 }
 .RandD{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .navLogo{
     width: 100px;
@@ -662,31 +675,15 @@ transform-origin: 0 0;
 }
 .blur{
     color: transparent;
-   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.customList li{
+    list-style: outside;
+    list-style-type: disc;
 }
 @media only screen and (min-width: 1352px ) {
-    /* For mobile phones: */
-    /* .heroHText{
-        font-size: 3.5rem;
-    }
-    .myNav {
-        width: 100%;
-        height: 10vh;
-    }
-    .descCard{
-        width: 66%;
-    }
-    .descCardLft{
-        width: 66%;
-    } */
-
-
 }
 @media only screen and (max-width: 1352px) {
-    /* For mobile phones: */
-    /* .myNav {
-        height: 10vh;
-    } */
     .heroHText{
         font-size: 4.4rem;
     }
@@ -696,18 +693,17 @@ transform-origin: 0 0;
     .descCardLft{
         width: 50%;
     }
-    /* .navFont {
-        font-size: 1.1rem;
-    } */
     .navBr {
         width: 40%;
     }
     .heroHText{
         font-size: 3.2rem;
     }
+    .facilitiesHero{
+        height: 85vh;
+    }
 }
 @media only screen and (max-width: 1280px) {
-    /* For mobile phones: */
     .hero{
         min-height: 100vh;
         position: relative;
@@ -736,7 +732,11 @@ transform-origin: 0 0;
     .heroHText{
         font-size: 3rem;
     }
+    .facilitiesHero{
+        height: 87vh;
+    }
     
+    /* 141vh */
 }
 @media only screen and (max-width: 1020px) {
     /* For mobile phones: */
@@ -752,10 +752,6 @@ transform-origin: 0 0;
     .descCard, .descCardLft {
         width: 90%;
     }
-    .descImg {
-
-    }
-    
 
 }
 @media only screen and (max-width: 990px) {
@@ -832,6 +828,14 @@ transform-origin: 0 0;
     }
     .myMarTop{
         margin-top: 25vh;
+    }
+    .facilitiesHero{
+        height: 95vh;
+    }
+}
+@media only screen and (max-width: 767px){
+    .facilitiesHero{
+        height: 118vh;
     }
 }
 @media only screen and (max-width: 650px){
