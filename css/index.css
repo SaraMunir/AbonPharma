@@ -436,7 +436,7 @@ div img {
     background: #fafafaee;
 }
 .descCardTxt{
-    width: 85%;
+    width: 90%;
 }
 /* .descCardTxtLt{
     width: 84%;
@@ -458,7 +458,7 @@ div img {
 }
 .descTitle{
     font-family: 'Goldman', cursive;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #63addf;  
     text-transform: uppercase;  
 }
@@ -641,7 +641,7 @@ transform-origin: 0 0;
     background: white;
 }
 .contactHero{
-    background: #348bbd;
+    background: #d2d8db;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
