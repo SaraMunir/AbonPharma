@@ -45,13 +45,26 @@ body{
 }
 .heroMain{
     background-color: #0b2e52;
-    min-height: 100vh;
     position: relative;
 }
 /* .hero{
     min-height: 80vh;
     position: relative;
 } */
+.heroBckImg{
+    background: url(../assets/high-view-blue-pills-spilled-from-container.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30vh 10vh;
+}
+.heroHText{
+    color: #00599c;
+    font-family: 'Cairo', cursive;
+    font-size: 3rem;
+    text-align: left;
+    text-transform: capitalize;
+}
 .heroTexts{
     position: absolute;
     top: 0;
@@ -71,7 +84,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #103f6e;
+    background: #c3e2ea;
 }
 .navBarCont{
     width: 100%;
@@ -99,7 +112,7 @@ body{
 .navFont {
     text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 .navLinkActive {
     color:  #f6fdff;
@@ -109,22 +122,22 @@ body{
     border:3px solid #f6fdff;
 }
 .navLinkActive:hover {
-    color:  #103f6e;
+    color:  #00599c;
     transition: all ease .5s;
     font-weight: 500;
     background: #f6fdff;
 }
 .navLink {
-    color:  #58ade7;
+    color:  #00599c;
     transition: all ease .5s;
-    font-weight: 500;
+    font-weight: bolder;
 }
 .navLink:hover {
     color: #ffffff;
     
 }
 .navBrandName {
-    color: #58ade7;
+    color: #00599c;
     font-size: 1.4rem;
     font-weight: 400;
     margin-top: 18px;
@@ -144,15 +157,6 @@ body{
     top: 0;
     z-index: 100;
     opacity: .75;
-}
-.heroHText{
-    color: #ffffff;
-    font-family: 'Goldman', cursive;
-    /* font-weight: bold; */
-    filter: drop-shadow(2px 2px 2px #142f2ed0);
-    text-align: left;
-    /* box-shadow: 4px 4px 10px #323436; */
-    text-transform: uppercase;
 }
 .heroH2Text{
     color: #070820;
@@ -703,9 +707,6 @@ transform-origin: 0 0;
 @media only screen and (min-width: 1352px ) {
 }
 @media only screen and (max-width: 1352px) {
-    .heroHText{
-        font-size: 4.4rem;
-    }
     .descCard{
         width: 57%;
     }
@@ -715,18 +716,12 @@ transform-origin: 0 0;
     .navBr {
         width: 40%;
     }
-    .heroHText{
-        font-size: 3.2rem;
-    }
 }
 @media only screen and (max-width: 1280px) {
     /* .hero{
         min-height: 100vh;
         position: relative;
     } */
-    .heroHText{
-        font-size: 3.4rem;
-    }
     .descCard{
         width: 50%;
     }
@@ -745,16 +740,12 @@ transform-origin: 0 0;
     /* .navMen {
         width: 60%;
     } */
-    .heroHText{
-        font-size: 3rem;
-    }
+
     /* 141vh */
 }
 @media only screen and (max-width: 1020px) {
     /* For mobile phones: */
-    /* .heroHText{
-        font-size:3rem;
-    } */
+
     .descCardLft{
         width: 50%;
     }
