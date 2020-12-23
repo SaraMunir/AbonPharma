@@ -14,7 +14,6 @@ body{
 }
 .myBody{
     background-color: #d2d8db;
-
 }
 .myB{
     text-decoration: none;
@@ -23,7 +22,6 @@ body{
 .myB:hover{
     text-decoration: none;
 }
-
 .cover{
     position: fixed;
     top: 0;
@@ -39,12 +37,11 @@ body{
 .loadingBox{
     top: 45%;
 }
-
 .myBorder{
     border: 1px solid red;
 }
 .heroMain{
-    background-color: #0b2e52;
+    /* background-color: #0b2e52; */
     position: relative;
 }
 /* .hero{
@@ -56,7 +53,7 @@ body{
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30vh 10vh;
+    padding: 25vh 20vh;
 }
 .heroHText{
     color: #00599c;
@@ -93,7 +90,6 @@ body{
 }
 .navBr{
     width: 40%;
-    /* border: 1px solid orangered; */
 }
 .navMen{
     width: 60%;
@@ -101,7 +97,6 @@ body{
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
-    /* border: 1px solid #9dff00; */
     margin-left: auto;
 }
 .navMenFlex{
@@ -111,7 +106,7 @@ body{
 }
 .navFont {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
 }
 .navLinkActive {
@@ -128,19 +123,23 @@ body{
     background: #f6fdff;
 }
 .navLink {
+    cursor: pointer;
     color:  #00599c;
     transition: all ease .5s;
     font-weight: bolder;
 }
 .navLink:hover {
-    color: #ffffff;
-    
+    color: #4d9bd6;
+}
+.navLink a {
+    color:  #00599c;
+
 }
 .navBrandName {
     color: #00599c;
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-top: 25px;
     padding-left: 10px;
 }
 .navBrandNameSp {
@@ -253,10 +252,11 @@ body{
 }
 .menuBar {
     visibility: hidden;
-    min-width: 350px;
+    min-width: 250px;
+    text-align: left;
     /* padding: 50px 0; */
     position: absolute;
-    top: 63px;
+    top: 45px;
     right: 0;
     z-index: -40;
     /* background: #103f6e; */
@@ -274,18 +274,16 @@ body{
     position: relative;
 	width: 0;
 	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-    border-bottom: 15px solid #103f6e;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+    border-bottom: 10px solid #103f6e;
     right: 30px;
 }
-.menuItem-link{
-    opacity: 0;
-    background: #103f6e;
+.borderTp{
+    border-top: 5px solid #103f6e;
 }
 .borderBtm{
     border-bottom: 1px solid #598dc0;
-
 }
 .menuBarContr:hover .menuItem-link,.menuBarContr:hover .triangle-up {
     opacity: 1;
@@ -295,21 +293,23 @@ body{
     padding: 10px;
 }
 .menuItem-link {
+    opacity: 0;
     width: 100%;
     display: block;
-    padding: 20px;
+    padding: 15px;
     /* margin: 10px; */
-    color: #ffffff;
+    color: #00599c;
+    background: #ffffff;
     text-decoration: none;
     margin: 0;
     transition: all ease .5s;
     font-weight: bold;
 }
 .menuItem-link:hover {
-    color: #458bb9;
+    /* color: #458bb9; */
     text-decoration: none;
     margin: 0;
-    background: #ffffff;
+    background: #d9ecf1e3;
 }
 ul li {
     list-style: none;
@@ -475,9 +475,7 @@ div img {
 }
 .cardRndImg:hover {
     background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
-
 }
-
 /* career */
 .jobSum{
     font-size: 0.78rem;;
@@ -486,11 +484,9 @@ div img {
 }
 .background {
     position: relative;
-    /* min-height: 50vh; */
     border-radius: 8px;
     background: #ffffff;
     padding: 40px 20px;
-    /* box-shadow: -2px  -2px 20px #1c383fd8 inset; */
 }
 .card2{
     width: 350px; 
@@ -514,7 +510,7 @@ div img {
     background: #3d5358e1;
     top: 0;
     right: 0;
-right: 0;    
+    right: 0;
 }
 .lightTxt{
     color: white;
@@ -522,21 +518,17 @@ right: 0;
 .myList li {
     list-style-type: square;
 }
-
 /* footer */
 footer {
     padding: 50px;
     background: #103f6e;
 }
-/*     color: #56d4b3;
-    color: #68b1c4; */
 .footer-link {
     color: #68b1c4;
     padding: 10px;
 }
 .footerList{
     padding: 10px;
-    
 }
 /* for header animation  */
 .ml10, .ml10-1 {
@@ -552,7 +544,6 @@ padding-right: 0.05em;
 padding-bottom: 0.1em;
 overflow: hidden;
 }
-
 .ml10 .letter,.ml10-1 .letter {
 display: inline-block;
 line-height: 1em;
@@ -564,7 +555,6 @@ transform-origin: 0 0;
     font-weight: 900;
     font-size: 4em;
 }
-
 .ml101 .text-wrapper,
 .ml101-1 .text-wrapper{
 position: relative;
@@ -574,7 +564,6 @@ padding-right: 0.05em;
 padding-bottom: 0.1em;
 overflow: hidden;
 }
-
 .ml101 .letter,
 .ml101-1 .letter{
 display: inline-block;
@@ -586,7 +575,6 @@ transform-origin: 0 0;
     font-weight: 900;
     font-size: 4em;
 }
-
 .ml102 .text-wrapper {
 position: relative;
 display: inline-block;
@@ -595,13 +583,11 @@ padding-right: 0.05em;
 padding-bottom: 0.1em;
 overflow: hidden;
 }
-
 .ml102 .letter {
 display: inline-block;
 line-height: 1em;
 transform-origin: 0 0;
 }
-
 .myFlex{
     display: flex;
 }
@@ -623,7 +609,6 @@ transform-origin: 0 0;
     color: black;
     padding: 3px;
     border-radius: 5px;
-
 }
 .emailClass:hover {
     text-decoration: none;
@@ -643,10 +628,10 @@ transform-origin: 0 0;
 }
 .navMenResp{
     width: 65%;
-    background: #154d85;
+    background: #c3e2ea;
     padding: 40px;
     position: absolute;
-    top: 100px;
+    top: 91px;
     right: 0;
 }
 .closeMenuBtn {
@@ -668,7 +653,6 @@ transform-origin: 0 0;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
-
 }
 .imgOnWhnResp{
     display: none;
@@ -691,7 +675,6 @@ transform-origin: 0 0;
     font-size: 6rem;
     color: #ffffffed;
     margin-top: 42px;
-
 }
 .myMarTop{
     margin-top: 35vh;
@@ -718,10 +701,6 @@ transform-origin: 0 0;
     }
 }
 @media only screen and (max-width: 1280px) {
-    /* .hero{
-        min-height: 100vh;
-        position: relative;
-    } */
     .descCard{
         width: 50%;
     }
@@ -731,21 +710,12 @@ transform-origin: 0 0;
     .descCardLft{
         width: 50%;
     }
-    /* .navFont {
-        font-size: 1rem;
-    } */
     .navBr {
         width: 40%;
     }
-    /* .navMen {
-        width: 60%;
-    } */
-
-    /* 141vh */
 }
 @media only screen and (max-width: 1020px) {
     /* For mobile phones: */
-
     .descCardLft{
         width: 50%;
     }
@@ -755,12 +725,10 @@ transform-origin: 0 0;
     .descCard, .descCardLft {
         width: 90%;
     }
-
 }
 @media only screen and (max-width: 990px) {
     .descCardLft{
         width: 50%;
-        
     }
     .myFlex{
         display: block;
@@ -769,49 +737,7 @@ transform-origin: 0 0;
         width: 90%;
     }
     .navLogo{
-        width: 95px;
-    }
-    .navBrandName{
-        font-size: 1.5rem;
-    }
-    .navHide{
-        display: none; 
-    }
-    .navHamburger{
-        display: block;
-        width: 30%;
-        text-align: right;
-    }
-    .navBr{
-        width: 70%;
-    }
-    .menuBar{
-        position: relative;
-        display: block;
-        height: 0;
-    }
-    .menuBarContr:hover .menuBar{
-        display: block;
-        /* top: 70px; */
-        z-index: 50;
-        height: 200px;
-    }
-    .menuItem-link{
-        opacity: 1;
-    }
-    .navHvrItem{
-        display: none;
-    }
-    .navHvr:hover .navHvrItem {
-        display: block
-    }
-    .nav-link{
-        padding: 20px;
-    }
-    .navLink:hover{
-        background:white;
-        color:#154d85;
-        ;
+        width: 80px;
     }
     .contactCard{
         margin-top: -130px;
@@ -841,16 +767,27 @@ transform-origin: 0 0;
     .heroHText {
         font-size: 2.5rem;
     }
-}
-@media only screen and (max-width: 650px){
+    .navHide{
+        display: none; 
+    }
     .navMenResp{
         width: 100%;
-        background: #154d85;
         padding: 40px;
         position: absolute;
         top: 100px;
         right: 0;
     }
+    .navHamburger{
+        display: block;
+        width: 30%;
+        text-align: right;
+    }
+    .menuItem-link{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 650px){
+
     .contactCard{
         margin-top: -50px;
     }

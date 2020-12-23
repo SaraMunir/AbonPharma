@@ -4,91 +4,91 @@ $(document).ready(function(e){
     setTimeout(() => {
         closeCover()
     }, 1000);
-    setTimeout(() => {
-        $( "#heroTxt" ).show();
-        var textWrapper = document.querySelector('.ml10 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        anime.timeline({loop: false})
-            .add({
-                targets: '.ml10 .letter',
-                rotateY: [-90, 0],
-                duration: 1300,
-                delay: (el, i) => 45 * i
-            }).add({
-                targets: '.ml10',
-                // opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    }, 1500);
-    setTimeout(() => {
-        $( "#heroTxt" ).show();
-        var textWrapper = document.querySelector('.ml10-1 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        anime.timeline({loop: false})
-            .add({
-                targets: '.ml10-1 .letter',
-                rotateY: [-90, 0],
-                duration: 1300,
-                delay: (el, i) => 45 * i
-            }).add({
-                targets: '.ml10-1',
-                // opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    }, 1500);
-    setTimeout(() => {
-        var textWrapper2 = document.querySelector('.ml101 .letters');
-        textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-            anime.timeline({loop: false})
-            .add({
-                targets: '.ml101 .letter',
-                rotateY: [-90, 0],
-                duration: 1300,
-                delay: (el, i) => 45 * i
-            }).add({
-                targets: '.ml101',
-                // opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    }, 1400);
-    setTimeout(() => {
-        var textWrapper2 = document.querySelector('.ml101-1 .letters');
-        textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-            anime.timeline({loop: false})
-            .add({
-                targets: '.ml101-1 .letter',
-                rotateY: [-90, 0],
-                duration: 900,
-                delay: (el, i) => 45 * i
-            }).add({
-                targets: '.ml101-1',
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    }, 1400);
-    setTimeout(() => {
-        var textWrapper3 = document.querySelector('.ml102 .letters');
-        textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-            anime.timeline({loop: false})
-            .add({
-                targets: '.ml102 .letter',
-                rotateY: [-90, 0],
-                duration: 1100,
-                delay: (el, i) => 45 * i
-            }).add({
-                targets: '.ml102',
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    }, 1400);
+    // setTimeout(() => {
+    //     $( "#heroTxt" ).show();
+    //     var textWrapper = document.querySelector('.ml10 .letters');
+    //     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    //     anime.timeline({loop: false})
+    //         .add({
+    //             targets: '.ml10 .letter',
+    //             rotateY: [-90, 0],
+    //             duration: 1300,
+    //             delay: (el, i) => 45 * i
+    //         }).add({
+    //             targets: '.ml10',
+    //             // opacity: 0,
+    //             duration: 1000,
+    //             easing: "easeOutExpo",
+    //             delay: 1000
+    //         });
+    // }, 1500);
+    // setTimeout(() => {
+    //     $( "#heroTxt" ).show();
+    //     var textWrapper = document.querySelector('.ml10-1 .letters');
+    //     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    //     anime.timeline({loop: false})
+    //         .add({
+    //             targets: '.ml10-1 .letter',
+    //             rotateY: [-90, 0],
+    //             duration: 1300,
+    //             delay: (el, i) => 45 * i
+    //         }).add({
+    //             targets: '.ml10-1',
+    //             // opacity: 0,
+    //             duration: 1000,
+    //             easing: "easeOutExpo",
+    //             delay: 1000
+    //         });
+    // }, 1500);
+    // setTimeout(() => {
+    //     var textWrapper2 = document.querySelector('.ml101 .letters');
+    //     textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    //         anime.timeline({loop: false})
+    //         .add({
+    //             targets: '.ml101 .letter',
+    //             rotateY: [-90, 0],
+    //             duration: 1300,
+    //             delay: (el, i) => 45 * i
+    //         }).add({
+    //             targets: '.ml101',
+    //             // opacity: 0,
+    //             duration: 1000,
+    //             easing: "easeOutExpo",
+    //             delay: 1000
+    //         });
+    // }, 1400);
+    // setTimeout(() => {
+    //     var textWrapper2 = document.querySelector('.ml101-1 .letters');
+    //     textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    //         anime.timeline({loop: false})
+    //         .add({
+    //             targets: '.ml101-1 .letter',
+    //             rotateY: [-90, 0],
+    //             duration: 900,
+    //             delay: (el, i) => 45 * i
+    //         }).add({
+    //             targets: '.ml101-1',
+    //             duration: 1000,
+    //             easing: "easeOutExpo",
+    //             delay: 1000
+    //         });
+    // }, 1400);
+    // setTimeout(() => {
+    //     var textWrapper3 = document.querySelector('.ml102 .letters');
+    //     textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    //         anime.timeline({loop: false})
+    //         .add({
+    //             targets: '.ml102 .letter',
+    //             rotateY: [-90, 0],
+    //             duration: 1100,
+    //             delay: (el, i) => 45 * i
+    //         }).add({
+    //             targets: '.ml102',
+    //             duration: 1000,
+    //             easing: "easeOutExpo",
+    //             delay: 1000
+    //         });
+    // }, 1400);
 })
 function showMenu() {
     $( ".navMenResp" ).slideDown();
@@ -103,13 +103,9 @@ function myScroll(type){
         }, 1000);
     }
 }
-
 function closeCover(){
     $( ".cover" ).fadeOut( 500);
-
 }
-
-
 function showMoreSect() {
     $('html, body').animate({
         scrollTop: $(".aspectSection").offset().top
@@ -148,7 +144,6 @@ function showFndrBruce(){
         scrollTop: $("#fndrBruce").offset().top
     }, 1500);
 }
-
 function scrollToOrals(){
     $('html, body').animate({
         scrollTop: $("#oralSolids").offset().top
@@ -166,32 +161,25 @@ function scrollToParenterals(){
 }
 
 function closeJobDetail(){
-    // $( "#jobDetailWindo" ).slideUp( );
     $( "#jobDetailWindo" ).addClass( 'hide');
-
-
 }
 function openJobDetail(){
-    // $( "#jobDetailWindo" ).slideDown( 1000);
     $( "#jobDetailWindo" ).removeClass( 'hide');
-
     $('html, body').animate({
         scrollTop: $(".jobDetail").offset().top
     }, 500);
 }
-// window.scroll({
-//     top: 2500, 
-//     left: 0, 
-//     behavior: 'smooth'
-//   });
-  
-//   // Scroll certain amounts from current position 
-//   window.scrollBy({ 
-//     top: 100, // could be negative value
-//     left: 0, 
-//     behavior: 'smooth' 
-//   });
-$('.carousel').carousel({
-    interval: 4000
-    })
+let abtMenu = false;
+let abtMenu = false;
+function showSubMen(menuOpt){
+    if(menuOpt==='abtMenu'){
+        if(abtMenu === false){
+            abtMenu=true;
+            $('#abtMenu').removeClass( 'hide')
+        }else{
+            abtMenu=false;
+            $('#abtMenu').addClass( 'hide')
+        }
+    }
 
+}
