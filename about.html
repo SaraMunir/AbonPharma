@@ -21,10 +21,10 @@
 <body class="myBody">
     <div style="height: 5vh;">
     </div>
-    <div class="myNav myBoxShad">
+    <div class="myNav">
         <div class="navBarCont">
             <div class="">
-                <ul class="d-flex m-0 p-0">
+                <ul class="d-flex m-0 ml-4 p-0">
                     <li class="nav-item navLogo">
                         <a class="navbar-brand mr-auto" href="index.html">
                             <img src="assets/abon_llc_logo_white.png" alt="">
@@ -36,39 +36,38 @@
                 </ul>
             </div>
             <div class="navMen navHide">
-                <ul class="navMenFlex navFont text-center pt-4">
-                    <li class="nav-item">
-                        <a class="nav-link navLink " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link navLinkActive" href="about.html">company profile</a>
-                    </li>
+                <ul class="navMenFlex navFont text-center p-0 m-0 pt-4 ">
                     <li class="menuBarContr nav-item " >
-                        <a class="nav-link navLink" href="facilities.html">Facilities
-                            <i class="fas fa-chevron-down"></i>
+                        <a class="nav-link navLink" href="about.html">About &nbsp;
+                            <span class="pt-3"><i class="fas fa-chevron-down"></i></span>
                         </a>
                         <div class="facility myBoxShad mx-auto" >
-                            <ul class="menuBar">
+                            <ul class="menuBar p-0 m-0 ">
                                 <div class="d-flex justify-content-end">
                                     <div class="triangle-up"></div>
                                 </div>
-                                <li><a class="menuItem-link borderBtm" href="facilities.html#R&D">R&D</a></li>
-                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                                <li><a class="menuItem-link borderBtm borderTp" href="about.html#CompanyProfile">Company Profile</a></li>
+                                <li><a class="menuItem-link borderBtm" href="about.html#Team">Team </a></li>
+                                <li><a class="menuItem-link " href="about.html#Facilities">Facilities</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="menuBarContr nav-item ">
-                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link navLink" href="capabilities.html">R&D &nbsp; <i class="fas fa-chevron-down"></i></a>
                         <div class="capability myBoxShad  mx-auto" >
                             <ul class="menuBar">
                                 <div class="d-flex justify-content-end">
                                     <div class="triangle-up"></div>
+                                    
                                 </div>
-                                <li><a class="menuItem-link borderBtm" href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="menuItem-link borderBtm borderTp" href="capabilities.html#preformulation">preformulation</a></li>
                                 <li><a class="menuItem-link borderBtm" href="capabilities.html#formulation">formulation </a></li>
                                 <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink"  href="contactUs.html">PipeLine</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
@@ -82,35 +81,43 @@
                 <div class=" closeMenuBtn" onclick="closeMenu()">
                     <i class="fas fa-times"></i>
                 </div>
-                <ul class="navFont text-center" style="padding-left: 0; padding-top: 15px;">
-                    <li class="nav-item">
-                        <a class="nav-link navLink" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class=" nav-link navLinkActive" href="about.html">company profile</a>
-                    </li>
-                    <li class="navHvr nav-item">
-                        <a class="nav-link navLink" href="facilities.html">Facilities
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="navHvrItem facility mx-auto" >
-                            <ul class="p-1 border" >
-                                <li><a class="menuItem-link" href="facilities.html#R&D">R&D</a></li>
-                                <li><a class="menuItem-link" href="facilities.html#MANUFACTURING">MANUFACTURING </a></li>
+                <ul class="navFont text-left" style="padding-left: 0; padding-top: 15px;">
+                    <li class="navHvr nav-item borderBtm">
+                        <div class="d-flex justify-content-between navLink">
+                            <a class="col-8 nav-link" href="about.html">About
+                            </a>
+                            <div class="col-4 d-flex justify-content-end" onclick="showSubMen('abtMenu')">
+                                <i class="fas fa-plus p-2" ></i>
+                            </div>
+                        </div>
+                        <div class="pl-5 navHvrItem mx-auto hide" id="abtMenu">
+                            <ul class="pl-2" >
+                                <li><a class="nav-link navLink borderBtm " href="about.html#CompanyProfile">Company Profile</a></li>
+                                <li><a class="nav-link navLink borderBtm" href="about.html#Team">Team </a></li>
+                                <li><a class="nav-link navLink" href="about.html#Facilities">Facilities</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navHvr nav-item">
-                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
-                        <div class="navHvrItem capability mx-auto" >
-                            <ul class="p-1 border">
-                                <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
-                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
-                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                    <li class="navHvr nav-item borderBtm">
+                        <div class="d-flex justify-content-between navLink">
+                            <a class="col-8 nav-link" href="capabilities.html">R&D
+                            </a>
+                            <div class="col-4 d-flex justify-content-end" onclick="showSubMen('RandD')">
+                                <i class="fas fa-plus p-2" ></i>
+                            </div>
+                        </div>
+                        <div class="pl-5 navHvrItem mx-auto hide" id="RandD">
+                            <ul class="pl-2" >
+                                <li><a class="nav-link navLink borderBtm " href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="nav-link navLink borderBtm" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="nav-link navLink"  href="capabilities.html#analytical">analytical</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item borderBtm">
+                        <a class="nav-link navLink"  href="contactUs.html">PipeLine</a>
+                    </li>
+                    <li class="nav-item borderBtm">
                         <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
                     </li>
                 </ul>
