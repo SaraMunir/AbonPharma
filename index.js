@@ -170,7 +170,7 @@ function openJobDetail(){
     }, 500);
 }
 let abtMenu = false;
-let abtMenu = false;
+let RandD = false;
 function showSubMen(menuOpt){
     if(menuOpt==='abtMenu'){
         if(abtMenu === false){
@@ -179,6 +179,15 @@ function showSubMen(menuOpt){
         }else{
             abtMenu=false;
             $('#abtMenu').addClass( 'hide')
+        }
+    }
+    if(menuOpt==='RandD'){
+        if(RandD === false){
+            RandD=true;
+            $('#RandD').removeClass( 'hide')
+        }else{
+            RandD=false;
+            $('#RandD').addClass( 'hide')
         }
     }
 

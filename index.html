@@ -82,31 +82,42 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <ul class="navFont text-left" style="padding-left: 0; padding-top: 15px;">
-                    <li class="navHvr nav-item">
+                    <li class="navHvr nav-item borderBtm">
                         <div class="d-flex justify-content-between navLink">
-                            <a class="nav-link" href="about.html">About
+                            <a class="col-8 nav-link" href="about.html">About
                             </a>
-                            <i class="fas fa-plus p-2" onclick="showSubMen('abtMenu')"></i>
+                            <div class="col-4 d-flex justify-content-end" onclick="showSubMen('abtMenu')">
+                                <i class="fas fa-plus p-2" ></i>
+                            </div>
                         </div>
-                        <div class="pl-4 navHvrItem mx-auto hide" id="abtMenu">
-                            <ul class="pl-4" >
+                        <div class="pl-5 navHvrItem mx-auto hide" id="abtMenu">
+                            <ul class="pl-2" >
                                 <li><a class="nav-link navLink borderBtm " href="about.html#CompanyProfile">Company Profile</a></li>
                                 <li><a class="nav-link navLink borderBtm" href="about.html#Team">Team </a></li>
-                                <li><a class="nav-link navLink borderBtm " href="facilities.htm">Facilities</a></li>
+                                <li><a class="nav-link navLink" href="facilities.htm">Facilities</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navHvr nav-item">
-                        <a class="nav-link navLink" href="capabilities.html">Capabilities <i class="fas fa-chevron-down"></i></a>
-                        <div class="navHvrItem capability mx-auto" >
-                            <ul class="p-1 border">
-                                <li><a class="menuItem-link" href="capabilities.html#preformulation"></a></li>
-                                <li><a class="menuItem-link" href="capabilities.html#formulation">formulation </a></li>
-                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                    <li class="navHvr nav-item borderBtm">
+                        <div class="d-flex justify-content-between navLink">
+                            <a class="col-8 nav-link" href="capabilities.html">R&D
+                            </a>
+                            <div class="col-4 d-flex justify-content-end" onclick="showSubMen('RandD')">
+                                <i class="fas fa-plus p-2" ></i>
+                            </div>
+                        </div>
+                        <div class="pl-5 navHvrItem mx-auto hide" id="RandD">
+                            <ul class="pl-2" >
+                                <li><a class="nav-link navLink borderBtm " href="capabilities.html#preformulation">preformulation</a></li>
+                                <li><a class="nav-link navLink borderBtm" href="capabilities.html#formulation">formulation </a></li>
+                                <li><a class="nav-link navLink"  href="capabilities.html#analytical">analytical</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item borderBtm">
+                        <a class="nav-link navLink"  href="contactUs.html">PipeLine</a>
+                    </li>
+                    <li class="nav-item borderBtm">
                         <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
                     </li>
                 </ul>
