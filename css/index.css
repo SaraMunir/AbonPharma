@@ -255,7 +255,7 @@ body{
 }
 .menuBar {
     visibility: hidden;
-    min-width: 250px;
+    min-width: 270px;
     text-align: left;
     /* padding: 50px 0; */
     position: absolute;
@@ -302,7 +302,7 @@ body{
     padding: 15px;
     /* margin: 10px; */
     color: #00599c;
-    background: #f0f0f0;
+    background: #fffcfc;
     text-decoration: none;
     margin: 0;
     transition: all ease .5s;
