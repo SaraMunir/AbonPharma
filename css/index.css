@@ -49,7 +49,7 @@ body{
     position: relative;
 } */
 .heroBckImg{
-    background: url(../assets/high-view-blue-pills-spilled-from-container.jpg);
+    background: url(../assets/high-view-blue-pills-spilled-from-container_lowQ.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
