@@ -199,9 +199,15 @@ body{
     filter: drop-shadow(2px 2px 3px #1c383f);
 }
 .myBtn:active {
-    /* background: #286371; */
-    /* background: #103f6e; */
     filter: drop-shadow(4px 4px 5px #1c383f00);
+}
+.toggleBtn{
+    color: #00599c;
+    cursor: pointer;
+}
+.toggleBtn:hover{
+    color: #1dc0c0;
+
 }
 .mySubBtn{
     cursor: pointer;
@@ -296,7 +302,7 @@ body{
     padding: 15px;
     /* margin: 10px; */
     color: #00599c;
-    background: #ffffff;
+    background: #f0f0f0;
     text-decoration: none;
     margin: 0;
     transition: all ease .5s;
@@ -448,10 +454,6 @@ div img {
 .descCardTxt{
     width: 90%;
 }
-/* .descCardTxtLt{
-    width: 84%;
-    margin-left: 11px;
-} */
 .descImg{
     width: 450px;
     position: relative;
@@ -549,11 +551,9 @@ footer {
 .footer-link:hover{
     color: #1dc0c0;
     text-decoration: none;
-
 }
 .footerList{
     /* padding: 10px; */
-
 }
 /* for header animation  */
 .ml10, .ml10-1 {
@@ -711,6 +711,18 @@ transform-origin: 0 0;
 .customList li{
     list-style: outside;
     list-style-type: disc;
+}
+.lineDvdr{
+    border-radius: 30px;
+    height: 3px;
+    background-color: #1dc0c0;
+    margin: 20px;
+}
+.lineDvdrBlue{
+    border-radius: 30px;
+    height: 3px;
+    background-color: #00599c;
+    margin: 20px;
 }
 @media only screen and (min-width: 1352px ) {
 }

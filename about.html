@@ -17,6 +17,8 @@
     <!-- fonts:  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body class="myBody">
     <div style="height: 5vh;">
@@ -39,7 +41,7 @@
                 <ul class="navMenFlex navFont text-center p-0 m-0 pt-4 ">
                     <li class="menuBarContr nav-item " >
                         <a class="nav-link navLink" href="about.html">About &nbsp;
-                            <span class="pt-3"><i class="fas fa-chevron-down"></i></span>
+                            <span  style="font-size: .8rem;"><i class="fas fa-chevron-down"></i></span>
                         </a>
                         <div class="facility myBoxShad mx-auto" >
                             <ul class="menuBar p-0 m-0 ">
@@ -48,26 +50,28 @@
                                 </div>
                                 <li><a class="menuItem-link borderBtm borderTp" href="about.html#CompanyProfile">Company Profile</a></li>
                                 <li><a class="menuItem-link borderBtm" href="about.html#Team">Team </a></li>
-                                <li><a class="menuItem-link " href="about.html#Facilities">Facilities</a></li>
+                                <li><a class="menuItem-link borderBtm" href="about.html#Facilities">Facilities</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="menuBarContr nav-item ">
-                        <a class="nav-link navLink" href="capabilities.html">R&D &nbsp; <i class="fas fa-chevron-down"></i></a>
+                        <a class="nav-link navLink" href="capabilities.html">R&D &nbsp; <span style="font-size: .8rem;"><i class="fas fa-chevron-down"></i></span> </a>
                         <div class="capability myBoxShad  mx-auto" >
                             <ul class="menuBar">
                                 <div class="d-flex justify-content-end">
                                     <div class="triangle-up"></div>
-                                    
                                 </div>
                                 <li><a class="menuItem-link borderBtm borderTp" href="capabilities.html#preformulation">preformulation</a></li>
                                 <li><a class="menuItem-link borderBtm" href="capabilities.html#formulation">formulation </a></li>
-                                <li><a class="menuItem-link" href="capabilities.html#analytical">analytical </a></li>
+                                <li><a class="menuItem-link borderBtm" href="capabilities.html#analytical">analytical </a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navLink"  href="contactUs.html">PipeLine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navLink"  href="careers.html">careers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navLink"  href="contactUs.html">Contact Us</a>
@@ -124,58 +128,72 @@
             </div>
         </div>
     </div>
-    <!-- <div class="hero">
-        <div class="container heroTexts text-center">
-            <div class="row">
-                
-            </div>
-        </div>
-    </div> -->
-    <div class="col-lg-9 mx-auto text-center" style="padding-top: 30px; padding-bottom: 50px;">
+    <div class="col-lg-9 mx-auto text-left" style="padding-top: 30px; padding-bottom: 50px;">
         <div class="heroText mt-5 mx-auto">
-            <h2 class="heroH3Text">About Us</h2>
+            <h2 class="heroHText">About Us</h2>
             <p class="heroSubText mx-auto">Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on drug delivery research and product development. Abon’s expertise and flexibility can bring a complex formulation project into clinical or bioequivalence study in a timely manner and within budget. Whether your goal is to improve bio-availability, achieve bio-equivalence, or develop a new product, Abon’s innovative approach to formulation development will meet your expectations. Abon’s professional team of scientists has a proven track record in a multitude of dosage forms, and has multiple patents in drug delivery.</p>
-            <div class="myBtn btnWdth1 mx-auto mt-5" onClick="showMoreSect()">
+            <div class="myBtn btnWdth1 mt-5" onClick="showMoreSect()">
                 Read More
             </div>
         </div>
 
     </div>
     <section class="lightBk aspectSection text-center">
-        <h1 class="heroH3Text" style="margin-bottom: 60px; color: #103f6e;">Meet The Founders</h1>
-        <div class="row container mx-auto col-9">
-            <div class="founderCard col-lg-6 mx-auto pb-5">
-                <img class="card1" src="assets/founderSalah.jpg" alt="product-development">
-                <div class="others">
-                    <h4 class="mb-4 text-center founderName mt-3">Salah U. Ahmed, PhD</h4>
-                    <h6 class="mb-4 text-center founderJobTitle">job title</h6>
-                    <p class="founderDesc">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc... </p>
-                    <div class="myBtn btnWdth1 mx-auto mt-2" onclick="showFndrSalah()">
-                        Read More
+        <div class="col-10 mx-auto">
+            <h2 class="heroHText mb-4">Meet The Founders</h2>
+            <div>
+                <div>
+                    <div class="row founderCard pb-2">
+                        <div class="col-lg-3 d-flex justify-content-start">
+                            <img class="card1" src="assets/founderSalah.jpg" alt="product-development">
+                        </div>
+                        <div class="others col-lg-8">
+                            <h4 class="mb-4 text-left founderName mt-3">Salah U. Ahmed, PhD</h4>
+                            <h6 class="mb-4 text-left founderJobTitle">President & CEO</h6>
+                        </div>
+                        <div class="col-lg-1" >
+                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('fndrSalah')" id="toggleBtn1"></i>
+                        </div>
+                    </div>
+                    <div class="hide" id="fndrSalah">
+                        <p class="text-left mt-4">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. He was responsible for the development of generic and proprietary pharmaceuticals as well as API and biotechnology products. Barr’s product portfolio encompassed diverse Drug Delivery Systems (DDS) including parenteral, nasal, ocular, oral, transmucosal, transdermal, and intrauterine routes of administration. The corporation ran its research and development operations in the USA and several countries in Europe.
+                            <br>Dr. Ahmed received his MS in industrial Pharmacy and PhD in Pharmaceutical Sciences from St. Johns University, New York. He has more than a quarter century of pharmaceutical experience, of which 16 years was at Barr Pharmaceuticals, Inc. His leadership role in product development significantly contributed to Barr’s transformation to a specialty pharmaceutical company and a world leader in the generic pharmaceutical industry.
+                            <br>Dr. Ahmed has a distinguished track record in pharmaceutical research involving special DDS, solid-state interactions, statistical design and mathematical modeling in product development research, and in-vitro/in-vivo performance of dosage forms. His research work in these areas originated more than 40 patents. He authored or co-authored more than 60 research papers, abstracts and book chapters.</p>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="lineDvdr col-5 mx-auto"></div>
+                        <img src="assets/hexagon.png" alt="hexagon" style="width: 20px; height: 100%; padding-top: 12px;">
+                        <div class="lineDvdr col-5 mx-auto"></div>
                     </div>
                 </div>
-            </div>
-            <div class="founderCard col-lg-6 mx-auto">
-                <img class="card1" src="assets/founderBruce.jpg" alt="product-development">
-                <div class="others">
-                    <h4 class="mb-4 text-center founderName mt-3">Bruce Downey, Esq</h4>
-                    <h6 class="mb-4 text-center founderJobTitle">job title</h6>
-                    <p class="founderDesc">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008...</p>
-                    <div class="myBtn btnWdth1 mx-auto mt-2" onclick="showFndrBruce()"> 
-                        Read More
+                <div>
+                    <div class="row founderCard pb-2">
+                        <div class="col-lg-3 d-flex justify-content-start">
+                            <img class="card1" src="assets/founderBruce.jpg" alt="product-development">
+                        </div>
+                        <div class="others col-lg-8">
+                            <h4 class="mb-4 text-left founderName mt-3">Salah U. Ahmed, PhD</h4>
+                            <h6 class="mb-4 text-left founderJobTitle">President & CEO</h6>
+                        </div>
+                        <div class="col-lg-1" >
+                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('fndrBruce')" id="toggleBtn2"></i>
+                        </div>
+                    </div>
+                    <div class="hide" id="fndrBruce">
+                        <p class="text-left mt-4">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008. Mr. Downey joined Barr Pharmaceuticals, Inc. in 1993 and was appointed Chairman of the Board and Chief Executive Officer in 1994. Prior to joining Barr, Mr. Downey was a capital partner in Winston & Strawn, and a predecessor firm, Bishop, Cook, Purcell and Reynolds. In 1979, he founded Baller & Downey, which later merged with Bishop, Cook, Purcell and Reynolds. <br> Mr. Downey began his legal career in the Honors Program at the U.S. Department of Justice. He later worked as a Special Litigation Counsel at the U.S. Department of Energy. Mr. Downey graduated with honors from Miami University in 1969 and received his law degree cum laude from Ohio State. He also served on the Board of Editors of The Ohio State University Law Journal and was elected to the Order of the Coif. Mr. Downey is a former director of Warner Chilcott. In 2006 and 2007, Mr. Downey served as the Chairman of the Board for the Generic Pharmaceutical Association (GPhA), the trade association for the generic pharmaceutical industry. <br> Mr. Downey is a Partner in NewSpring Health Capital II, L.P. a venture capital firm, and also a board member of Momenta Pharmaceuticals, Cardinal Health, and Acetylon Pharmaceuticals. Mr. Downey is currently the Chair of the Board of Ambassadors for Johns Hopkins’ Project RESTORE that funds research and clinical trials to support the creation of progressive treatments for transverse myelitis and multiple sclerosis.</p>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="lineDvdr col-5 mx-auto"></div>
+                        <img src="assets/hexagon.png" alt="hexagon" style="width: 20px; height: 100%; padding-top: 12px;">
+                        <div class="lineDvdr col-5 mx-auto"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="founderSectionDetail" id="fndrSalah">
+    <!-- <section class="founderSectionDetail" >
         <div class="row mx-auto">
-            <!-- <div class="mx-auto col-lg-4 p-0">
-                <img class="fndrRndImg mx-auto" src="assets/founderSalah.jpg" alt="product-development">
-            </div> -->
             <img class="fndrRndImg mx-auto col-lg-4 p-0" src="assets/founderSalah.jpg" alt="product-development">
-            <!-- <div class="mx-auto col-lg-4 p-0">
-            </div> -->
             <div class="fndrDetail text-center mx-auto  col-lg-8">
                 <h3>Salah U. Ahmed, PhD</h3>
                 <p style="padding: 24px;">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. He was responsible for the development of generic and proprietary pharmaceuticals as well as API and biotechnology products. Barr’s product portfolio encompassed diverse Drug Delivery Systems (DDS) including parenteral, nasal, ocular, oral, transmucosal, transdermal, and intrauterine routes of administration. The corporation ran its research and development operations in the USA and several countries in Europe.
@@ -183,9 +201,8 @@
                 <br>Dr. Ahmed has a distinguished track record in pharmaceutical research involving special DDS, solid-state interactions, statistical design and mathematical modeling in product development research, and in-vitro/in-vivo performance of dosage forms. His research work in these areas originated more than 40 patents. He authored or co-authored more than 60 research papers, abstracts and book chapters.</p>
             </div>
         </div>
-    </section>
-    <hr>
-    <section class="founderSectionDetail" id="fndrBruce">
+    </section> -->
+    <!-- <section class="founderSectionDetail" id="fndrBruce">
         <div class="row mx-auto">
             <img class="fndrRndImg mx-auto col-lg-4 p-0 unHideFndImg" src="assets/founderBruce.jpg" alt="product-development">
             <div class="fndrDetail text-center mx-auto col-lg-8">
@@ -198,7 +215,7 @@
                 <img class="fndrRndImg mx-auto" src="assets/founderBruce.jpg" alt="product-development">
             </div> -->
         </div>
-    </section>
+    </section> -->
     <script src="./index.js"></script>
 </body>
 </html>

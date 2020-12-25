@@ -111,6 +111,37 @@ function showMoreSect() {
         scrollTop: $(".aspectSection").offset().top
     }, 1500);
 }
+let fndrSalah1=false;
+let fndrBruce2=false;
+function showMore(fndr){
+    if(fndr === 'fndrSalah'){
+        if(fndrSalah1===false){
+            $( "#fndrSalah" ).slideDown();
+            $( "#toggleBtn1" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn1" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            fndrSalah1=true
+        }else{
+            $( "#fndrSalah" ).slideUp();
+            $( "#toggleBtn1" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn1" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            fndrSalah1=false
+        }
+    }
+    if(fndr === 'fndrBruce'){
+        if(fndrBruce2===false){
+            $( "#fndrBruce" ).slideDown();
+            $( "#toggleBtn2" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn2" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            fndrBruce2=true
+        }else{
+            $( "#fndrBruce" ).slideUp();
+            $( "#toggleBtn2" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn2" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            fndrBruce2=false
+        }
+    }
+
+}
 function scrollToPrForm(){
     console.log('did it scrollToPrForm?')
     $('html, body').animate({
