@@ -689,7 +689,7 @@ transform-origin: 0 0;
     background: white;
 }
 .contactHero{
-    background: #d2d8db;
+    /* background: #d2d8db; */
     width: 100%;
     min-height: 100vh;
     padding: 20px;
