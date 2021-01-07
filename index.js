@@ -12,91 +12,6 @@ $(document).ready(function(e){
     setTimeout(() => {
         closeCover()
     }, 1000);
-    // setTimeout(() => {
-    //     $( "#heroTxt" ).show();
-    //     var textWrapper = document.querySelector('.ml10 .letters');
-    //     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    //     anime.timeline({loop: false})
-    //         .add({
-    //             targets: '.ml10 .letter',
-    //             rotateY: [-90, 0],
-    //             duration: 1300,
-    //             delay: (el, i) => 45 * i
-    //         }).add({
-    //             targets: '.ml10',
-    //             // opacity: 0,
-    //             duration: 1000,
-    //             easing: "easeOutExpo",
-    //             delay: 1000
-    //         });
-    // }, 1500);
-    // setTimeout(() => {
-    //     $( "#heroTxt" ).show();
-    //     var textWrapper = document.querySelector('.ml10-1 .letters');
-    //     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    //     anime.timeline({loop: false})
-    //         .add({
-    //             targets: '.ml10-1 .letter',
-    //             rotateY: [-90, 0],
-    //             duration: 1300,
-    //             delay: (el, i) => 45 * i
-    //         }).add({
-    //             targets: '.ml10-1',
-    //             // opacity: 0,
-    //             duration: 1000,
-    //             easing: "easeOutExpo",
-    //             delay: 1000
-    //         });
-    // }, 1500);
-    // setTimeout(() => {
-    //     var textWrapper2 = document.querySelector('.ml101 .letters');
-    //     textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    //         anime.timeline({loop: false})
-    //         .add({
-    //             targets: '.ml101 .letter',
-    //             rotateY: [-90, 0],
-    //             duration: 1300,
-    //             delay: (el, i) => 45 * i
-    //         }).add({
-    //             targets: '.ml101',
-    //             // opacity: 0,
-    //             duration: 1000,
-    //             easing: "easeOutExpo",
-    //             delay: 1000
-    //         });
-    // }, 1400);
-    // setTimeout(() => {
-    //     var textWrapper2 = document.querySelector('.ml101-1 .letters');
-    //     textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    //         anime.timeline({loop: false})
-    //         .add({
-    //             targets: '.ml101-1 .letter',
-    //             rotateY: [-90, 0],
-    //             duration: 900,
-    //             delay: (el, i) => 45 * i
-    //         }).add({
-    //             targets: '.ml101-1',
-    //             duration: 1000,
-    //             easing: "easeOutExpo",
-    //             delay: 1000
-    //         });
-    // }, 1400);
-    // setTimeout(() => {
-    //     var textWrapper3 = document.querySelector('.ml102 .letters');
-    //     textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    //         anime.timeline({loop: false})
-    //         .add({
-    //             targets: '.ml102 .letter',
-    //             rotateY: [-90, 0],
-    //             duration: 1100,
-    //             delay: (el, i) => 45 * i
-    //         }).add({
-    //             targets: '.ml102',
-    //             duration: 1000,
-    //             easing: "easeOutExpo",
-    //             delay: 1000
-    //         });
-    // }, 1400);
 })
 function showMenu() {
     $( ".navMenResp" ).slideDown();
@@ -145,6 +60,19 @@ function showMore(fndr){
             $( "#fndrBruce" ).slideUp();
             $( "#toggleBtn2" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
             $( "#toggleBtn2" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            fndrBruce2=false
+        }
+    }
+    if(fndr === 'Gaus'){
+        if(fndrBruce2===false){
+            $( "#Gaus" ).slideDown();
+            $( "#toggleBtn3" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn3" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            fndrBruce2=true
+        }else{
+            $( "#Gaus" ).slideUp();
+            $( "#toggleBtn3" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn3" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
             fndrBruce2=false
         }
     }
