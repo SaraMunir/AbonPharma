@@ -49,7 +49,7 @@ body{
     position: relative;
 } */
 .heroBckImg{
-    background: url(../assets/high-view-blue-pills-spilled-from-container_lowQ.jpg);
+    background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #c3e2ea;
+    background: #68c7e2;
 }
 .navBarCont{
     width: 100%;
@@ -129,7 +129,7 @@ body{
     font-weight: bolder;
 }
 .navLink:hover {
-    color: #4d9bd6;
+    color: #18a69f;
 }
 .navLink a {
     color:  #00599c;
@@ -194,7 +194,7 @@ body{
     font-size: 1rem;
 }
 .myBtn:hover {
-    background:  #1dc0c0;
+    background:  #18a69f;
     /* color: white; */
     filter: drop-shadow(2px 2px 3px #1c383f);
 }
@@ -381,8 +381,14 @@ label{
     /* color: #00599c; */
     font-size: 2rem;
 }
+.specialTxt{
+    color: #4e504f; 
+    font-weight: bolder; 
+    font-size: 1.3rem;
+}
 .myCard{
-    width: 31%;
+    width: 345px;
+    margin-bottom: 20px;
     min-height: 75vh;
     background-color: #f5f5f5;
     padding: 40px 20px 40px 40px;
@@ -390,15 +396,26 @@ label{
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
 
+.test {
+    background-color: yellow;
+}
+.navLogoBef{
+    width: 100px;
+    transition: all .6s ease;
+}
+.navLogo{
+    width: 70px;
+    transition: all .6s ease;
+}
 .myCardTitle{
     font-family: 'Cairo', cursive;
     font-weight: 500;
     font-size: 2rem;
-    color: #00599c;
+    color: #18a69f;
 }
 .myCardDesc{
     font-size: 1.1rem;
-    min-height: 48vh;
+    min-height: 62vh;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -642,12 +659,10 @@ transform-origin: 0 0;
 .RandD{
     padding-top: 50px;
 }
-.navLogo{
-    width: 100px;
-}
+
 .navHamburger{
     color: white;
-    padding: 30px 20px;
+    padding: 20px;
     cursor: pointer;
     display: none;
 }
@@ -724,15 +739,9 @@ transform-origin: 0 0;
     background-color: #00599c;
     margin: 20px;
 }
-@media only screen and (min-width: 1352px ) {
-}
+
 @media only screen and (max-width: 1352px) {
-    .descCard{
-        width: 57%;
-    }
-    .descCardLft{
-        width: 50%;
-    }
+    
     .navBr {
         width: 40%;
     }
@@ -749,6 +758,16 @@ transform-origin: 0 0;
     }
     .navBr {
         width: 40%;
+    }
+}
+@media only screen and (max-width: 1142px) {
+    .myCard{
+        width: 318px;
+    }
+}
+@media only screen and (max-width: 1070px) {
+    .myCard{
+        width: 350px;
     }
 }
 @media only screen and (max-width: 1020px) {
@@ -791,6 +810,10 @@ transform-origin: 0 0;
     .myMarTop{
         margin-top: 25vh;
     }
+    .myCard{
+        width: 325px;
+    }
+
 }
 @media only screen and (max-width: 869px){
     .heroTxtHide{
@@ -820,6 +843,9 @@ transform-origin: 0 0;
     }
     .menuItem-link{
         opacity: 1;
+    }
+    .myCard{
+        width: 450px;
     }
 }
 @media only screen and (max-width: 650px){
