@@ -36,17 +36,26 @@ function showMoreSect() {
 }
 let fndrSalah1=false;
 let fndrBruce2=false;
+let Gaus=false;
+let Anwar=false;
+let Yanming=false;
+let Mahish=false;
 function showMore(fndr){
     if(fndr === 'fndrSalah'){
         if(fndrSalah1===false){
             $( "#fndrSalah" ).slideDown();
             $( "#toggleBtn1" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
             $( "#toggleBtn1" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $("#SalahScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#SalahScroll").offset().top
+            }, 1000);
             fndrSalah1=true
         }else{
             $( "#fndrSalah" ).slideUp();
             $( "#toggleBtn1" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
             $( "#toggleBtn1" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $("#SalahScroll").removeClass('addPdTp');
             fndrSalah1=false
         }
     }
@@ -55,28 +64,91 @@ function showMore(fndr){
             $( "#fndrBruce" ).slideDown();
             $( "#toggleBtn2" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
             $( "#toggleBtn2" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $("#BruceScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#BruceScroll").offset().top
+            }, 1000);
             fndrBruce2=true
         }else{
             $( "#fndrBruce" ).slideUp();
             $( "#toggleBtn2" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
             $( "#toggleBtn2" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $("#BruceScroll").removeClass('addPdTp');
             fndrBruce2=false
         }
     }
     if(fndr === 'Gaus'){
-        if(fndrBruce2===false){
+        if(Gaus===false){
             $( "#Gaus" ).slideDown();
             $( "#toggleBtn3" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
             $( "#toggleBtn3" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
-            fndrBruce2=true
+            $("#GausScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#GausScroll").offset().top
+            }, 1000);
+            Gaus=true
         }else{
             $( "#Gaus" ).slideUp();
             $( "#toggleBtn3" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
             $( "#toggleBtn3" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
-            fndrBruce2=false
+            $("#GausScroll").removeClass('addPdTp');
+            Gaus=false
         }
     }
-
+    if(fndr === 'Anwar'){
+        if(Anwar===false){
+            $( "#Anwar" ).slideDown();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $("#AnwarScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#AnwarScroll").offset().top
+            }, 1000);
+            Anwar=true;
+        }else{
+            $( "#Anwar" ).slideUp();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $("#AnwarScroll").removeClass('addPdTp');
+            Anwar=false;
+        }
+    }
+    if(fndr === 'Yanming'){
+        if(Yanming===false){
+            $( "#Yanming" ).slideDown();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $("#YanmingScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#YanmingScroll").offset().top
+            }, 1000);
+            Yanming=true;
+        }else{
+            $( "#Yanming" ).slideUp();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $("#YanmingScroll").removeClass('addPdTp');
+            Yanming=false;
+        }
+    }
+    if(fndr === 'Mahish'){
+        if(Mahish===false){
+            $( "#Mahish" ).slideDown();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $("#MahishScroll").addClass('addPdTp');
+            $('html, body').animate({
+                scrollTop: $("#MahishScroll").offset().top
+            }, 1000);
+            Mahish=true;
+        }else{
+            $( "#Mahish" ).slideUp();
+            $( "#toggleBtn4" ).removeClass( 'fas fa-2x fa-chevron-circle-up toggleBtn');
+            $( "#toggleBtn4" ).addClass( 'fas fa-2x fa-chevron-circle-down toggleBtn');
+            $("#MahishScroll").removeClass('addPdTp');
+            Mahish=false;
+        }
+    }
 }
 function scrollToPrForm(){
     console.log('did it scrollToPrForm?')

@@ -745,8 +745,11 @@ transform-origin: 0 0;
     margin: 20px;
 }
 
+.addPdTp{
+    padding-top: 70px;
+    transition: ease all .3s;
+}
 @media only screen and (max-width: 1352px) {
-    
     .navBr {
         width: 40%;
     }
