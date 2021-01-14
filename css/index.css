@@ -18,13 +18,6 @@ body{
     color: black;
     font-weight: 600;
 }
-.myB{
-    text-decoration: none;
-    margin: 20px 0;
-}
-.myB:hover{
-    text-decoration: none;
-}
 .cover{
     position: fixed;
     top: 0;
@@ -183,10 +176,10 @@ body{
     opacity: .75;
 }
 .heroH2Text{
-    color: #070820;
-    /* font-family: 'Goldman', cursive; */
+    color: #18a69f;
+    font-family: 'Cairo', cursive;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.3rem;
 }
 .heroH3Text{
     color: #103f6e;
@@ -196,7 +189,7 @@ body{
 .heroSubText{
     color: #000000;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* line-height: 2.2rem; */
 }
 .specialTxt{
@@ -205,7 +198,7 @@ body{
     font-size: 1.3rem;
 }
 .ltrSpc{
-    letter-spacing: 1.6px;
+    letter-spacing: 1.2px;
 }
 .ltrHgtBg{
     line-height: 2.4rem;
@@ -333,9 +326,11 @@ body{
 .menuItem {
     padding: 10px;
 }
-.fndDesc{
-    font-size: 1.1rem;
+.fndDesc {
+    font-size: 1.15rem;
     color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .menuItem-link {
     opacity: 0;
@@ -379,9 +374,10 @@ ul li {
     padding: 20vh 0;
     background: #f0f0f0;
 }
+
 .contactUs{
     padding: 10px;
-    background: #f1f1f1ee;
+    background: #f4fffc;
 }
 .contactCard{
     background: white;
@@ -411,6 +407,9 @@ ul li {
     font-weight: 800;
     background-color: #b7f3f0;
 }
+.listBold2{
+    font-weight: 800;
+}
 .listGroupItem{
     padding: 15px;
 }
@@ -431,19 +430,24 @@ ul li {
     display: inline; 
     width: 18px;
 }
+.listChild2{
+    display: inline; 
+    width: 12px;
+}
 .myInput{
+    font-weight: 700;
     width: 100%;
     display: block;
     border: none;
     border-radius: 0;
     border-bottom: 2px solid #bfc6cc;
 }
-label{
-    color: #4b6174;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
 
+label{
+    font-size: 1.3rem;
+    color: #00599c;
+    font-weight: 800;
+}
 .title1 {
     color: #1dc0c0;
     /* color: #00599c; */
@@ -488,7 +492,7 @@ label{
 }
 .myCardDesc{
     font-size: 1.2rem;
-    min-height: 62vh;
+    min-height: 80vh;
     text-align: left;
     /* font-family: 'Roboto', sans-serif; */
     font-weight: 700;
@@ -763,7 +767,7 @@ transform-origin: 0 0;
 .contactHero{
     /* background: #d2d8db; */
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 20px;
 }
 .imgOnWhnResp{
@@ -876,7 +880,7 @@ transform-origin: 0 0;
         width: 80px;
     }
     .contactCard{
-        margin-top: -130px;
+        margin-top: -100px;
     }
     .imgOnWhnResp{
         display: block;
