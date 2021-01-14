@@ -14,6 +14,9 @@ body{
 }
 .myBody{
     background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-weight: 600;
 }
 .myB{
     text-decoration: none;
@@ -49,19 +52,27 @@ body{
     position: relative;
 } */
 .heroBckImg{
-    background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low.jpg);
-    min-height: 100vh;
+    background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low-2-big.jpg);
+    min-height: 95vh;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 25vh 20vh;
+    background-position-y: 40px;
 }
 .heroHText{
     color: #00599c;
     font-family: 'Cairo', cursive;
-    font-size: 3rem;
+    font-size: 3.3rem;
     text-align: left;
     text-transform: capitalize;
 }
+.spShadow{
+    filter: drop-shadow(2px 2px 2px #000000c7);
+}
+.spShadow2{
+    filter: drop-shadow(0px 0px 3px #fbfeff);
+}
+
 .heroTexts{
     position: absolute;
     top: 0;
@@ -81,7 +92,9 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #68c7e2;
+    background: #ffffff;
+    box-shadow: -3px 2px 5px #00000067;
+
 }
 .navBarCont{
     width: 100%;
@@ -106,8 +119,8 @@ body{
 }
 .navFont {
     text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 800;
 }
 .navLinkActive {
     color:  #f6fdff;
@@ -124,19 +137,31 @@ body{
 }
 .navLink {
     cursor: pointer;
-    color:  #00599c;
+    color:  #000000;
     transition: all ease .5s;
-    font-weight: bolder;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
 }
 .navLink:hover {
-    color: #18a69f;
+    background-color: #18a69f;
+    color: white;
+    font-size: 1.2rem;
+    filter: drop-shadow(3px 3px 3px rgb(179, 179, 179));
 }
 .navLink a {
     color:  #00599c;
-
 }
+.readMoreLnk{
+    color: white;
+}
+.readMoreLnk:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .navBrandName {
-    color: #00599c;
+    color: #000000;
     font-size: 1.1rem;
     font-weight: bolder;
     margin-top: 25px;
@@ -159,21 +184,34 @@ body{
 }
 .heroH2Text{
     color: #070820;
-    font-family: 'Goldman', cursive;
+    /* font-family: 'Goldman', cursive; */
     font-weight: bold;
     font-size: 4rem;
 }
 .heroH3Text{
     color: #103f6e;
-    font-family: 'Goldman', cursive;
     font-weight: bold;
     font-size: 3.7rem;
 }
 .heroSubText{
-    color: #4b4b4b;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 2rem;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    /* line-height: 2.2rem; */
+}
+.specialTxt{
+    color: #000000; 
+    font-weight: 800; 
+    font-size: 1.3rem;
+}
+.ltrSpc{
+    letter-spacing: 1.6px;
+}
+.ltrHgtBg{
+    line-height: 2.4rem;
+}
+.ltrHgtSm{
+    line-height: 2.2rem;
 }
 .heroSubText2{
     color: #353535;
@@ -194,7 +232,7 @@ body{
     font-size: 1rem;
 }
 .myBtn:hover {
-    background:  #18a69f;
+    background:  #20beb7;
     /* color: white; */
     filter: drop-shadow(2px 2px 3px #1c383f);
 }
@@ -257,14 +295,14 @@ body{
     visibility: hidden;
     min-width: 270px;
     text-align: left;
-    /* padding: 50px 0; */
     position: absolute;
     top: 50px;
     right: 0;
     z-index: -40;
-    /* background: #103f6e; */
-    transition: all .5s;
     height: 0px;
+    filter: drop-shadow(3px 3px 4px #1c242b5b);
+    transition: all .5s;
+
 }
 .menuBarContr:hover .menuBar{
     visibility: visible;
@@ -279,14 +317,14 @@ body{
 	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-    border-bottom: 10px solid #103f6e;
+    border-bottom: 10px solid #18a69f;
     right: 30px;
 }
 .borderTp{
-    border-top: 5px solid #103f6e;
+    border-top: 5px solid #18a69f;
 }
 .borderBtm{
-    border-bottom: 1px solid #598dc0;
+    border-bottom: 1px solid #18a69f;
 }
 .menuBarContr:hover .menuItem-link,.menuBarContr:hover .triangle-up {
     opacity: 1;
@@ -295,13 +333,17 @@ body{
 .menuItem {
     padding: 10px;
 }
+.fndDesc{
+    font-size: 1.1rem;
+    color: black;
+}
 .menuItem-link {
     opacity: 0;
     width: 100%;
     display: block;
     padding: 15px;
     /* margin: 10px; */
-    color: #00599c;
+    color: #000000;
     background: #fffcfc;
     text-decoration: none;
     margin: 0;
@@ -317,7 +359,6 @@ body{
 ul li {
     list-style: none;
 }
-
 .hide {
     display: none;
 }
@@ -325,7 +366,7 @@ ul li {
     color: pink;
 }
 .myBoxShad{
-    box-shadow: 4px 4px 10px #323436;
+    box-shadow: 0px 4px 5px #1c383f3d;
 }
 .header5 {
     color: white;
@@ -352,16 +393,43 @@ ul li {
     background: #103f6e;
 }
 .lightBk{
-    background: #f1f1f1;
+    background: #ffffff;
 }
 .lightBkBlue{
-    background: #b9c6d3;
+    background: #eafffa;
 }
 .aspectSection{
     padding: 50px;
-    /* padding-bottom: 100px; */
-    /* background-color: #dfe2df; */
     min-height: 100vh;
+}
+.list-group-item{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.listBold{
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: #b7f3f0;
+}
+.listGroupItem{
+    padding: 15px;
+}
+.listGrpItmInr{
+    border: 1px solid rgb(59, 59, 59);
+}
+.listGrpItmTop{
+    border-top: 1px solid #3b3b3b;
+    border-left: 1px solid #3b3b3b;
+    border-right: 1px solid #3b3b3b;
+}
+.listGrpItmBtm{
+    border-bottom: 1px solid #3b3b3b;
+    border-left: 1px solid #3b3b3b;
+    border-right: 1px solid #3b3b3b;
+}
+.listChild{
+    display: inline; 
+    width: 18px;
 }
 .myInput{
     width: 100%;
@@ -381,20 +449,25 @@ label{
     /* color: #00599c; */
     font-size: 2rem;
 }
-.specialTxt{
-    color: #4e504f; 
-    font-weight: bolder; 
-    font-size: 1.3rem;
-}
+
 .myCard{
     width: 345px;
     margin-bottom: 20px;
     min-height: 75vh;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding: 40px 20px 40px 40px;
     border-radius: 5px;
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
+.myCardBg{
+    /* margin-bottom: 20px; */
+    min-height: 75vh;
+    background-color: #ffffff;
+    padding: 70px;
+    border-radius: 5px;
+    filter: drop-shadow(-2px 4px 5px #1c383f3d);
+}
+
 
 .test {
     background-color: yellow;
@@ -409,17 +482,16 @@ label{
 }
 .myCardTitle{
     font-family: 'Cairo', cursive;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 2rem;
     color: #18a69f;
 }
 .myCardDesc{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     min-height: 62vh;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
 }
 div img {
     width: 100%;
@@ -486,7 +558,7 @@ div img {
     z-index: 20;
 }
 .descTitle{
-    font-family: 'Goldman', cursive;
+    /* font-family: 'Goldman', cursive; */
     font-size: 2.8rem;
     color: #63addf;  
     text-transform: uppercase;  
@@ -553,12 +625,12 @@ div img {
 /* footer */
 footer {
     padding: 20px 50px;
-    background: #c3e2ea;
+    background: #a2e6e3;
 }
 .footer-link {
-    color: #00599c;
-    font-weight: 400;
-    font-size: 1rem;
+    color: #01213a;
+    font-weight: 600;
+    font-size: 1.1rem;
     /* padding: 10px; */
 }
 .footerBold{
@@ -566,7 +638,7 @@ footer {
     font-size: 1.1rem;
 }
 .footer-link:hover{
-    color: #1dc0c0;
+    color: #014996;
     text-decoration: none;
 }
 .footerList{
@@ -661,7 +733,7 @@ transform-origin: 0 0;
 }
 
 .navHamburger{
-    color: white;
+    /* color: white; */
     padding: 20px;
     cursor: pointer;
     display: none;
@@ -671,7 +743,7 @@ transform-origin: 0 0;
     background: #c3e2ea;
     padding: 40px;
     position: absolute;
-    top: 91px;
+    top: 77px;
     right: 0;
 }
 .closeMenuBtn {
@@ -730,7 +802,7 @@ transform-origin: 0 0;
 .lineDvdr{
     border-radius: 30px;
     height: 3px;
-    background-color: #1dc0c0;
+    background-color: #00599c;
     margin: 20px;
 }
 .lineDvdr2{
@@ -822,12 +894,16 @@ transform-origin: 0 0;
         width: 325px;
     }
 
+
 }
 @media only screen and (max-width: 869px){
     .heroTxtHide{
         display: block;
     }
     .heroTxtHideAft{
+        display: none;
+    }
+    .hideOnMobileList{
         display: none;
     }
 }
@@ -849,6 +925,7 @@ transform-origin: 0 0;
         width: 30%;
         text-align: right;
     }
+
     .menuItem-link{
         opacity: 1;
     }

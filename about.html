@@ -16,9 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <!-- fonts:  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body class="myBody">
     <div style="height: 5vh;">
@@ -87,8 +90,8 @@
                 </div>
                 <ul class="navFont text-left" style="padding-left: 0; padding-top: 15px;">
                     <li class="navHvr nav-item borderBtm">
-                        <div class="d-flex justify-content-between navLink">
-                            <a class="col-8 nav-link" href="about.html">About
+                        <div class="d-flex justify-content-between">
+                            <a class="col-8 nav-link navLink" href="about.html">About
                             </a>
                             <div class="col-4 d-flex justify-content-end" onclick="showSubMen('abtMenu')">
                                 <i class="fas fa-plus p-2" ></i>
@@ -103,8 +106,8 @@
                         </div>
                     </li>
                     <li class="navHvr nav-item borderBtm">
-                        <div class="d-flex justify-content-between navLink">
-                            <a class="col-8 nav-link" href="R&D.html">R&D
+                        <div class="d-flex justify-content-between">
+                            <a class="col-8 nav-link navLink" href="R&D.html">R&D
                             </a>
                             <div class="col-4 d-flex justify-content-end" onclick="showSubMen('RandD')">
                                 <i class="fas fa-plus p-2" ></i>
@@ -128,17 +131,17 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-9 mx-auto text-left" style="padding-top: 30px; padding-bottom: 50px;">
+    <div class="col-lg-10 mx-auto text-left" style="padding-top: 30px; padding-bottom: 50px;">
         <div class="heroText mt-5 mx-auto">
             <h2 class="heroHText">About Us</h2>
-            <p class="heroSubText mx-auto">Abon Pharmaceuticals LLC is a specialty pharmaceutical company focused on drug delivery research. Founded in 2009, Abon continues to uphold its science-based approach to product development. Abon’s highly qualified team of scientists has a proven track record in dosage forms across the pharmaceutical space, generating multiple patents. 
+            <p class="heroSubText mx-auto ltrSpc ltrHgtBg">Abon Pharmaceuticals LLC is a specialty pharmaceutical company focused on drug delivery research. Founded in 2009, Abon continues to uphold its science-based approach to product development. Abon’s highly qualified team of scientists has a proven track record in dosage forms across the pharmaceutical space, generating multiple patents. 
             <br> 
             Abon’s innovative approach, expertise, and flexibility are tailored to improving bioavailability or achieving bioequivalence within timelines and budget. We are also a process focused company that ensures robustness and manufacturability. Our team has experience in tech transfer in multiple regions of the globe and collaborates with partners both in the USA and across different continents and cultures.
             </p>
         </div>
     </div>
-    <section class="lightBk aspectSection text-center">
-        <div class="col-10 mx-auto">
+    <section class="aspectSection text-center lightBkBlue ">
+        <div class="mx-auto myCardBg">
             <h2 class="heroHText mb-4">Meet The Founders</h2>
             <hr class="col-11" style="border-top: 1px solid #5252526c; margin-left: 0;">
             <div>
@@ -156,7 +159,7 @@
                         </div>
                     </div>
                     <div class="hide" id="fndrSalah">
-                        <p class="text-left mt-4">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. He was responsible for the development of generic and proprietary pharmaceuticals as well as API and biotechnology products. Barr’s product portfolio encompassed diverse Drug Delivery Systems (DDS) including parenteral, nasal, ocular, oral, transmucosal, transdermal, and intrauterine routes of administration. The corporation ran its research and development operations in the USA and several countries in Europe.
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Dr. Salah U. Ahmed is the President & CEO of Abon Pharmaceuticals, LLC. Prior to the establishment of Abon, he was the Executive Vice President of Global Research and Development and Chief Scientific Officer at Barr Pharmaceuticals, Inc. He was responsible for the development of generic and proprietary pharmaceuticals as well as API and biotechnology products. Barr’s product portfolio encompassed diverse Drug Delivery Systems (DDS) including parenteral, nasal, ocular, oral, transmucosal, transdermal, and intrauterine routes of administration. The corporation ran its research and development operations in the USA and several countries in Europe.
                             <br>Dr. Ahmed received his MS in industrial Pharmacy and PhD in Pharmaceutical Sciences from St. Johns University, New York. He has more than a quarter century of pharmaceutical experience, of which 16 years was at Barr Pharmaceuticals, Inc. His leadership role in product development significantly contributed to Barr’s transformation to a specialty pharmaceutical company and a world leader in the generic pharmaceutical industry.
                             <br>Dr. Ahmed has a distinguished track record in pharmaceutical research involving special DDS, solid-state interactions, statistical design and mathematical modeling in product development research, and in-vitro/in-vivo performance of dosage forms. His research work in these areas originated more than 40 patents. He authored or co-authored more than 60 research papers, abstracts and book chapters.</p>
                     </div>
@@ -186,18 +189,19 @@
                         </div>
                     </div>
                     <div class="hide" id="fndrBruce">
-                        <p class="text-left mt-4">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008. Mr. Downey joined Barr Pharmaceuticals, Inc. in 1993 and was appointed Chairman of the Board and Chief Executive Officer in 1994. Prior to joining Barr, Mr. Downey was a capital partner in Winston & Strawn, and a predecessor firm, Bishop, Cook, Purcell and Reynolds. In 1979, he founded Baller & Downey, which later merged with Bishop, Cook, Purcell and Reynolds. <br> Mr. Downey began his legal career in the Honors Program at the U.S. Department of Justice. He later worked as a Special Litigation Counsel at the U.S. Department of Energy. Mr. Downey graduated with honors from Miami University in 1969 and received his law degree cum laude from Ohio State. He also served on the Board of Editors of The Ohio State University Law Journal and was elected to the Order of the Coif. Mr. Downey is a former director of Warner Chilcott. In 2006 and 2007, Mr. Downey served as the Chairman of the Board for the Generic Pharmaceutical Association (GPhA), the trade association for the generic pharmaceutical industry. <br> Mr. Downey is a Partner in NewSpring Health Capital II, L.P. a venture capital firm, and also a board member of Momenta Pharmaceuticals, Cardinal Health, and Acetylon Pharmaceuticals. Mr. Downey is currently the Chair of the Board of Ambassadors for Johns Hopkins’ Project RESTORE that funds research and clinical trials to support the creation of progressive treatments for transverse myelitis and multiple sclerosis.</p>
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Mr. Downey was formerly Chairman and CEO of Barr Pharmaceuticals, Inc., a global specialty pharmaceutical company that operated in more than 30 countries worldwide. Barr was acquired by Teva Pharmaceuticals in 2008. Mr. Downey joined Barr Pharmaceuticals, Inc. in 1993 and was appointed Chairman of the Board and Chief Executive Officer in 1994. Prior to joining Barr, Mr. Downey was a capital partner in Winston & Strawn, and a predecessor firm, Bishop, Cook, Purcell and Reynolds. In 1979, he founded Baller & Downey, which later merged with Bishop, Cook, Purcell and Reynolds. <br> Mr. Downey began his legal career in the Honors Program at the U.S. Department of Justice. He later worked as a Special Litigation Counsel at the U.S. Department of Energy. Mr. Downey graduated with honors from Miami University in 1969 and received his law degree cum laude from Ohio State. He also served on the Board of Editors of The Ohio State University Law Journal and was elected to the Order of the Coif. Mr. Downey is a former director of Warner Chilcott. In 2006 and 2007, Mr. Downey served as the Chairman of the Board for the Generic Pharmaceutical Association (GPhA), the trade association for the generic pharmaceutical industry. <br> Mr. Downey is a Partner in NewSpring Health Capital II, L.P. a venture capital firm, and also a board member of Momenta Pharmaceuticals, Cardinal Health, and Acetylon Pharmaceuticals. Mr. Downey is currently the Chair of the Board of Ambassadors for Johns Hopkins’ Project RESTORE that funds research and clinical trials to support the creation of progressive treatments for transverse myelitis and multiple sclerosis.</p>
                     </div>
                     <div class="d-flex mb-4"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="lightBk text-center m-0">
+    <!-- <section class="lightBk text-center m-0">
         <div class="lineDvdr2 col-11 mx-auto"></div>
-    </section >
-    <section class="lightBk aspectSection text-center">
-        <div class="col-10 mx-auto">
+    </section > -->
+    <!-- <hr class="lightBkBlue"> -->
+    <section class="lightBkBlue aspectSection text-center">
+        <div class="mx-auto myCardBg">
             <h2 class="heroHText mb-4">Meet The Management Team</h2>
             <hr class="col-11" style="border-top: 1px solid #5252526c; margin-left: 0;">
             <div>
@@ -215,7 +219,7 @@
                         </div>
                     </div>
                     <div class="hide" id="Gaus">
-                        <p class="text-left mt-4">Gaus is responsible for Quality System, Analytical Support, and Portfolio Management. Prior to joining Abon, he worked at Barr Pharmaceuticals for 16 years in several key positions with increasing responsibilities, including Senior Director of ARD and Director of Quality Control. His contribution to Barr’s development and quality program was instrumental in the company’s growth. 
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Gaus is responsible for Quality System, Analytical Support, and Portfolio Management. Prior to joining Abon, he worked at Barr Pharmaceuticals for 16 years in several key positions with increasing responsibilities, including Senior Director of ARD and Director of Quality Control. His contribution to Barr’s development and quality program was instrumental in the company’s growth. 
                             <br>
                             Gaus obtained his MS in Medicinal  Chemistry from St. Johns University, New York. He completed his B. Pharm (Hons) and M. Pharm from the University of Dhaka, Bangladesh. 
                             </p>
@@ -247,7 +251,7 @@
                         </div>
                     </div>
                     <div class="hide" id="Anwar">
-                        <p class="text-left mt-4">Anwar brings over 27 years of pharmaceutical experience in formulation and process development, process scale-up and optimization, technology transfer, process validation, project management, and R&D cGMP Operations. Before joining Abon, Anwar worked for four years at Kashiv Biosciences as Executive Director of Formulation Research & Development and Senior Director of Process Development, Technical Services, and Operation. Anwar was responsible for both cGMP and Pilot Plant operations and successfully submitted multiple ANDAs. Before Kashiv, Anwar worked at Teva/Barr Pharmaceuticals for over 21 years, where he served in various responsibilities encompassing R&D Formulation Development, Process Validation & Technology Transfer, and Project Management. <br>
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Anwar brings over 27 years of pharmaceutical experience in formulation and process development, process scale-up and optimization, technology transfer, process validation, project management, and R&D cGMP Operations. Before joining Abon, Anwar worked for four years at Kashiv Biosciences as Executive Director of Formulation Research & Development and Senior Director of Process Development, Technical Services, and Operation. Anwar was responsible for both cGMP and Pilot Plant operations and successfully submitted multiple ANDAs. Before Kashiv, Anwar worked at Teva/Barr Pharmaceuticals for over 21 years, where he served in various responsibilities encompassing R&D Formulation Development, Process Validation & Technology Transfer, and Project Management. <br>
                             Dr. Hossain obtained his Ph.D. (Pharmaceutics) and M.S. (Industrial Pharmacy) from Long Island University, Brooklyn, New York. His graduate research generated a publication and a patent.  He received his M. Pharm and B. Pharm (Hons) from the University of Dhaka, Bangladesh. Additionally, he presented nine papers at AAPS conferences.
                             </p>
                     </div>
@@ -278,7 +282,7 @@
                         </div>
                     </div>
                     <div class="hide" id="Yanming">
-                        <p class="text-left mt-4">Yanming focuses on liquid dosage form, specifically oral suspensions and Long-Acting Injectables. She also supervises the pharmacokinetic support for biostudy design and other requirements for all products at Abon. Before Abon, She joined Barr Laboratory in 2001 as a Formulation Scientist and later served as a Senior Scientist and then a Principal Scientist. She joined Abon as the Director of Formulation R&D, responsible for the generic and proprietary product development. Yanming’s work contributed to multiple ANDAs, including several first to file approvals, and generated several patents, research papers, review articles, and invited presentations. <br>
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Yanming focuses on liquid dosage form, specifically oral suspensions and Long-Acting Injectables. She also supervises the pharmacokinetic support for biostudy design and other requirements for all products at Abon. Before Abon, She joined Barr Laboratory in 2001 as a Formulation Scientist and later served as a Senior Scientist and then a Principal Scientist. She joined Abon as the Director of Formulation R&D, responsible for the generic and proprietary product development. Yanming’s work contributed to multiple ANDAs, including several first to file approvals, and generated several patents, research papers, review articles, and invited presentations. <br>
                             Dr. Zu received her Ph.D. in Pharmaceutics from the University of Illinois, Chicago. She completed her B.S. in Pharmacy and M.S. in Pharmaceutics from Shenyang Pharmaceutical University, China. She is also a Registered Pharmacist in New York State. </p>
                     </div>
                     <div class="d-flex mb-4 col-8 mx-auto">
@@ -308,7 +312,7 @@
                         </div>
                     </div>
                     <div class="hide" id="Mahish">
-                        <p class="text-left mt-4">Mahish is responsible for aligning analytical support with the R&D team and empowering those project leaders to meet R & D’s needs in a timely and efficient manner. <br>
+                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Mahish is responsible for aligning analytical support with the R&D team and empowering those project leaders to meet R & D’s needs in a timely and efficient manner. <br>
                             Mahish joined Abon in 2009 as Director. Analytical R&D. Mahish has more than 30 years of experience, starting as a Chemist and progressing to Senior Manager. He brings a broad range of experience in managing both QC and R&D Labs and overseeing the metrology of an advanced lab at Barr Pharmaceuticals. He received his B.S Degree in Chemistry from Calcutta University, India.</p>
                     </div>
                     <div class="d-flex mb-4 col-8 mx-auto">
