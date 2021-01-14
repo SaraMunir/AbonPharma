@@ -59,6 +59,13 @@ body{
     text-align: left;
     text-transform: capitalize;
 }
+.heroHText2{
+    color: #00599c;
+    font-family: 'Cairo', cursive;
+    font-size: 2.6rem;
+    text-align: left;
+    text-transform: capitalize;
+}
 .spShadow{
     filter: drop-shadow(2px 2px 2px #000000c7);
 }
