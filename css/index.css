@@ -27,23 +27,9 @@ body{
     background: radial-gradient( #154d85,  #07223d);
     z-index: 500;
 }
-.scrollToNext{
-    min-height: 30px;
-}
 .loadingBox{
     top: 45%;
 }
-.myBorder{
-    border: 1px solid red;
-}
-.heroMain{
-    /* background-color: #0b2e52; */
-    position: relative;
-}
-/* .hero{
-    min-height: 80vh;
-    position: relative;
-} */
 .heroBckImg{
     background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low-2-big.jpg);
     min-height: 95vh;
@@ -72,20 +58,7 @@ body{
 .spShadow2{
     filter: drop-shadow(0px 0px 3px #fbfeff);
 }
-
-.heroTexts{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 150;
-}
-.visibilityOff{
-    visibility: hidden;
-}
 .myNav {
-    /* height: 12vh; */
     width: 100%;
     position: fixed;
     z-index: 300;
@@ -94,7 +67,6 @@ body{
     padding: 0 10px;
     background: #ffffff;
     box-shadow: -3px 2px 5px #00000067;
-
 }
 .navBarCont{
     width: 100%;
@@ -159,7 +131,6 @@ body{
     color: white;
     text-decoration: none;
 }
-
 .navBrandName {
     color: #000000;
     font-size: 1.1rem;
