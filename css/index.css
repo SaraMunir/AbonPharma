@@ -380,7 +380,7 @@ ul li {
     font-weight: 600;
 }
 .listBold{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     background-color: #b7f3f0;
 }
@@ -410,6 +410,11 @@ ul li {
 .listChild2{
     display: inline; 
     width: 12px;
+}
+.fa-circle{
+    color: #35373ab9;
+    font-size: 9px;
+    
 }
 .myInput{
     font-weight: 700;
