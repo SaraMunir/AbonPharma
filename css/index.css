@@ -15,7 +15,6 @@ body{
 .myBody{
     background-color: #f5f8fa;
     font-family: 'Roboto', sans-serif;
-
     /* font-family: 'Nunito', sans-serif; */
     color: black;
 }
@@ -392,17 +391,17 @@ ul li {
     padding: 15px;
 }
 .listGrpItmInr{
-    border: .5px solid #bbbbbb;
+    border: .5px solid #cdd3d6;
 }
 .listGrpItmTop{
-    border-top: .5px solid #bbbbbb;
-    border-left: .5px solid #bbbbbb;
-    border-right: .5px solid #bbbbbb;
+    border-top: .5px solid #cdd3d6e7;
+    border-left: .5px solid #cdd3d6e7;
+    border-right: .5px solid #cdd3d6e7;
 }
 .listGrpItmBtm{
-    border-bottom: .5px solid #bbbbbb;
-    border-left: .5px solid #bbbbbb;
-    border-right: .5px solid #bbbbbb;
+    border-bottom: .5px solid #cdd3d6e7;
+    border-left: .5px solid #cdd3d6e7;
+    border-right: .5px solid #cdd3d6e7;
 }
 .listChild{
     display: inline; 
@@ -610,7 +609,6 @@ footer {
 }
 .footer-link {
     color: #01213a;
-    font-weight: 600;
     font-size: 1.1rem;
     /* padding: 10px; */
 }
