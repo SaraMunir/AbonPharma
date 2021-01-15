@@ -13,10 +13,11 @@ body{
     padding: 0;
 }
 .myBody{
-    background-color: #ffffff;
-    font-family: 'Nunito', sans-serif;
+    background-color: #f5f8fa;
+    font-family: 'Roboto', sans-serif;
+
+    /* font-family: 'Nunito', sans-serif; */
     color: black;
-    font-weight: 600;
 }
 .cover{
     position: fixed;
@@ -65,7 +66,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #ffffff;
+    background: #f5f6f8;
     box-shadow: -3px 2px 5px #00000067;
 }
 .navBarCont{
@@ -166,8 +167,8 @@ body{
 }
 .heroSubText{
     color: #000000;
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
     /* line-height: 2.2rem; */
 }
 .specialTxt{
@@ -176,7 +177,7 @@ body{
     font-size: 1.3rem;
 }
 .ltrSpc{
-    letter-spacing: 1.2px;
+    letter-spacing: 0px;
 }
 .ltrHgtBg{
     line-height: 2.4rem;
@@ -305,10 +306,9 @@ body{
     padding: 10px;
 }
 .fndDesc {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: black;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 500;
 }
 .menuItem-link {
     opacity: 0;
@@ -370,7 +370,7 @@ ul li {
     background: #ffffff;
 }
 .lightBkBlue{
-    background: #f4fffc;
+    background: #dde4e2;
 }
 .aspectSection{
     padding: 50px;
@@ -381,29 +381,28 @@ ul li {
     font-weight: 600;
 }
 .listBold{
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 600;
     background-color: #b7f3f0;
 }
 .listBold2{
-    font-weight: 800;
+    font-weight: 500;
 }
 .listGroupItem{
     padding: 15px;
-    font-size: 1.1rem;
 }
 .listGrpItmInr{
-    border: 1px solid rgb(59, 59, 59);
+    border: .5px solid #bbbbbb;
 }
 .listGrpItmTop{
-    border-top: 1px solid #3b3b3b;
-    border-left: 1px solid #3b3b3b;
-    border-right: 1px solid #3b3b3b;
+    border-top: .5px solid #bbbbbb;
+    border-left: .5px solid #bbbbbb;
+    border-right: .5px solid #bbbbbb;
 }
 .listGrpItmBtm{
-    border-bottom: 1px solid #3b3b3b;
-    border-left: 1px solid #3b3b3b;
-    border-right: 1px solid #3b3b3b;
+    border-bottom: .5px solid #bbbbbb;
+    border-left: .5px solid #bbbbbb;
+    border-right: .5px solid #bbbbbb;
 }
 .listChild{
     display: inline; 
@@ -437,7 +436,7 @@ label{
     width: 345px;
     margin-bottom: 20px;
     min-height: 75vh;
-    background-color: #ffffff;
+    background-color: #f5f6f8;
     padding: 40px 20px 40px 40px;
     border-radius: 5px;
     filter: drop-shadow(4px 4px 4px #1c383f3d);
@@ -445,7 +444,7 @@ label{
 .myCardBg{
     /* margin-bottom: 20px; */
     min-height: 75vh;
-    background-color: #ffffff;
+    background-color: #f5f6f8;
     padding: 70px;
     border-radius: 5px;
     filter: drop-shadow(-2px 4px 5px #1c383f3d);
@@ -456,7 +455,7 @@ label{
     background-color: yellow;
 }
 .navLogoBef{
-    width: 100px;
+    width: 95px;
     transition: all .6s ease;
 }
 .navLogo{
@@ -470,10 +469,10 @@ label{
     color: #18a69f;
 }
 .myCardDesc{
-    font-size: 1.2rem;
+    font-size: 1rem;
     min-height: 80vh;
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
 }
 div img {
     width: 100%;
