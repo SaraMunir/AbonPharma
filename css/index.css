@@ -1,8 +1,6 @@
-
 body{
     max-width:  1920px;
     width: 100%;
-    /* background-image: url(../assets/flat-lay-medical-elements-composition-PLACEholder.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 50px; 
@@ -65,7 +63,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #f5f6f8;
+    background: #dae6e2;
     box-shadow: -3px 2px 5px #00000067;
 }
 .navBarCont{
@@ -379,6 +377,8 @@ ul li {
     font-size: 1.2rem;
     font-weight: 600;
 }
+.list-group{
+}
 .listBold{
     font-size: 1rem;
     font-weight: 600;
@@ -390,9 +390,18 @@ ul li {
 .listGroupItem{
     padding: 15px;
 }
+ul {
+    border-radius: 0px;
+}
+.listGrpBrdr{
+    border: .5px solid #adb5b9;
+    border-radius: 0rem;
+
+}
 .listGrpItmInr{
     border: .5px solid #cdd3d6;
 }
+
 .listGrpItmTop{
     border-top: .5px solid #cdd3d6e7;
     border-left: .5px solid #cdd3d6e7;
@@ -400,8 +409,9 @@ ul li {
 }
 .listGrpItmBtm{
     border-bottom: .5px solid #cdd3d6e7;
-    border-left: .5px solid #cdd3d6e7;
-    border-right: .5px solid #cdd3d6e7;
+}
+.listGrpItmBtmHdn{
+    border-bottom: .5px solid #cdd3d600;
 }
 .listChild{
     display: inline; 
