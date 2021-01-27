@@ -486,7 +486,7 @@ div img {
     padding: 2px;
     margin: 10px;
     width: 150px;
-    height: 100px;
+    height: 95px;
     object-fit: cover;
     cursor: pointer;
     margin: 0 auto;
@@ -501,7 +501,7 @@ div img {
 }
 .gallery{
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .cardImg{
     width: 12vh;
