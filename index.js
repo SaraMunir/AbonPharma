@@ -1,4 +1,104 @@
-let PreFormulation;
+let PreformulationeObj = [
+    {
+        id: 0,
+        src: "Pre-formulation-DigitalMicroscope",
+        name: "Digital Microscope",
+        thmb: "Pre-formulation-DigitalMicroscopeThmb"
+    },
+    {
+        id: 1,
+        src: "Pre-formulation-DSC",
+        name: "DSC",
+        thmb: "Pre-formulation-DSCThmb"
+    },
+    {
+        id: 2,
+        src: "Pre-formulation-DVS",
+        name: "DVS",
+        thmb: "Pre-formulation-DVSThmb"
+    },
+    {
+        id: 3,
+        src: "Preformulation-Rheometer",
+        name: "Rheometer",
+        thmb: "Preformulation-RheometerThmb"
+    },
+    {
+        id: 4,
+        src: "Pre-formulation-SEM",
+        name: "SEM",
+        thmb: "Pre-formulation-SEMThmb"
+    },
+    {
+        id: 5,
+        src: "Preformulation-TAM",
+        name: "TAM",
+        thmb: "Preformulation-TAMThmb"
+    },
+    {
+        id: 6,
+        src: "Pre-formulation-TGA",
+        name: "TGA",
+        thmb: "Pre-formulation-TGAThmb"
+    }
+]
+let formulationeObj = [
+    {
+        id: 0,
+        src: "formulation-BiLayerTabletPress",
+        name: "Bi Layer Tablet Press",
+    },
+    {
+        id: 1,
+        src: "formulation-Blender",
+        name: "Blender"
+    },
+    {
+        id: 2,
+        src: "formulation-BlisterMachine",
+        name: "Blister Machine"
+    },
+    {
+        id: 3,
+        src: "formulation-Granulation1",
+        name: "Granulation"
+    },
+    {
+        id: 4,
+        src: "formulation-Granulation2",
+        name: "Granulation 2"
+    },
+    {
+        id: 5,
+        src: "formulation-HuttlinFluidBed",
+        name: "Huttlin Fluid Bed"
+    },
+    {
+        id: 6,
+        src: "formulation-LaserDrill",
+        name: "Laser Drill"
+    },
+    {
+        id: 7,
+        src: "formulation-Lyophilizer",
+        name: "Lyophilizer"
+    },
+    {
+        id: 8,
+        src: "formulation-microfluidizer",
+        name: "Micro-Fluidizer"
+    },
+    {
+        id: 9,
+        src: "formulation-Pharmasep",
+        name: "Pharmasep"
+    },
+    {
+        id: 10,
+        src: "formulation-SingleStationPress",
+        name: "Single Station Press"
+    },
+]
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -12,6 +112,16 @@ $(document).ready(function(e){
     setTimeout(() => {
         closeCover()
     }, 1000);
+    setFormulationImg();
+    setPreFormulationImg();
+    $('#thumbnailsFromu').html('');
+    $('#thumbnailsPreFromu').html('');
+    formulationeObj.forEach(obj=>{
+        $('#thumbnailsFromu').append(`<img class="machineImgThmNl" src="assets/abonsMachinary/${obj.src}.jpg" alt="" onmouseover="showOnHovr(${obj.id}, 'yes', 'formulation')" onmouseout="showOnHovr(${obj.id}, 'no', 'formulation')" onclick="selectImg(${obj.id},'formulation')">`)
+    })
+    PreformulationeObj.forEach(obj=>{
+        $('#thumbnailsPreFromu').append(`<img class="machineImgThmNl" src="assets/abonsMachinary/${obj.src}.jpg" alt="" onmouseover="showOnHovr(${obj.id}, 'yes', 'Preformulation')" onmouseout="showOnHovr(${obj.id}, 'no', 'Preformulation')" onclick="selectImg(${obj.id},'Preformulation')">`)
+    })
 })
 function showMenu() {
     $( ".navMenResp" ).slideDown();
@@ -230,4 +340,56 @@ function showSubMen(menuOpt){
         }
     }
 
+}
+let oldPhoto = true;
+
+let selectedFormulationObj =[
+];
+let selectedPreFormulationObj =[
+];
+function setFormulationImg(){
+    selectedFormulationObj=formulationeObj[0]
+    $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedFormulationObj.src}.jpg" alt="">
+    <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center" >${selectedFormulationObj.name}</p>`)
+}
+function setPreFormulationImg(){
+    selectedPreFormulationObj=PreformulationeObj[0]
+    $('#machineImgDetPreFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedPreFormulationObj.src}.jpg" alt="">
+    <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center" >${selectedPreFormulationObj.name}</p>`)
+}
+function showOnHovr(id, show, type){
+    if(type==='formulation'){
+        if(show === 'yes'){
+            let tempFormulationOb = formulationeObj[id]
+            $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${tempFormulationOb.src}.jpg" alt="">
+            <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${tempFormulationOb.name}</p>`)
+            } else {
+                $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedFormulationObj.src}.jpg" alt="">
+        <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${selectedFormulationObj.name}</p>`)
+        }
+    }
+    if(type==='Preformulation'){
+        if(show === 'yes'){
+            let tempPreFormulationOb = PreformulationeObj[id]
+            $('#machineImgDetPreFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${tempPreFormulationOb.src}.jpg" alt="">
+            <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${tempPreFormulationOb.name}</p>`)
+            } else {
+                $('#machineImgDetPreFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedPreFormulationObj.src}.jpg" alt="">
+        <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${selectedPreFormulationObj.name}</p>`)
+        }
+    }
+
+}
+function selectImg(id, type){
+    console.log(id)
+    if(type=== 'formulation'){
+        selectedFormulationObj=formulationeObj[id]
+        $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedFormulationObj.src}.jpg" alt="">
+        <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${selectedFormulationObj.name}</p>`)
+    }
+    if(type=== 'Preformulation'){
+        selectedPreFormulationObj=PreformulationeObj[id]
+        $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedPreFormulationObj.src}.jpg" alt="">
+        <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${selectedPreFormulationObj.name}</p>`)
+    }
 }

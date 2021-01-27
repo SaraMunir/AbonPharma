@@ -377,12 +377,9 @@ ul li {
     font-size: 1.2rem;
     font-weight: 600;
 }
-.list-group{
-}
 .listBold{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    background-color: #b7f3f0;
 }
 .listBold2{
     font-weight: 500;
@@ -394,21 +391,14 @@ ul {
     border-radius: 0px;
 }
 .listGrpBrdr{
-    border: .5px solid #adb5b9;
-    border-radius: 0rem;
-
 }
 .listGrpItmInr{
     border: .5px solid #cdd3d6;
 }
-
 .listGrpItmTop{
     border-top: .5px solid #cdd3d6e7;
     border-left: .5px solid #cdd3d6e7;
     border-right: .5px solid #cdd3d6e7;
-}
-.listGrpItmBtm{
-    border-bottom: .5px solid #cdd3d6e7;
 }
 .listGrpItmBtmHdn{
     border-bottom: .5px solid #cdd3d600;
@@ -424,7 +414,6 @@ ul {
 .fa-circle{
     color: #35373ab9;
     font-size: 9px;
-    
 }
 .myInput{
     font-weight: 700;
@@ -434,7 +423,6 @@ ul {
     border-radius: 0;
     border-bottom: 2px solid #bfc6cc;
 }
-
 label{
     font-size: 1.3rem;
     color: #00599c;
@@ -445,7 +433,6 @@ label{
     /* color: #00599c; */
     font-size: 2rem;
 }
-
 .myCard{
     width: 345px;
     margin-bottom: 20px;
@@ -456,15 +443,12 @@ label{
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
 .myCardBg{
-    /* margin-bottom: 20px; */
-    min-height: 75vh;
+    min-height: 55vh;
     background-color: #f5f6f8;
     padding: 70px;
     border-radius: 5px;
     filter: drop-shadow(-2px 4px 5px #1c383f3d);
 }
-
-
 .test {
     background-color: yellow;
 }
@@ -491,6 +475,33 @@ label{
 div img {
     width: 100%;
 
+}
+.machineImg{
+    height: 80vh;
+    object-fit: contain;
+    background: white;
+
+}
+.machineImgThmNl{
+    padding: 2px;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all .3s ease;
+    border-radius: 4px;
+}
+.machineImgThmNl:hover{
+    filter: drop-shadow(0px 2px 3px #1c383fd8);
+}
+.ThmbGall{
+    margin: 0 auto;
+}
+.gallery{
+    position: relative;
+    min-height: 100vh;
 }
 .cardImg{
     width: 12vh;
