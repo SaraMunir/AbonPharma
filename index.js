@@ -111,8 +111,9 @@ function myFunction() {
 $(document).ready(function(e){
     setTimeout(() => {
     //     closeCover()
-    $( "#heroTxtMain" ).fadeIn( 500);
-    }, 800);
+    $( "#heroTxtMain" ).fadeIn( );
+    $( ".myNav" ).fadeIn( );
+    }, 400);
     setFormulationImg();
     setPreFormulationImg();
     $('#thumbnailsFromu').html('');
