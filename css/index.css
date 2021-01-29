@@ -776,7 +776,7 @@ transform-origin: 0 0;
 .contactHero{
     background: #ffffff;
     width: 100%;
-    min-height: 90vh;
+    min-height:490px;
     padding: 20px;
 }
 .imgOnWhnResp{
