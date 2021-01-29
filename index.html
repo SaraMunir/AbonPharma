@@ -20,7 +20,7 @@
 </head>
 <body class="myBody">
     <div class="myNav" >
-        <div class="navBarCont">
+        <div class="navBarCont wrapper">
             <div class="">
                 <ul class="d-flex m-0 ml-4 p-0">
                     <li class="nav-item navLogoBef" id="myP">
@@ -60,6 +60,7 @@
                                 <li><a class="menuItem-link borderBtm borderTp" href="R&D.html#preformulation">preformulation</a></li>
                                 <li><a class="menuItem-link borderBtm" href="R&D.html#formulation">formulation </a></li>
                                 <li><a class="menuItem-link borderBtm" href="R&D.html#analytical">analytical </a></li>
+                                <li><a class="menuItem-link borderBtm" href="R&D.html#pharmacokinetics">Pharmacokinetics </a></li>
                             </ul>
                         </div>
                     </li>
@@ -83,8 +84,8 @@
                 </div>
                 <ul class="navFont text-left" style="padding-left: 0; padding-top: 15px;">
                     <li class="navHvr nav-item borderBtm">
-                        <div class="d-flex justify-content-between">
-                            <a class="col-8 nav-link navLink" href="about.html">About
+                        <div class="d-flex justify-content-between navLink">
+                            <a class="col-8 nav-link" href="about.html">About
                             </a>
                             <div class="col-4 d-flex justify-content-end" onclick="showSubMen('abtMenu')">
                                 <i class="fas fa-plus p-2" ></i>
@@ -99,8 +100,8 @@
                         </div>
                     </li>
                     <li class="navHvr nav-item borderBtm">
-                        <div class="d-flex justify-content-between">
-                            <a class="col-8 nav-link navLink" href="R&D.html">R&D
+                        <div class="d-flex justify-content-between navLink">
+                            <a class="col-8 nav-link" href="R&D.html">R&D
                             </a>
                             <div class="col-4 d-flex justify-content-end" onclick="showSubMen('RandD')">
                                 <i class="fas fa-plus p-2" ></i>
@@ -110,7 +111,8 @@
                             <ul class="pl-2" >
                                 <li><a class="nav-link navLink borderBtm " href="R&D.html#preformulation">preformulation</a></li>
                                 <li><a class="nav-link navLink borderBtm" href="R&D.html#formulation">formulation </a></li>
-                                <li><a class="nav-link navLink"  href="R&D.html#analytical">analytical</a></li>
+                                <li><a class="nav-link navLink borderBtm"  href="R&D.html#analytical">analytical</a></li>
+                                <li><a class="nav-link navLink"  href="R&D.html#pharmacokinetics">pharmacokinetics</a></li>
                             </ul>
                         </div>
                     </li>
@@ -124,41 +126,43 @@
             </div>
         </div>
     </div>
-    <div class="cover mx-auto container-fluid">
+    <!-- <div class="cover mx-auto container-fluid">
         <div class="col-1 mx-auto loadingBox">
             <img src="./assets/Rolling-1s-200px.gif" alt="" style="width: 50px;">
         </div>
-    </div>
+    </div> -->
     <div class="home" id="home">
         <header class="" >
             <div class="heroBckImg">
-                <div class="col-lg-8">
-                    <h1 class="heroHText spShadow" style="color: white">
-                        A Science-Based Approach To Product Development
-                    </h1>
-                    <p  class="ltrSpc ltrHgtBg p-0 heroSubText col-lg-10 spShadow2" style="font-size: 1.3rem;" >Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on <span class="specialTxt">complex generics</span> and <span class="specialTxt">proprietary</span> products across <span class="specialTxt">injectable, oral</span> and other dosage forms with a <span class="specialTxt">high barrier to entry</span>. 
-                    </p>
+                <div class="wrapper">
+                    <div class="col-lg-8 hide" id="heroTxtMain">
+                        <h1 class="heroHText spShadow" style="color: white">
+                            A Science-Based Approach To Product Development
+                        </h1>
+                        <p  class="ltrSpc ltrHgtBg p-0 heroSubText col-lg-10 spShadow2" style="font-size: 1.3rem;" >Abon Pharmaceuticals, LLC is a specialty pharmaceutical company focused on <span class="specialTxt">complex generics</span> and <span class="specialTxt">proprietary</span> products across <span class="specialTxt">injectable, oral</span> and other dosage forms with a <span class="specialTxt">high barrier to entry</span>. 
+                        </p>
+                    </div>
                 </div>
             </div>
         </header>
         <section class="aspectSection lightBkBlue text-center">
-            <div class="cards row mx-auto">
+            <div class="cards row mx-auto wrapper">
                 <div class="myCard text-left mx-auto">
                     <h2 class="myCardTitle">About Us</h2>
                     <p class="myCardDesc pt-3 ltrHgtSm">Abon specializes in developing a broad range of pharmaceutical products and integrates product quality by formulation and process design. At Abon, we emphasize using scientific methods and modern technology to improve dosage form efficiency, enable robust processing, and enhance patient compliance.
                     </p>
-                    <div class="col-6 mt-4"> <a class="myBtn readMoreLnk" href="about.html">Read More</a></div>
+                    <div class="col-lg-6 mt-4"> <a class="myBtn readMoreLnk" href="about.html">Read More</a></div>
                 </div>
                 <div class="myCard text-left mx-auto">
                     <h2 class="myCardTitle">R&D</h2>
                     <p class="myCardDesc pt-3 ltrHgtSm">Abons team of scientists and chemists utilize advanced techniques and modern equipment to identify and characterize physicochemical properties essential to formulate and process complex dosage forms. Our product development approach is always accompanied by statistical designs and mathematical modeling, facilitating FDA requirements and maximizing the probability of desired in-vivo performance.</p>
-                    <div class="col-6 mt-4"> <a class="myBtn readMoreLnk" href="R&D.html">Read More</a></div>
+                    <div class="col-lg-6 mt-4"> <a class="myBtn readMoreLnk" href="R&D.html">Read More</a></div>
                 </div>
                 <div class="myCard text-left mx-auto">
                     <h2 class="myCardTitle">Collaboration </h2>
                     <p class="myCardDesc pt-3 ltrHgtSm">Abon is seeking global partners for development and marketing opportunities for proprietary technologies and complex generics. Our Long-Acting Injection/ Depot development capability and expertise offer distinct competitive advantages to any partner. 
                     </p>
-                    <div class="col-6 mt-4"> <a class="myBtn readMoreLnk" href="Pipeline.html">Read More</a></div>
+                    <div class="col-lg-6 mt-4"> <a class="myBtn readMoreLnk" href="Pipeline.html">Read More</a></div>
                 </div>
             </div>
         </section>

@@ -110,8 +110,9 @@ function myFunction() {
 }
 $(document).ready(function(e){
     setTimeout(() => {
-        closeCover()
-    }, 1000);
+    //     closeCover()
+    $( "#heroTxtMain" ).fadeIn( 500);
+    }, 800);
     setFormulationImg();
     setPreFormulationImg();
     $('#thumbnailsFromu').html('');
@@ -136,9 +137,9 @@ function myScroll(type){
         }, 1000);
     }
 }
-function closeCover(){
-    $( ".cover" ).fadeOut( 500);
-}
+// function closeCover(){
+//     $( ".cover" ).fadeOut( 500);
+// }
 function showMoreSect() {
     $('html, body').animate({
         scrollTop: $(".aspectSection").offset().top
@@ -389,7 +390,7 @@ function selectImg(id, type){
     }
     if(type=== 'Preformulation'){
         selectedPreFormulationObj=PreformulationeObj[id]
-        $('#machineImgDetFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedPreFormulationObj.src}.jpg" alt="">
+        $('#machineImgDetPreFormu').html(`<img class="machineImg" src="assets/abonsMachinary/${selectedPreFormulationObj.src}.jpg" alt="">
         <p class="heroSubText mx-auto ltrSpc ltrHgtBg text-center">${selectedPreFormulationObj.name}</p>`)
     }
 }

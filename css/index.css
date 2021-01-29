@@ -10,11 +10,16 @@ body{
     margin: 0;
     padding: 0;
 }
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .myBody{
-    background-color: #f5f8fa;
+    background-color: #94d6e6;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Nunito', sans-serif; */
     color: black;
+
 }
 .cover{
     position: fixed;
@@ -30,7 +35,7 @@ body{
 }
 .heroBckImg{
     background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low-2-big.jpg);
-    min-height: 95vh;
+    min-height: 81vh;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 25vh 20vh;
@@ -39,7 +44,7 @@ body{
 .heroHText{
     color: #00599c;
     font-family: 'Cairo', cursive;
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     text-align: left;
     text-transform: capitalize;
 }
@@ -63,7 +68,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #dae6e2;
+    background: #ddeee8;
     box-shadow: -3px 2px 5px #00000067;
 }
 .navBarCont{
@@ -363,15 +368,19 @@ ul li {
 .darkBk{
     background: #103f6e;
 }
+.whiteBkg{
+    background: #ffffff;
+
+}
 .lightBk{
     background: #ffffff;
 }
 .lightBkBlue{
-    background: #dae6e2;
+    background: #ddeee8;
 }
 .aspectSection{
     padding: 50px;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 .list-group-item{
     font-size: 1.2rem;
@@ -443,9 +452,10 @@ label{
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
 .myCardBg{
-    min-height: 55vh;
+    min-height: 30vh;
     background-color: #f5f6f8;
-    padding: 70px;
+    padding: 40px 70px;
+    margin-bottom: 10px;
     border-radius: 5px;
     filter: drop-shadow(-2px 4px 5px #1c383f3d);
 }
@@ -468,7 +478,7 @@ label{
 }
 .myCardDesc{
     font-size: 1rem;
-    min-height: 80vh;
+    min-height: 450px;
     text-align: left;
     font-weight: 500;
 }
@@ -477,16 +487,15 @@ div img {
 
 }
 .machineImg{
-    height: 80vh;
+    height: 60vh;
     object-fit: contain;
-    background: white;
-
+    object-position: top;
 }
 .machineImgThmNl{
     padding: 2px;
     margin: 10px;
-    width: 150px;
-    height: 95px;
+    width: 50px;
+    height: 35px;
     object-fit: cover;
     cursor: pointer;
     margin: 0 auto;
@@ -765,7 +774,7 @@ transform-origin: 0 0;
     background: white;
 }
 .contactHero{
-    /* background: #d2d8db; */
+    background: #ffffff;
     width: 100%;
     min-height: 90vh;
     padding: 20px;
@@ -824,6 +833,20 @@ transform-origin: 0 0;
 .addPdTp{
     padding-top: 70px;
     transition: ease all .3s;
+}
+@media only screen and (min-width: 1352px) {
+    .myCard {
+        width: 405px;
+        min-height: 40vh;
+        /* margin-bottom: 20px;
+        background-color: #f5f6f8;
+        padding: 40px 20px 40px 40px;
+        border-radius: 5px;
+        filter: drop-shadow(4px 4px 4px #1c383f3d); */
+    }
+    .myCardDesc {
+        min-height: 400px;
+    }
 }
 @media only screen and (max-width: 1352px) {
     .navBr {
@@ -913,7 +936,7 @@ transform-origin: 0 0;
 }
 @media only screen and (max-width: 730px){
     .heroHText {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .navHide{
         display: none; 

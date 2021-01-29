@@ -23,7 +23,7 @@
 </head>
 <body class="myBody">
     <div class="myNav" >
-        <div class="navBarCont">
+        <div class="navBarCont wrapper">
             <div class="">
                 <ul class="d-flex m-0 ml-4 p-0">
                     <li class="nav-item navLogoBef" id="myP">
@@ -63,6 +63,7 @@
                                 <li><a class="menuItem-link borderBtm borderTp" href="R&D.html#preformulation">preformulation</a></li>
                                 <li><a class="menuItem-link borderBtm" href="R&D.html#formulation">formulation </a></li>
                                 <li><a class="menuItem-link borderBtm" href="R&D.html#analytical">analytical </a></li>
+                                <li><a class="menuItem-link borderBtm" href="R&D.html#pharmacokinetics">Pharmacokinetics </a></li>
                             </ul>
                         </div>
                     </li>
@@ -113,7 +114,8 @@
                             <ul class="pl-2" >
                                 <li><a class="nav-link navLink borderBtm " href="R&D.html#preformulation">preformulation</a></li>
                                 <li><a class="nav-link navLink borderBtm" href="R&D.html#formulation">formulation </a></li>
-                                <li><a class="nav-link navLink"  href="R&D.html#analytical">analytical</a></li>
+                                <li><a class="nav-link navLink borderBtm"  href="R&D.html#analytical">analytical</a></li>
+                                <li><a class="nav-link navLink"  href="R&D.html#pharmacokinetics">pharmacokinetics</a></li>
                             </ul>
                         </div>
                     </li>
@@ -127,33 +129,35 @@
             </div>
         </div>
     </div>
-    <div class="myBoxShad" style="position: relative;">
+    <div class="myBoxShad " style="position: relative;">
         <div class="contactHero"  style="padding-top: 15vh; margin-top: 5vh;">
-            <div class="col-lg-10 row mx-auto">
-                <div class="col-lg-12 text-left">
-                    <h1 class="heroHText"> <i class="fas fa-map-marker-alt "></i> &nbsp; Contact Us</h1>
-                    <p class="heroSubText mb-4">Abon is seeking global partners for development and marketing opportunities.
-                    </p>
-                    <div class="mx-auto myGroupBrd mt-4 heroSubText heroSubText">
-                        <div class="d-flex mb-2 ">
-                            <i class="col-1 fas fa-map-marked-alt mt-2" style="color: #2b5a8a"></i>
-                            <p class="col-11 text-left">140 Legrand Ave
-                                Northvale, New Jersey 07647
-                                USA.</p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="col-1 fas fa-phone-square mt-2" style="color: #2b5a8a"></i>
-                            <p class="col-11 text-left">
-                                1-877-330-ABON(2266)
-                                <br>
-                                201-767-1102
-                            </p>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <i class="col-1 fas fa-fax mt-2" style="color: #2b5a8a"></i>
-                            <p class="col-11 text-left">
-                                201-767-1145
-                            </p>
+            <div class="wrapper">
+                <div class="col-lg-8 row mx-auto ">
+                    <div class="col-lg-12 text-left">
+                        <h1 class="heroHText"> <i class="fas fa-map-marker-alt "></i> &nbsp; Contact Us</h1>
+                        <p class="heroSubText mb-4">Abon is seeking global partners for development and marketing opportunities.
+                        </p>
+                        <div class="mx-auto myGroupBrd mt-4 heroSubText heroSubText">
+                            <div class="d-flex mb-2 ">
+                                <i class="col-1 fas fa-map-marked-alt mt-2" style="color: #2b5a8a"></i>
+                                <p class="col-11 text-left">140 Legrand Ave
+                                    Northvale, New Jersey 07647
+                                    USA.</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="col-1 fas fa-phone-square mt-2" style="color: #2b5a8a"></i>
+                                <p class="col-11 text-left">
+                                    1-877-330-ABON(2266)
+                                    <br>
+                                    201-767-1102
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="col-1 fas fa-fax mt-2" style="color: #2b5a8a"></i>
+                                <p class="col-11 text-left">
+                                    201-767-1145
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,28 +165,30 @@
         </div>
     </div>
     <section class="contactUs" id="ContactUs">
-        <div class="col-lg-9 mx-auto">
-            <div class="contactCard">
-                <div class="mx-auto text-center" style="font-weight: 800;">
-                    <h2 class="heroH2Text mb-4">Send Us A Message</h2>
-                    <form class="">
-                        <div class="form-group text-left">
-                            <label class="contactLabel" for="exampleInputEmail1">Email address</label>
-                            <input type="email" class= "myInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <hr class="col-5 mx-auto">
-                        <div class="form-group text-left mt-4">
-                            <label for="exampleInputName ">Name</label>
-                            <input type="text" class="myInput" id="exampleInputName" aria-describedby="name" placeholder="Enter Your Name">
-                        </div>
-                        <hr class="col-5 mx-auto">
-                        <div class="form-group text-left  mt-4">
-                            <label for="exampleInputName">Message</label>
-                            <textarea class="myInput" name="" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="mySubBtn">Submit</button>
-                    </form>                 
+        <div class="wrapper">
+            <div class="col-lg-8 mx-auto">
+                <div class="contactCard">
+                    <div class="mx-auto text-center" style="font-weight: 800;">
+                        <h2 class="heroH2Text mb-4">Send Us A Message</h2>
+                        <form class="">
+                            <div class="form-group text-left">
+                                <label class="contactLabel" for="exampleInputEmail1">Email address</label>
+                                <input type="email" class= "myInput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <hr class="col-5 mx-auto">
+                            <div class="form-group text-left mt-4">
+                                <label for="exampleInputName ">Name</label>
+                                <input type="text" class="myInput" id="exampleInputName" aria-describedby="name" placeholder="Enter Your Name">
+                            </div>
+                            <hr class="col-5 mx-auto">
+                            <div class="form-group text-left  mt-4">
+                                <label for="exampleInputName">Message</label>
+                                <textarea class="myInput" name="" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="mySubBtn">Submit</button>
+                        </form>                 
+                    </div>
                 </div>
             </div>
         </div>
