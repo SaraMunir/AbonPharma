@@ -18,20 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+<!-- 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 <body class="myBody">
     <div class="myNavBack"></div>
     <div class="myNav" >
-        <div class="navBarCont wrapper ">
+        <div class="navBarCont wrapper">
             <div class="">
                 <ul class="d-flex m-0 ml-4 p-0">
                     <li class="nav-item navLogoBef" id="myP">
                         <a class="navbar-brand mr-auto" href="index.html">
-                            <img class="logoBefore" src="assets/abon_llc_logo_green.png" alt="" >
+                            <img class="logoBefore" src="assets/abonLogoWhite.png" alt="" >
                         </a>
                     </li>
                     <li class="nav-item">
@@ -40,7 +42,7 @@
                 </ul>
             </div>
             <div class="navMen navHide">
-                <ul class="navMenFlex navFont text-center p-0 m-0 pt-3">
+                <ul class="navMenFlex navFont text-center p-0 m-0 pt-2">
                     <li class="menuBarContr nav-item " >
                         <a class="nav-link navLink" href="about.html">About &nbsp;
                             <span  style="font-size: .8rem;"><i class="fas fa-chevron-down"></i></span>
@@ -132,20 +134,20 @@
             </div>
         </div>
     </div>
-    <div class="myBoxShad whiteBkg" style="position: relative;">
-        <div class="col-lg-8 mx-auto text-left" style="padding-top: 30px; padding-bottom: 50px;">
-            <div class="heroText mt-5 mx-auto wrapper">
+    <div class="whiteBck AbtBck" style="position: relative;">
+        <div class="col-lg-10 mx-auto text-left" style="padding-top: 30px; padding-bottom: 30px;">
+            <div class="heroText mt-1 mx-auto wrapper">
                 <h2 class="heroHText">About Us</h2>
-                <p class="heroSubText mx-auto ltrSpc ltrHgtBg">Abon Pharmaceuticals LLC is a specialty pharmaceutical company focused on drug delivery research. Founded in 2009, Abon continues to uphold its science-based approach to product development. Abon’s highly qualified team of scientists has a proven track record in dosage forms across the pharmaceutical space, generating multiple patents. 
+                <p class="heroSubText ltrSpc ltrHgtBg col-lg-10 p-0">Abon Pharmaceuticals LLC is a specialty pharmaceutical company focused on drug delivery research. Founded in 2009, Abon continues to uphold its science-based approach to product development. Abon’s highly qualified team of scientists has a proven track record in dosage forms across the pharmaceutical space, generating multiple patents. 
                 <br> 
                 Abon’s innovative approach, expertise, and flexibility are tailored to improving bioavailability or achieving bioequivalence within timelines and budget. We are also a process focused company that ensures robustness and manufacturability. Our team has experience in tech transfer in multiple regions of the globe and collaborates with partners both in the USA and across different continents and cultures.
                 </p>
             </div>
         </div>
     </div>
-    <section class="aspectSection text-center lightBkBlue ">
-        <div class="mx-auto myCardBg wrapper">
-            <h2 class="heroHText2 mb-4">Meet The Founders</h2>
+    <section class="aspectSection text-center lightBkBlue">
+        <div class="mx-auto mb-2 pt-3 myCardBg wrapper">
+            <h2 class="heroHText2 mb-4 mt-3">Meet The Founders</h2>
             <hr class="col-11" style="border-top: 1px solid #5252526c; margin-left: 0;">
             <div>
                 <div id="SalahScroll">
@@ -196,145 +198,136 @@
                     </div>
                     <div class="d-flex mb-4"></div>
                 </div>
-            </div>
-        </div>
-        <div class="mx-auto myCardBg wrapper">
-            <h2 class="heroHText2 mb-4">Meet The Management Team</h2>
-            <hr class="col-11" style="border-top: 1px solid #5252526c; margin-left: 0;">
-            <div>
-                <div id="GausScroll">
-                    <div class="row founderCard pb-2">
-                        <div class="col-lg-3 d-flex justify-content-start">
-                            <img class="card1" src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png" alt="product-development">
+                <hr class="col-11" style="border-top: 1px solid #5252526c; margin-left: 0;">
+                <h2 class="heroHText2 mb-4">Meet The Management Team</h2>
+                <div>
+                    <div id="GausScroll">
+                        <div class="row founderCard pb-2">
+                            <div class="col-lg-3 d-flex justify-content-start">
+                                <img class="card1" src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png" alt="product-development">
+                            </div>
+                            <div class="others col-lg-8">
+                                <h4 class="mb-4 text-left founderName mt-3">Gaus Khan, MS</h4>
+                                <h6 class="mb-4 text-left founderJobTitle">Executive Vice President of Quality & Analytical Services</h6>
+                            </div>
+                            <div class="col-lg-1" >
+                                <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Gaus')" id="toggleBtn3"></i>
+                            </div>
                         </div>
-                        <div class="others col-lg-8">
-                            <h4 class="mb-4 text-left founderName mt-3">Gaus Khan, MS</h4>
-                            <h6 class="mb-4 text-left founderJobTitle">Executive Vice President of Quality & Analytical Services</h6>
+                        <div class="hide" id="Gaus">
+                            <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Gaus is responsible for Quality System, Analytical Support, and Portfolio Management. Prior to joining Abon, he worked at Barr Pharmaceuticals for 16 years in several key positions with increasing responsibilities, including Senior Director of ARD and Director of Quality Control. His contribution to Barr’s development and quality program was instrumental in the company’s growth. 
+                                <br>
+                                Gaus obtained his MS in Medicinal  Chemistry from St. Johns University, New York. He completed his B. Pharm (Hons) and M. Pharm from the University of Dhaka, Bangladesh. 
+                                </p>
                         </div>
-                        <div class="col-lg-1" >
-                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Gaus')" id="toggleBtn3"></i>
-                        </div>
-                    </div>
-                    <div class="hide" id="Gaus">
-                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Gaus is responsible for Quality System, Analytical Support, and Portfolio Management. Prior to joining Abon, he worked at Barr Pharmaceuticals for 16 years in several key positions with increasing responsibilities, including Senior Director of ARD and Director of Quality Control. His contribution to Barr’s development and quality program was instrumental in the company’s growth. 
-                            <br>
-                            Gaus obtained his MS in Medicinal  Chemistry from St. Johns University, New York. He completed his B. Pharm (Hons) and M. Pharm from the University of Dhaka, Bangladesh. 
-                            </p>
-                    </div>
-                    <div class="d-flex mb-4 col-8 mx-auto">
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                    </div>
-                </div>
-                <div id="AnwarScroll">
-                    <div class="row founderCard pb-2" >
-                        <div class="col-lg-3 d-flex justify-content-start">
-                            <img class="card1" src="assets/anwar.jpg" alt="product-development">
-                        </div>
-                        <div class="others col-lg-8">
-                            <h4 class="mb-4 text-left founderName mt-3">Anwar Hossain, PhD</h4>
-                            <h6 class="mb-4 text-left founderJobTitle">Executive Director, R&D & Technology Services</h6>
-                        </div>
-                        <div class="col-lg-1" >
-                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Anwar')" id="toggleBtn4"></i>
+                        <div class="d-flex mb-4 col-8 mx-auto">
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
                         </div>
                     </div>
-                    <div class="hide" id="Anwar">
-                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Anwar brings over 27 years of pharmaceutical experience in formulation and process development, process scale-up and optimization, technology transfer, process validation, project management, and R&D cGMP Operations. Before joining Abon, Anwar worked for four years at Kashiv Biosciences as Executive Director of Formulation Research & Development and Senior Director of Process Development, Technical Services, and Operation. Anwar was responsible for both cGMP and Pilot Plant operations and successfully submitted multiple ANDAs. Before Kashiv, Anwar worked at Teva/Barr Pharmaceuticals for over 21 years, where he served in various responsibilities encompassing R&D Formulation Development, Process Validation & Technology Transfer, and Project Management. <br>
-                            Dr. Hossain obtained his Ph.D. (Pharmaceutics) and M.S. (Industrial Pharmacy) from Long Island University, Brooklyn, New York. His graduate research generated a publication and a patent.  He received his M. Pharm and B. Pharm (Hons) from the University of Dhaka, Bangladesh. Additionally, he presented nine papers at AAPS conferences.
-                            </p>
-                    </div>
-                    <div class="d-flex mb-4 col-8 mx-auto">
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                    </div>
-                </div>
-                <div id="YanmingScroll">
-                    <div class="row founderCard pb-2" >
-                        <div class="col-lg-3 d-flex justify-content-start">
-                            <img class="card1" src="assets/Yanming.jpg" alt="product-development">
+                    <div id="AnwarScroll">
+                        <div class="row founderCard pb-2" >
+                            <div class="col-lg-3 d-flex justify-content-start">
+                                <img class="card1" src="assets/anwar.jpg" alt="product-development">
+                            </div>
+                            <div class="others col-lg-8">
+                                <h4 class="mb-4 text-left founderName mt-3">Anwar Hossain, PhD</h4>
+                                <h6 class="mb-4 text-left founderJobTitle">Executive Director, R&D & Technology Services</h6>
+                            </div>
+                            <div class="col-lg-1" >
+                                <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Anwar')" id="toggleBtn4"></i>
+                            </div>
                         </div>
-                        <div class="others col-lg-8">
-                            <h4 class="mb-4 text-left founderName mt-3">Yanming Zu, PhD, RPh</h4>
-                            <h6 class="mb-4 text-left founderJobTitle">Executive Director, Research and Development</h6>
+                        <div class="hide" id="Anwar">
+                            <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Anwar brings over 27 years of pharmaceutical experience in formulation and process development, process scale-up and optimization, technology transfer, process validation, project management, and R&D cGMP Operations. Before joining Abon, Anwar worked for four years at Kashiv Biosciences as Executive Director of Formulation Research & Development and Senior Director of Process Development, Technical Services, and Operation. Anwar was responsible for both cGMP and Pilot Plant operations and successfully submitted multiple ANDAs. Before Kashiv, Anwar worked at Teva/Barr Pharmaceuticals for over 21 years, where he served in various responsibilities encompassing R&D Formulation Development, Process Validation & Technology Transfer, and Project Management. <br>
+                                Dr. Hossain obtained his Ph.D. (Pharmaceutics) and M.S. (Industrial Pharmacy) from Long Island University, Brooklyn, New York. His graduate research generated a publication and a patent.  He received his M. Pharm and B. Pharm (Hons) from the University of Dhaka, Bangladesh. Additionally, he presented nine papers at AAPS conferences.
+                                </p>
                         </div>
-                        <div class="col-lg-1" >
-                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Yanming')" id="toggleBtn4"></i>
-                        </div>
-                    </div>
-                    <div class="hide" id="Yanming">
-                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc"> Dr. Zu focuses on liquid dosage forms, specifically oral suspensions and long acting injectables.  She is also responsible for overviewing the pharmacokinetic support for biostudy design and other requirements for all products at Abon.  Additionally, she manages the 505(b)(2) projects Abon has undertaken.  Before Abon, Dr. Zu joined Barr Laboratory in 2001 as a Formulation Scientist and later served as a Senior Scientist and then a Principal Scientist.  She joined Abon at its inception as the Director of Formulation R&D, responsible for the generic and proprietary product development.  Dr. Zu’s work contributed to multiple ANDAs, including several first to file approvals, and generated several patents, research papers, review articles, and invited presentations. <br>
-                            Dr. Zu received her Ph.D. in Pharmaceutics from the University of Illinois at Chicago.  She completed her B.S. in Pharmacy (English) and studied M.S. in Pharmaceutics from Shenyang Pharmaceutical University, China.  Dr. Zu is a Registered Pharmacist in New York State.  She also holds an M.S. degree in Acupuncture from the Eastern School of Acupuncture and Traditional Medicine.
-                           </p>
-                    </div>
-                    <div class="d-flex mb-4 col-8 mx-auto">
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                    </div>
-                </div>
-                <div id="MahishScroll">
-                    <div class="row founderCard pb-2">
-                        <div class="col-lg-3 d-flex justify-content-start">
-                            <img class="card1" src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png" alt="product-development">
-                        </div>
-                        <div class="others col-lg-8">
-                            <h4 class="mb-4 text-left founderName mt-3">Mahish Patel</h4>
-                            <h6 class="mb-4 text-left founderJobTitle">Executive Director, Analytical Research & Development</h6>
-                        </div>
-                        <div class="col-lg-1" >
-                            <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Mahish')" id="toggleBtn3"></i>
+                        <div class="d-flex mb-4 col-8 mx-auto">
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
                         </div>
                     </div>
-                    <div class="hide" id="Mahish">
-                        <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Mahish is responsible for aligning analytical support with the R&D team and empowering those project leaders to meet R & D’s needs in a timely and efficient manner. <br>
-                            Mahish joined Abon in 2009 as Director. Analytical R&D. Mahish has more than 30 years of experience, starting as a Chemist and progressing to Senior Manager. He brings a broad range of experience in managing both QC and R&D Labs and overseeing the metrology of an advanced lab at Barr Pharmaceuticals. He received his B.S Degree in Chemistry from Calcutta University, India.</p>
+                    <div id="YanmingScroll">
+                        <div class="row founderCard pb-2" >
+                            <div class="col-lg-3 d-flex justify-content-start">
+                                <img class="card1" src="assets/Yanming.jpg" alt="product-development">
+                            </div>
+                            <div class="others col-lg-8">
+                                <h4 class="mb-4 text-left founderName mt-3">Yanming Zu, PhD, RPh</h4>
+                                <h6 class="mb-4 text-left founderJobTitle">Executive Director, Research and Development</h6>
+                            </div>
+                            <div class="col-lg-1" >
+                                <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Yanming')" id="toggleBtn4"></i>
+                            </div>
+                        </div>
+                        <div class="hide" id="Yanming">
+                            <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc"> Dr. Zu focuses on liquid dosage forms, specifically oral suspensions and long acting injectables.  She is also responsible for overviewing the pharmacokinetic support for biostudy design and other requirements for all products at Abon.  Additionally, she manages the 505(b)(2) projects Abon has undertaken.  Before Abon, Dr. Zu joined Barr Laboratory in 2001 as a Formulation Scientist and later served as a Senior Scientist and then a Principal Scientist.  She joined Abon at its inception as the Director of Formulation R&D, responsible for the generic and proprietary product development.  Dr. Zu’s work contributed to multiple ANDAs, including several first to file approvals, and generated several patents, research papers, review articles, and invited presentations. <br>
+                                Dr. Zu received her Ph.D. in Pharmaceutics from the University of Illinois at Chicago.  She completed her B.S. in Pharmacy (English) and studied M.S. in Pharmaceutics from Shenyang Pharmaceutical University, China.  Dr. Zu is a Registered Pharmacist in New York State.  She also holds an M.S. degree in Acupuncture from the Eastern School of Acupuncture and Traditional Medicine.
+                               </p>
+                        </div>
+                        <div class="d-flex mb-4 col-8 mx-auto">
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                        </div>
                     </div>
-                    <div class="d-flex mb-4 col-8 mx-auto">
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
-                        <div class="lineDvdr col-1 mx-auto"></div>
+                    <div id="MahishScroll">
+                        <div class="row founderCard pb-2">
+                            <div class="col-lg-3 d-flex justify-content-start">
+                                <img class="card1" src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png" alt="product-development">
+                            </div>
+                            <div class="others col-lg-8">
+                                <h4 class="mb-4 text-left founderName mt-3">Mahish Patel</h4>
+                                <h6 class="mb-4 text-left founderJobTitle">Executive Director, Analytical Research & Development</h6>
+                            </div>
+                            <div class="col-lg-1" >
+                                <i class="fas fa-2x fa-chevron-circle-down toggleBtn" onclick="showMore('Mahish')" id="toggleBtn3"></i>
+                            </div>
+                        </div>
+                        <div class="hide" id="Mahish">
+                            <p class="text-left mt-4 fndDesc ltrHgtSm ltrSpc">Mahish is responsible for aligning analytical support with the R&D team and empowering those project leaders to meet R & D’s needs in a timely and efficient manner. <br>
+                                Mahish joined Abon in 2009 as Director. Analytical R&D. Mahish has more than 30 years of experience, starting as a Chemist and progressing to Senior Manager. He brings a broad range of experience in managing both QC and R&D Labs and overseeing the metrology of an advanced lab at Barr Pharmaceuticals. He received his B.S Degree in Chemistry from Calcutta University, India.</p>
+                        </div>
+                        <div class="d-flex mb-4 col-8 mx-auto">
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                            <div class="lineDvdr col-1 mx-auto"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- <section class="lightBk text-center m-0">
-        <div class="lineDvdr2 col-11 mx-auto"></div>
-    </section > -->
-    <!-- <hr class="lightBkBlue"> -->
-    <section class="lightBkBlue text-center">
-        
     </section>
     <footer>
         <div class="row text-left container mx-auto">

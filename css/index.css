@@ -16,8 +16,7 @@ body{
 }
 .myBody{
     background-color: #94d6e6;
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Montserrat', sans-serif;    /* font-family: 'Nunito', sans-serif; */
     color: black;
 
 }
@@ -34,23 +33,52 @@ body{
     top: 45%;
 }
 .heroBckImg{
-    background: url(../assets/high-angle-vaccination-elements-arrangement-close-up-low-2-big.jpg);
-    min-height: 81vh;
+    background: url(../assets/newHeroEdit2.jpg);
+    min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 25vh 20vh;
-    background-position-y: 40px;
+    padding: 15vh 33vh;
+    background-position-y: -137px;
+}
+.AbtBck{
+    background-color: white;
+    background: url(../assets/whiteWithHexagon1.jpg);
+    /* min-height: 81vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.whiteBck{
+    background-color: white;
+}
+.RndBckBck{
+    background: #031b36;
+}
+.pipeBckBck{
+    background: #003876;
+}
+.RndBck{
+    background: url(../assets/background6.jpg);
+    /* min-height: 81vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -67px;
+}
+.pipeBck{
+    background: url(../assets/pipelineGlobal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -176px;
 }
 .heroHText{
     color: #00599c;
-    font-family: 'Cairo', cursive;
+    font-family: 'Cairo', sans-serif;
     font-size: 2.8rem;
     text-align: left;
     text-transform: capitalize;
 }
 .heroHText2{
     color: #00599c;
-    font-family: 'Cairo', cursive;
+    font-family: 'Cairo', sans-serif;
     font-size: 2.6rem;
     text-align: left;
     text-transform: capitalize;
@@ -62,8 +90,8 @@ body{
     filter: drop-shadow(0px 0px 3px #fbfeff);
 }
 .myNavBack {
-    height: 70px;
-    background: #ddeee8;
+    height: 57px;
+    background: #04618d;
 }
 .myNav {
     width: 100%;
@@ -72,7 +100,8 @@ body{
     top: 0;
     right: 0;
     padding: 0 10px;
-    background: #ddeee8;
+    background: #04618d;
+    background-image: linear-gradient( 45deg, #04618d, #0a7eb4);
     box-shadow: -3px 2px 5px #00000067;
 }
 .navBarCont{
@@ -108,25 +137,26 @@ body{
     border-radius: 3px;
     border:3px solid #f6fdff;
 }
+.navLink {
+    cursor: pointer;
+    color:  #e7e7e7;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: all ease .3s;
+}
 .navLinkActive:hover {
     color:  #00599c;
     transition: all ease .5s;
     font-weight: 500;
     background: #f6fdff;
 }
-.navLink {
-    cursor: pointer;
-    color:  #000000;
-    transition: all ease .5s;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-size: 1.05rem;
-}
+
 .navLink:hover {
-    background-color: #18a69f;
-    color: white;
-    font-size: 1.2rem;
-    filter: drop-shadow(3px 3px 3px rgb(179, 179, 179));
+    background-color: #bde5ef;
+    color: Black;
+    font-size: 1.1rem;
+    filter: drop-shadow(3px 3px 3px #424242d5);
 }
 .navLink a {
     color:  #00599c;
@@ -139,11 +169,10 @@ body{
     text-decoration: none;
 }
 .navBrandName {
-    color: #000000;
-    font-size: 1.1rem;
+    color: #ffffff;
+    font-size: 1.rem;
     font-weight: bolder;
-    margin-top: 25px;
-    padding-left: 10px;
+    margin-top: 15px;
 }
 .navBrandNameSp {
     text-transform: uppercase;
@@ -162,7 +191,7 @@ body{
 }
 .heroH2Text{
     color: #18a69f;
-    font-family: 'Cairo', cursive;
+    font-family: 'Cairo', sans-serif;
     font-weight: bold;
     font-size: 2.3rem;
 }
@@ -174,7 +203,7 @@ body{
 .heroSubText{
     color: #000000;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     /* line-height: 2.2rem; */
 }
 .specialTxt{
@@ -186,10 +215,10 @@ body{
     letter-spacing: 0px;
 }
 .ltrHgtBg{
-    line-height: 2.4rem;
+    line-height: 1.6rem;
 }
 .ltrHgtSm{
-    line-height: 2.2rem;
+    line-height: 1.9rem;
 }
 .heroSubText2{
     color: #353535;
@@ -380,7 +409,7 @@ ul li {
     background: #ffffff;
 }
 .lightBkBlue{
-    background: #ddeee8;
+    background: #eaeaea;
 }
 .aspectSection{
     padding: 15px 50px;
@@ -398,7 +427,7 @@ ul li {
     font-weight: 500;
 }
 .listGroupItem{
-    padding: 15px;
+    padding: 10px;
 }
 ul {
     border-radius: 0px;
@@ -448,6 +477,7 @@ label{
 }
 .myCard{
     width: 345px;
+    border: 1px solid #cbcbcb;
     margin-bottom: 20px;
     min-height: 75vh;
     background-color: #f5f6f8;
@@ -475,31 +505,34 @@ label{
     transition: all .6s ease;
 }
 .myCardTitle{
-    font-family: 'Cairo', cursive;
+    font-family: 'Cairo', sans-serif;
     /* font-weight: 500; */
     font-size: 2rem;
     color: #18a69f;
 }
 .myCardDesc{
-    font-size: 1rem;
-    min-height: 450px;
+    font-size: .9rem;
+    min-height: 390px;
     text-align: left;
     font-weight: 500;
 }
 div img {
     width: 100%;
+}
+.logoBefore{
+    width: 80%;
 
 }
 .machineImg{
-    /* height: 60vh; */
+    height: 80vh;
     object-fit: contain;
     object-position: top;
 }
 .machineImgThmNl{
     padding: 2px;
     margin: 10px;
-    width: 50px;
-    height: 35px;
+    width: 120px;
+    height: 100px;
     object-fit: cover;
     cursor: pointer;
     margin: 0 auto;
@@ -644,7 +677,7 @@ div img {
 /* footer */
 footer {
     padding: 20px 50px;
-    background: #94d6e6;
+    background: #bde5ef;;
 }
 .footer-link {
     color: #01213a;
@@ -730,8 +763,6 @@ transform-origin: 0 0;
     border-bottom-right-radius: 10px;
 }
 .myGroupBrd{
-    padding: 10px;
-    min-height: 75px;
     border-radius: 5px;
     font-size: 1.2rem;
 }
@@ -779,9 +810,12 @@ transform-origin: 0 0;
 }
 .contactHero{
     background: #ffffff;
+    background-image: url(../assets/international-business-trading-concept-cities-countries1.jpg);
     width: 100%;
-    min-height:490px;
+    min-height:437px;
     padding: 20px;
+    background-size: cover;
+    background-position-y: -322px;
 }
 .imgOnWhnResp{
     display: none;
