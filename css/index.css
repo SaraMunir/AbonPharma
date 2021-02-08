@@ -1,12 +1,17 @@
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 body{
-    max-width:  1920px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px; 
-    background-attachment: fixed;
-    /* background-position-y: -50px; */
-    object-fit: cover;
     margin: 0;
     padding: 0;
 }
@@ -16,29 +21,21 @@ body{
 }
 .myBody{
     background-color: #94d6e6;
-    font-family: 'Montserrat', sans-serif;    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     color: black;
-
-}
-.cover{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: radial-gradient( #154d85,  #07223d);
-    z-index: 500;
-}
-.loadingBox{
-    top: 45%;
 }
 .heroBckImg{
     background: url(../assets/newHeroEdit2.jpg);
-    min-height: 70vh;
+    /* min-height: 70vh; */
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15vh 33vh;
+    /* padding: 15vh 33vh; */
     background-position-y: -137px;
+}
+.heroContent{
+    width: 80%;
+    margin: 0 auto;
+    padding: 160px 0;
 }
 .AbtBck{
     background-color: white;
@@ -100,9 +97,6 @@ body{
 .spShadow{
     filter: drop-shadow(2px 2px 2px #000000c7);
 }
-.spShadow2{
-    filter: drop-shadow(0px 0px 3px #fbfeff);
-}
 .myNavBack {
     height: 57px;
     background: #04618d;
@@ -144,13 +138,6 @@ body{
     font-size: 1rem;
     font-weight: 800;
 }
-.navLinkActive {
-    color:  #f6fdff;
-    transition: all ease .5s;
-    font-weight: 500;
-    border-radius: 3px;
-    border:3px solid #f6fdff;
-}
 .navLink {
     cursor: pointer;
     color:  #e7e7e7;
@@ -159,27 +146,16 @@ body{
     font-size: 1rem;
     transition: all ease .3s;
 }
-.navLinkActive:hover {
-    color:  #00599c;
-    transition: all ease .5s;
-    font-weight: 500;
-    background: #f6fdff;
-}
-
 .navLink:hover {
     background-color: #ddf2f7;
     color: Black;
     font-size: 1.1rem;
 }
 .navLink a {
-    color:  #00599c;
+    color:  #ffffff;
 }
-.readMoreLnk{
-    color: white;
-}
-.readMoreLnk:hover{
-    color: white;
-    text-decoration: none;
+.navLink a:hover {
+    color:  #000000;
 }
 .navBrandName {
     color: #ffffff;
@@ -193,20 +169,20 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
 }
-.carouselEffect{
-    background: radial-gradient( #3169c34d  ,#17345fbc ,#060e1a96);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-    opacity: .75;
+.navLogoBef{
+    width: 95px;
+    transition: all .6s ease;
 }
-.heroH2Text{
-    color: #18a69f;
-    font-family: 'Cairo', sans-serif;
-    font-weight: bold;
-    font-size: 2.3rem;
+.navLogo{
+    width: 70px;
+    transition: all .6s ease;
+}
+.readMoreLnk{
+    color: white;
+}
+.readMoreLnk:hover{
+    color: white;
+    text-decoration: none;
 }
 .heroH3Text{
     color: #103f6e;
@@ -265,7 +241,6 @@ body{
 }
 .toggleBtn:hover{
     color: #1dc0c0;
-
 }
 .mySubBtn{
     cursor: pointer;
@@ -334,9 +309,7 @@ body{
 }
 .menuBarContr:hover .menuBar{
     visibility: visible;
-    /* top: 70px; */
     z-index: 50;
-    /* height: 400px; */
 }
 .triangle-up {
     opacity: 0;
@@ -356,7 +329,6 @@ body{
 }
 .menuBarContr:hover .menuItem-link,.menuBarContr:hover .triangle-up {
     opacity: 1;
-    /* top: 70px; */
 }
 .menuItem {
     padding: 10px;
@@ -434,7 +406,7 @@ ul li {
 }
 .aspectSection{
     padding: 15px 50px;
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 .list-group-item{
     font-size: 1.2rem;
@@ -453,26 +425,8 @@ ul li {
 ul {
     border-radius: 0px;
 }
-.listGrpBrdr{
-}
-.listGrpItmInr{
-    border: .5px solid #cdd3d6;
-}
-.listGrpItmTop{
-    border-top: .5px solid #cdd3d6e7;
-    border-left: .5px solid #cdd3d6e7;
-    border-right: .5px solid #cdd3d6e7;
-}
 .listGrpItmBtmHdn{
     border-bottom: .5px solid #cdd3d600;
-}
-.listChild{
-    display: inline; 
-    width: 18px;
-}
-.listChild2{
-    display: inline; 
-    width: 12px;
 }
 .fa-circle{
     color: #35373ab9;
@@ -493,35 +447,21 @@ label{
 }
 .title1 {
     color: #1dc0c0;
-    /* color: #00599c; */
     font-size: 2rem;
 }
 .myCard{
     width: 345px;
     border: 1px solid #cbcbcb;
     margin-bottom: 20px;
-    min-height: 75vh;
     background-color: #f5f6f8;
     padding: 40px 20px 40px 40px;
     border-radius: 5px;
     filter: drop-shadow(4px 4px 4px #1c383f3d);
 }
 .myCardBg{
-    /* min-height: 30vh; */
-    /* background-color: #f5f6f8; */
     padding: 0 70px;
 }
-.test {
-    background-color: yellow;
-}
-.navLogoBef{
-    width: 95px;
-    transition: all .6s ease;
-}
-.navLogo{
-    width: 70px;
-    transition: all .6s ease;
-}
+
 .myCardTitle{
     font-family: 'Cairo', sans-serif;
     /* font-weight: 500; */
@@ -539,7 +479,6 @@ div img {
 }
 .logoBefore{
     width: 80%;
-
 }
 .machineImg{
     height: 80vh;
@@ -567,90 +506,6 @@ div img {
     position: relative;
     /* min-height: 100vh; */
 }
-.cardImg{
-    width: 12vh;
-    height: 12vh;
-    margin: 26px auto;
-    /* object-fit: cover; */
-}
-
-.cardRndImg{
-    position: relative;
-    border-radius: 50%; 
-    background-color: #d5d8d5;
-    width: 20vh;
-    height: 20vh;
-    transition: all ease .4s;
-}
-.cardDesc{
-    min-height: 23vh;
-    color: #dadada;
-}
-.descCard{
-    width: 57%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 30px;
-    background: #fafafaee;
-    /* height: 40vh; */
-    /* z-index: 10; */
-}
-.descCardLft{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    background: #fafafaee;
-}
-.descCardTxt{
-    width: 90%;
-}
-.descImg{
-    width: 450px;
-    position: relative;
-    right: -32px;
-    top: 100px;
-    z-index: 10;
-}
-.descImgLeft{
-    width: 450px;
-    position: relative;
-    left: -90px;
-    top: 100px;
-    z-index: 20;
-}
-.descTitle{
-    /* font-family: 'Goldman', cursive; */
-    font-size: 2.8rem;
-    color: #63addf;  
-    text-transform: uppercase;  
-}
-.descSubText{
-    /* min-height: 50vh; */
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-weight: 500;
-    line-height: 2.95rem;
-}
-.descHeroText{
-    /* min-height: 50vh; */
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-weight: 500;
-    line-height: 2.95rem;
-}
-.cardRndImg:hover {
-    background-image: linear-gradient(45deg,#1c383f, #286371, #1e7c74);
-}
-/* career */
 .jobSum{
     font-size: 0.78rem;;
     color: #7ccd88;
@@ -669,12 +524,12 @@ div img {
     margin-bottom: 15px;
     filter: drop-shadow(4px 4px 5px #1c383fd8);
 }
-.heroTxtHide{
+/* .heroTxtHide{
     display: none;
 }
 .heroTxtHideAft{
     display: block;
-}
+} */
 .jobDetailWindow{
     width: 100%;
     padding: 50px;
@@ -685,9 +540,6 @@ div img {
     top: 0;
     right: 0;
     right: 0;
-}
-.lightTxt{
-    color: white;
 }
 .myList li {
     list-style-type: square;
@@ -710,76 +562,6 @@ footer {
     color: #014996;
     text-decoration: none;
 }
-.footerList{
-    /* padding: 10px; */
-}
-/* for header animation  */
-.ml10, .ml10-1 {
-    position: relative;
-    font-weight: 900;
-    font-size: 4em;
-}
-.ml10 .text-wrapper,.ml10-1 .text-wrapper {
-position: relative;
-display: inline-block;
-padding-top: 0.2em;
-padding-right: 0.05em;
-padding-bottom: 0.1em;
-overflow: hidden;
-}
-.ml10 .letter,.ml10-1 .letter {
-display: inline-block;
-line-height: 1em;
-transform-origin: 0 0;
-}
-/* for header animation  */
-.ml101, .ml101-1 {
-    position: relative;
-    font-weight: 900;
-    font-size: 4em;
-}
-.ml101 .text-wrapper,
-.ml101-1 .text-wrapper{
-position: relative;
-display: inline-block;
-padding-top: 0.2em;
-padding-right: 0.05em;
-padding-bottom: 0.1em;
-overflow: hidden;
-}
-.ml101 .letter,
-.ml101-1 .letter{
-display: inline-block;
-line-height: 1em;
-transform-origin: 0 0;
-}
-.ml102 {
-    position: relative;
-    font-weight: 900;
-    font-size: 4em;
-}
-.ml102 .text-wrapper {
-position: relative;
-display: inline-block;
-padding-top: 0.2em;
-padding-right: 0.05em;
-padding-bottom: 0.1em;
-overflow: hidden;
-}
-.ml102 .letter {
-display: inline-block;
-line-height: 1em;
-transform-origin: 0 0;
-}
-.myFlex{
-    display: flex;
-}
-.cardRight{
-    padding: 50px;
-    background: white;
-    border-top-right-radius: 10px; 
-    border-bottom-right-radius: 10px;
-}
 .myGroupBrd{
     border-radius: 5px;
     font-size: 1.2rem;
@@ -797,7 +579,6 @@ transform-origin: 0 0;
 .RandD{
     padding-top: 50px;
 }
-
 .navHamburger{
     /* color: white; */
     padding: 20px;
@@ -806,11 +587,12 @@ transform-origin: 0 0;
 }
 .navMenResp{
     width: 65%;
-    background: #c3e2ea;
+    background: #04618d;
     padding: 40px;
     position: absolute;
     top: 77px;
     right: 0;
+    color: white;
 }
 .closeMenuBtn {
     position: absolute;
@@ -835,39 +617,6 @@ transform-origin: 0 0;
     background-size: cover;
     background-position-y: -322px;
 }
-.imgOnWhnResp{
-    display: none;
-}
-.imgOffWhnResp{
-    display: block;
-}
-.relativeInp{
-    position: relative;
-}
-.absInputText{
-    position: absolute;
-    background: #89b6cfd3;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-.absInputText h3{
-    font-size: 6rem;
-    color: #ffffffed;
-    margin-top: 42px;
-}
-.myMarTop{
-    margin-top: 35vh;
-}
-.blur{
-    color: transparent;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-.customList li{
-    list-style: outside;
-    list-style-type: disc;
-}
 .lineDvdr{
     border-radius: 30px;
     height: 3px;
@@ -885,20 +634,10 @@ transform-origin: 0 0;
     background-color: #00599c;
     margin: 20px;
 }
-
-.addPdTp{
-    padding-top: 70px;
-    transition: ease all .3s;
-}
 @media only screen and (min-width: 1352px) {
     .myCard {
         width: 405px;
         min-height: 40vh;
-        /* margin-bottom: 20px;
-        background-color: #f5f6f8;
-        padding: 40px 20px 40px 40px;
-        border-radius: 5px;
-        filter: drop-shadow(4px 4px 4px #1c383f3d); */
     }
     .myCardDesc {
         min-height: 400px;
@@ -910,15 +649,6 @@ transform-origin: 0 0;
     }
 }
 @media only screen and (max-width: 1280px) {
-    .descCard{
-        width: 50%;
-    }
-    .descImgLeft{
-        left: -60px;
-    }
-    .descCardLft{
-        width: 50%;
-    }
     .navBr {
         width: 40%;
     }
@@ -935,60 +665,20 @@ transform-origin: 0 0;
 }
 @media only screen and (max-width: 1020px) {
     /* For mobile phones: */
-    .descCardLft{
-        width: 50%;
-    }
-    .myFlex{
-        display: block;
-    }
-    .descCard, .descCardLft {
-        width: 90%;
-    }
+
 }
 @media only screen and (max-width: 990px) {
-    .descCardLft{
-        width: 50%;
-    }
-    .myFlex{
-        display: block;
-    }
-    .descCard, .descCardLft {
-        width: 90%;
-    }
     .navLogo{
         width: 80px;
     }
     .contactCard{
         margin-top: -100px;
     }
-    .imgOnWhnResp{
-        display: block;
-    }
-    .imgOffWhnResp{
-        display: none;
-    }
-    .descCardTxt{
-        text-align: center;
-    }
-    .myMarTop{
-        margin-top: 25vh;
-    }
     .myCard{
         width: 325px;
     }
-
-
 }
 @media only screen and (max-width: 869px){
-    .heroTxtHide{
-        display: block;
-    }
-    .heroTxtHideAft{
-        display: none;
-    }
-    .hideOnMobileList{
-        display: none;
-    }
     .myCardBg{
         padding: 0px;
     }
@@ -1011,17 +701,14 @@ transform-origin: 0 0;
         width: 30%;
         text-align: right;
     }
-
     .menuItem-link{
         opacity: 1;
     }
     .myCard{
         width: 450px;
     }
-
 }
 @media only screen and (max-width: 650px){
-
     .contactCard{
         margin-top: -50px;
     }
